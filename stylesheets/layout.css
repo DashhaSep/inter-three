@@ -1,3 +1,18 @@
 body {
-  background-color: rgb(43, 43, 43);
+  background-color: #f5f3f4;
+}
+section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.ramka {
+  border: 0.2vw black solid;
+  width: 90vw;
+  height: 40vw;
+  align-items: center;
+}
+p {
+  font-family: "Helvetica";
+  font-size: 14vw;
 }
