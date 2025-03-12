@@ -1,0 +1,374 @@
+/* окно регистрации */
+@keyframes registration {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
+/* кнопка интерфейс */
+
+.button-ball:hover {
+  background-color: black;
+  transform: (translate(15%));
+  animation: knopka 0.7s ease;
+}
+.round-button:hover {
+  background-color: #a83870;
+}
+@keyframes knopka {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2.3vw);
+  }
+}
+
+/* шарики */
+
+@keyframes arina {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(2vw, 2vw);
+  }
+  46% {
+    transform: translate(6vw, 2vw);
+  }
+  70% {
+    transform: translate(6vw, 2vw);
+  }
+  90% {
+    transform: translate(-2vw, 0vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b2 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(40vw, 2vw);
+  }
+  46% {
+    transform: translate(38vw, -10vw);
+  }
+  70% {
+    transform: translate(20vw, -13vw);
+  }
+  90% {
+    transform: translate(-3vw, -4vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b3 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-13vw, 5vw);
+  }
+  46% {
+    transform: translate(-13vw, -5vw);
+  }
+  70% {
+    transform: translate(10vw, -3vw);
+  }
+  90% {
+    transform: translate(6vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b4 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(3vw, 2vw);
+  }
+  46% {
+    transform: translate(-13vw, 1vw);
+  }
+  70% {
+    transform: translate(-8vw, 7vw);
+  }
+  90% {
+    transform: translate(0vw, 5vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b5 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-14vw, 6vw);
+  }
+  46% {
+    transform: translate(-13vw, 1vw);
+  }
+  70% {
+    transform: translate(3vw, 10vw);
+  }
+  90% {
+    transform: translate(-3vw, -2vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b6 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-11vw, 5vw);
+  }
+  46% {
+    transform: translate(-5vw, -4vw);
+  }
+  70% {
+    transform: translate(1vw, 4vw);
+  }
+  90% {
+    transform: translate(7vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b7 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-3vw, -3vw);
+  }
+  46% {
+    transform: translate(2vw, -20vw);
+  }
+  70% {
+    transform: translate(4vw, 0vw);
+  }
+  90% {
+    transform: translate(6vw, -3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b8 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(0vw, -20vw);
+  }
+  46% {
+    transform: translate(-30vw, -18vw);
+  }
+  70% {
+    transform: translate(-27vw, -5vw);
+  }
+  90% {
+    transform: translate(12vw, -18vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b9 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-2vw, -3vw);
+  }
+  46% {
+    transform: translate(3vw, 3vw);
+  }
+  70% {
+    transform: translate(7vw, -5vw);
+  }
+  90% {
+    transform: translate(2vw, -9vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b10 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(30vw, 2vw);
+  }
+  46% {
+    transform: translate(28vw, -9vw);
+  }
+  70% {
+    transform: translate(18vw, -10vw);
+  }
+  90% {
+    transform: translate(-5vw, -7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b11 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(4vw, -2vw);
+  }
+  46% {
+    transform: translate(-10vw, -1vw);
+  }
+  70% {
+    transform: translate(5vw, 2vw);
+  }
+  90% {
+    transform: translate(12vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b12 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(12vw, 2vw);
+  }
+  46% {
+    transform: translate(6vw, 4vw);
+  }
+  70% {
+    transform: translate(10vw, 2vw);
+  }
+  90% {
+    transform: translate(-2vw, 0vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b13 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(12vw, 2vw);
+  }
+  46% {
+    transform: translate(6vw, 4vw);
+  }
+  70% {
+    transform: translate(10vw, 2vw);
+  }
+  90% {
+    transform: translate(-2vw, 0vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+/* ВТОРОЙ ЭКРАН  */
+@keyframes white-noise {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  20% {
+    transform: translate(0.2vw, -0.1vw);
+  }
+  40% {
+    transform: translate(-0.1vw, 0.3vw);
+  }
+  60% {
+    transform: translate(0.2vw, 0.3vw);
+  }
+  80% {
+    transform: translate(-0.1vw, -0.1vw);
+  }
+  100% {
+    transform: translate(0.1vw, 0.1vw);
+  }
+}
+/* ТРЕТИЙ ЭКРАН  */
+.img1:hover {
+  background-image: url(../images/pystoty-full.svg);
+}
+
+.img1:hover ~ .tri-scren {
+  display: none;
+}
+
+/* ПОДВАЛ  */
+@keyframes rectangle {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scaleX(1.5);
+  }
+  60% {
+    transform: scaleY(2);
+  }
+  80% {
+    transform: scaleX(2);
+  }
+  100% {
+    transform: scale(1 2);
+  }
+}
+
+@keyframes attemp {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateX(-29.7vw);
+  }
+  100% {
+    transform: translate(-29.7vw, -10vw);
+  }
+}
+@keyframes finalSeven {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(26.7vw);
+  }
+  100% {
+    transform: translate(10.8vw, 26.7vw);
+  }
+}
+
+@keyframes finalThirteen {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-13.2vw);
+  }
+  100% {
+    transform: translate(-23.8vw, -13.2vw);
+  }
+}
