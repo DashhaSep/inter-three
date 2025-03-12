@@ -369,6 +369,26 @@
     transform: translate(0vw, 0vw);
   }
 }
+@keyframes b18 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-4vw, -7vw);
+  }
+  50% {
+    transform: translate(-12vw, 5vw);
+  }
+  70% {
+    transform: translate(-14vw, 2vw);
+  }
+  90% {
+    transform: translate(-2vw, -3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
 /* ВТОРОЙ ЭКРАН  */
 @keyframes white-noise {
   0% {
