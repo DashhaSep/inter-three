@@ -194,7 +194,7 @@ p {
 .b2 {
   margin-top: -7.8vw;
   margin-left: 5.7vw;
-  animation: b2 17s infinite;
+  animation: b2 23s infinite;
 }
 .b3 {
   margin-left: 16.6vw;
@@ -249,22 +249,22 @@ p {
 .b13 {
   margin-top: -12.2vw;
   margin-left: 73.9vw;
-  animation: b 17s infinite;
+  animation: b13 17s infinite;
 }
 .b14 {
   margin-left: 82.2vw;
   margin-top: -5.8vw;
-  animation: b 16s infinite;
+  animation: b14 16s infinite;
 }
 .b15 {
   margin-left: 91.8vw;
   margin-top: -15.2vw;
-  animation: b 21s infinite;
+  animation: b15 21s infinite;
 }
 .b16 {
   margin-top: 3vw;
   margin-left: 12.5vw;
-  animation: b 22s infinite;
+  animation: b16 19s infinite;
 }
 .b17 {
   margin-left: 24.8vw;
@@ -289,22 +289,27 @@ p {
 .b21 {
   margin-left: 21.6vw;
   margin-top: 17.7vw;
+  animation: b 19s infinite;
 }
 .b22 {
   margin-left: 27vw;
   margin-top: 22.5vw;
+  animation: b 19s infinite;
 }
 .b23 {
   margin-left: 32vw;
   margin-top: 16vw;
+  animation: b 19s infinite;
 }
 .b24 {
   margin-top: 11.7vw;
   margin-left: 36vw;
+  animation: b 19s infinite;
 }
 .b25 {
   margin-left: 41.5vw;
   margin-top: 7.7vw;
+  animation: b 19s infinite;
 }
 .b26 {
   margin-left: 65.7vw;
