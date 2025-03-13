@@ -389,25 +389,391 @@
     transform: translate(0vw, 0vw);
   }
 }
-/* ВТОРОЙ ЭКРАН  */
-@keyframes white-noise {
+@keyframes b19 {
   0% {
     transform: translate(0vw, 0vw);
   }
-  20% {
-    transform: translate(0.2vw, -0.1vw);
+  30% {
+    transform: translate(2vw, 7vw);
   }
-  40% {
-    transform: translate(-0.1vw, 0.3vw);
+  50% {
+    transform: translate(-5vw, 9vw);
   }
-  60% {
-    transform: translate(0.2vw, 0.3vw);
+  70% {
+    transform: translate(-14vw, 5vw);
   }
-  80% {
-    transform: translate(-0.1vw, -0.1vw);
+  90% {
+    transform: translate(-22vw, -3vw);
   }
   100% {
-    transform: translate(0.1vw, 0.1vw);
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b20 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(2vw, 7vw);
+  }
+  50% {
+    transform: translate(-3vw, 1vw);
+  }
+  70% {
+    transform: translate(-4vw, -4vw);
+  }
+  90% {
+    transform: translate(0vw, -3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b21 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+
+  30% {
+    transform: translate(-2vw, -13vw);
+  }
+  50% {
+    transform: translate(-10vw, -5vw);
+  }
+  70% {
+    transform: translate(-6vw, 4vw);
+  }
+  90% {
+    transform: translate(12vw, 5vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b22 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(4vw, -13vw);
+  }
+  50% {
+    transform: translate(-12vw, -5vw);
+  }
+  70% {
+    transform: translate(-6vw, -3vw);
+  }
+  90% {
+    transform: translate(12vw, -1vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b23 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(4vw, -13vw);
+  }
+  50% {
+    transform: translate(-12vw, -5vw);
+  }
+  70% {
+    transform: translate(-6vw, 4vw);
+  }
+  90% {
+    transform: translate(12vw, 5vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b24 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-32vw, 4vw);
+  }
+  40% {
+    transform: translate(-17vw, -3vw);
+  }
+  60% {
+    transform: translate(-10vw, -3vw);
+  }
+  80% {
+    transform: translate(-13vw, 4vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b25 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, -4vw);
+  }
+  40% {
+    transform: translate(-27vw, -5vw);
+  }
+  60% {
+    transform: translate(-13vw, 9vw);
+  }
+  80% {
+    transform: translate(-34vw, 12vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b26 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, 4vw);
+  }
+  40% {
+    transform: translate(25vw, 10vw);
+  }
+  60% {
+    transform: translate(-5vw, 14vw);
+  }
+  80% {
+    transform: translate(2vw, 5vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b27 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-2vw, 10vw);
+  }
+  40% {
+    transform: translate(15vw, -8vw);
+  }
+  60% {
+    transform: translate(4vw, 13vw);
+  }
+  80% {
+    transform: translate(5vw, 5vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b28 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-9vw, -3vw);
+  }
+  40% {
+    transform: translate(15vw, 12vw);
+  }
+  60% {
+    transform: translate(4vw, 13vw);
+  }
+  80% {
+    transform: translate(5vw, -3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b29 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-4vw, -3vw);
+  }
+  40% {
+    transform: translate(15vw, -10vw);
+  }
+  60% {
+    transform: translate(4vw, 4vw);
+  }
+  80% {
+    transform: translate(25vw, -14vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b30 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(27vw, -5vw);
+  }
+  40% {
+    transform: translate(17vw, 8vw);
+  }
+  60% {
+    transform: translate(4vw, 4vw);
+  }
+  80% {
+    transform: translate(25vw, -7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b31 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(30vw, -10vw);
+  }
+  40% {
+    transform: translate(22vw, -5vw);
+  }
+  60% {
+    transform: translate(4vw, -2vw);
+  }
+  80% {
+    transform: translate(25vw, 0vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b32 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-10vw, -10vw);
+  }
+  40% {
+    transform: translate(10vw, -5vw);
+  }
+  60% {
+    transform: translate(15vw, -13vw);
+  }
+  80% {
+    transform: translate(24vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b33 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-10vw, 12vw);
+  }
+  40% {
+    transform: translate(-12vw, 6vw);
+  }
+  60% {
+    transform: translate(-15vw, -3vw);
+  }
+  80% {
+    transform: translate(4vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b34 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-20vw, 4vw);
+  }
+  40% {
+    transform: translate(-12vw, 6vw);
+  }
+  60% {
+    transform: translate(-15vw, -3vw);
+  }
+  80% {
+    transform: translate(4vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b35 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+
+  30% {
+    transform: translate(4vw, -12vw);
+  }
+  40% {
+    transform: translate(-5vw, -2vw);
+  }
+  60% {
+    transform: translate(-17vw, -9vw);
+  }
+  80% {
+    transform: translate(-24vw, 3vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b36 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+
+  30% {
+    transform: translate(4vw, -12vw);
+  }
+  40% {
+    transform: translate(-5vw, -2vw);
+  }
+  60% {
+    transform: translate(-17vw, -9vw);
+  }
+  80% {
+    transform: translate(-10vw, -4vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+/* ВТОРОЙ ЭКРАН  */
+.info-behind-a1 span::after {
+  animation: white-noise 0.1s infinite linear;
+}
+@keyframes white-noise {
+  0% {
+    background-position: 0vw, 0vw;
+  }
+  20% {
+    background-position: 0.2vw, -0.1vw;
+  }
+  40% {
+    background-position: -0.1vw, 0.3vw;
+  }
+  60% {
+    background-position: 0.2vw, 0.3vw;
+  }
+  80% {
+    background-position: -0.1vw, -0.1vw;
+  }
+  100% {
+    background-position: 0.1vw, 0.1vw;
   }
 }
 /* ТРЕТИЙ ЭКРАН  */

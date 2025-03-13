@@ -14,7 +14,7 @@ section {
   overflow: hidden;
 }
 p {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
 }
 
 /* ПЕРВЫЙ ЭКРАН */
@@ -104,6 +104,64 @@ p {
   backdrop-filter: blur(100px);
   animation: registration 0.2s ease-in-out;
 }
+
+#textInput1 {
+  width: 37vw;
+  height: 2vw;
+  /* padding: 10px; */
+  font-size: 1vw;
+  margin-top: 10vw;
+  margin-left: 1vw;
+  border: 0vw solid #ccc;
+  border-radius: 4px;
+}
+#textInput2 {
+  width: 37vw;
+  height: 2vw;
+  /* padding: 10px; */
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  border: 0vw solid #ccc;
+  border-radius: 4px;
+}
+#textInput3 {
+  width: 37vw;
+  height: 2vw;
+  /* padding: 10px; */
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  border: 0vw solid #ccc;
+  border-radius: 4px;
+}
+/* Стили для кнопки  */
+#submitBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: grey;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10vw;
+  margin-left: 15vw;
+}
+
+#submitBtn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.vnesite {
+  color: white;
+  position: absolute;
+  margin-left: 12vw;
+  text-align: center;
+  margin-top: 3vw;
+  font-size: 1.2vw;
+}
+
 .register-box {
   width: 21.4vw;
   height: 3vw;
@@ -190,6 +248,16 @@ p {
 }
 .b36-name {
   margin-left: 1.5vw;
+}
+.b0 p {
+  margin-left: 1.5vw;
+}
+.b0 {
+  animation: b2 23s infinite -9s;
+  background-color: red;
+  color: red;
+  font-size: 0.9vw;
+  margin-left: 10vw;
 }
 .b2 {
   margin-top: -7.8vw;
@@ -279,81 +347,92 @@ p {
 .b19 {
   margin-left: 40.6vw;
   margin-top: 5vw;
-  animation: b 18s infinite;
+  animation: b19 21s infinite;
 }
 .b20 {
   margin-left: 15.9vw;
   margin-top: 12.8vw;
-  animation: b 19s infinite;
+  animation: b20 22s infinite;
 }
 .b21 {
   margin-left: 21.6vw;
   margin-top: 17.7vw;
-  animation: b 19s infinite;
+  animation: b21 25s infinite;
 }
 .b22 {
   margin-left: 27vw;
   margin-top: 22.5vw;
-  animation: b 19s infinite;
+  animation: b22 19s infinite;
 }
 .b23 {
   margin-left: 32vw;
   margin-top: 16vw;
-  animation: b 19s infinite;
+  animation: b23 25s infinite;
 }
 .b24 {
   margin-top: 11.7vw;
   margin-left: 36vw;
-  animation: b 19s infinite;
+  animation: b24 19s infinite;
 }
 .b25 {
   margin-left: 41.5vw;
   margin-top: 7.7vw;
-  animation: b 19s infinite;
+  animation: b25 21s infinite;
 }
 .b26 {
   margin-left: 65.7vw;
   margin-top: 0.9vw;
+  animation: b26 24s infinite;
 }
 .b27 {
   margin-left: 52.4vw;
   margin-top: 7.4vw;
+  animation: b27 27s infinite;
 }
 .b28 {
   margin-left: 63.5vw;
   margin-top: 5.4vw;
+  animation: b28 33s infinite;
 }
 .b29 {
   margin-left: 55vw;
   margin-top: 16.2vw;
+  animation: b29 35s infinite;
 }
 .b30 {
   margin-left: 59.2vw;
   margin-top: 12.4vw;
+  animation: b30 31s infinite;
 }
 .b31 {
   margin-left: 64.3vw;
   margin-top: 21.9vw;
+  animation: b31 27s infinite;
 }
 .b32 {
   margin-left: 70.3vw;
   margin-top: 15vw;
+  animation: b32 30s infinite;
 }
 .b33 {
   margin-left: 86.4vw;
   margin-top: 6.5vw;
+  animation: b33 27s infinite;
 }
 .b34 {
   margin-left: 92vw;
   margin-top: 13vw;
+  animation: b34 24s infinite;
 }
 .b35 {
   margin-left: 89.5vw;
   margin-top: 15.8vw;
+  animation: b35 28s infinite;
 }
 .b36 {
   margin-left: 73.4vw;
   margin-top: 18.4vw;
+  animation: b36 30s infinite;
 }
 .b1 {
   margin-left: 6.8vw;
@@ -469,6 +548,30 @@ p {
 .shadow {
   position: absolute;
 }
+/* .info-behind-a1 {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+  position: absolute;
+  margin-top: 17vw;
+  margin-left: 33.6vw;
+  z-index: -6;
+}
+.info-behind-a1 p {
+  position: absolute;
+  z-index: -5;
+}
+.info-behind-a1 p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 1vw;
+  background-image: url(../images/white-noise.png);
+  background-size: cover;
+  animation: white-noise 0.1s;
+} */
 .info-behind-a1 {
   color: rgb(0, 0, 0);
   font-size: 1vw;
@@ -482,6 +585,23 @@ p {
   background-repeat: no-repeat;
   animation: white-noise 0.1s;
 } */
+.info-behind-a1 span {
+  position: relative;
+  z-index: -20;
+}
+.info-behind-a1 span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  background-image: url(../images/white-noise.png);
+  background-size: cover;
+  animation: white-noise 0.1s;
+}
 .white-noise {
   width: 20vw;
   height: 20vw;
@@ -682,74 +802,76 @@ p {
   transform: translateX(-11.7vw);
   transition: transform 2.5s ease-in-out;
 }
-.initialTwo {
+.initial2 {
   transform: translateY(0vw);
 }
 
-.finalTwo {
+.final2 {
   transform: translateY(-13.8vw);
   transition: transform 2.5s ease-in-out;
 }
 
-.finalThree {
+.final3 {
   transform: translateX(-11.7vw);
   transition: transform 2.5s ease-in-out;
 }
-.finalFour {
+.final4 {
   animation: attemp 2.5s ease-in-out;
   animation-fill-mode: forwards;
 }
-.finalFive {
+.final5 {
   transform: translateY(14.1vw);
   transition: transform 2.5s ease-in-out;
 }
-.finalSix {
+.final6 {
   transform: translateY(-14.2vw);
   transition: transform 2.5s ease-in-out;
 }
-.finalSeven {
+.final7 {
   animation: finalSeven 5.5s ease-in-out;
   animation-fill-mode: forwards;
 }
-.initialEight {
+.initial8 {
   transform: translateY(0vw);
 }
-.finalEight {
+.final8 {
   transform: translateY(-14.2vw);
   transition: transform 2.5s ease-in-out;
 }
-.initialNine {
+.initial9 {
   transform: translateY(0vw);
 }
-.finalNine {
+.final9 {
   transform: translateY(13.1vw);
   transition: transform 2.5s ease-in-out;
 }
-.initialTen {
+.initial10 {
   transform: translateY(0vw);
 }
-.finalTen {
+.final10 {
   transform: translateY(13.15vw);
   transition: transform 2.5s ease-in-out;
 }
-.initialTwelve {
+.initial13 {
   transform: translateX(0vw);
 }
-.finalEleven {
+.final11 {
   transform: translateX(21.4vw);
   transition: transform 2.5s ease-in-out;
 }
-.finalTwelve {
+.final12 {
   transform: translateX(-15.4vw);
   transition: transform 2.5s ease-in-out;
 }
-.finalThirteen {
+.final13 {
   animation: finalThirteen 5s ease-in-out;
   animation-fill-mode: forwards;
 }
 /* ПЯТЫЙ ЭКРАН */
 canvas {
   border: 1px solid #000;
+  position: absolute;
+  width: 90vw;
 }
 .container {
   width: 80vw;
@@ -780,12 +902,11 @@ canvas {
 .podval {
   height: 56.64vw;
 }
-
+/* первый */
 .rectangle {
   border: 0.2vw solid rgb(0, 0, 0);
   width: 10vw;
   height: 10vw;
-  animation: b6 10s infinite;
   animation: rectangle 10s infinite;
 }
 .rectangle-fake {
@@ -809,4 +930,92 @@ canvas {
   rotate: -45deg;
   margin-top: 5vw;
   margin-left: -2.3vw;
+}
+/* второй */
+.rectangle-2 {
+  border: 0.2vw solid rgb(0, 0, 0);
+  width: 10vw;
+  height: 10vw;
+}
+.rectangle-fake-2 {
+}
+.crossed-one-2 {
+  margin-left: 10vw;
+}
+.cross-line-two-2,
+.cross-line-2 {
+  background-color: #000000;
+  width: 22.5vw;
+  height: 0.1vw;
+}
+.cross-line-two-2 {
+  rotate: -63.5deg;
+  margin-top: 10vw;
+  margin-left: -6.2vw;
+}
+.cross-line-2 {
+  rotate: -45deg;
+  margin-top: 5vw;
+  margin-left: -2.3vw;
+}
+/* Общие стили для страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+
+/* Стили для кнопки */
+#themeButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+#themeButton:hover {
+  background-color: #45a049;
+}
+/* Стили для текстового поля */
+#textInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стили для кнопки */
+#addButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #45a049;
+}
+
+/* Стили для списка */
+#outputList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#outputList li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

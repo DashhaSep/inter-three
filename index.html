@@ -11,7 +11,17 @@
     <!-- первый экран регистрация -->
     <section class="register">
       <article id="register">
-        <div class="modal"></div>
+        <div class="modal">
+          <p class="vnesite">
+            внесите свои данные, чтобы получить <br />доступ к выставке
+          </p>
+          <input type="text" id="textInput1" placeholder="user name" />
+          <input type="text2" id="textInput2" placeholder="Email" />
+          <input type="text3" id="textInput3" placeholder="Номер телефона" />
+          <ul id="outputList"></ul>
+          <button id="submitBtn">Отправить</button>
+          <p id="output"></p>
+        </div>
       </article>
       <div class="ramka"></div>
       <div class="line1"></div>
@@ -92,13 +102,20 @@
 
     <!-- второй экран  -->
     <section>
-      <div class="white-noise"></div>
       <p class="info-behind-a1">
-        "Сердце Бурь" <br />
-        подходит для: сильных <br />
-        характером, смелых, <br />решительных, стремящихся <br />
-        к свободе и независимости.
+        <span>"Сердце Бурь" </span><br />
+        <span>подходит для: сильных </span><br />
+        <span>характером, смелых,</span> <br />
+        <span> решительных, стремящихся </span><br />
+        <span>к свободе и независимости.</span>
       </p>
+      <!-- <div class="info-behind-a1">
+        <p>"Сердце Бурь"</p>
+        <p>подходит для: сильных</p>
+        <p>характером, смелых,</p>
+        <p>решительных, стремящихся</p>
+        <p>к свободе и независимости.</p>
+      </div> -->
       <img class="shadow sh1" src="images/shadow-one.svg" alt="" />
       <img class="shadow sh2" src="images/shadow-two.svg" alt="" />
       <img class="shadow sh3" src="images/shadow-three.svg" alt="" />
@@ -153,7 +170,7 @@
     <!-- пятый экран -->
     <section>
       <div class="container">
-        <canvas id="art"></canvas>
+        <canvas id="canvas" id="art"></canvas>
         <div id="buttons">
           <input type="button" id="reset" value="Reset" />
         </div>
@@ -161,12 +178,48 @@
     </section>
     <!-- шестой экран - подвал -->
     <section class="podval">
+      <!-- первый -->
       <div class="crossed-one">
         <div class="rectangle-fake">
           <div class="rectangle">
             <div class="cross-line"></div>
             <div class="cross-line-two"></div>
           </div>
+        </div>
+      </div>
+      <!-- второй -->
+      <div class="rectangle-fake-2">
+        <div class="rectangle-2">
+          <div class="cross-line-2"></div>
+          <div class="cross-line-two-2"></div>
+        </div>
+      </div>
+      <!-- третий -->
+      <div class="rectangle-fake-3">
+        <div class="rectangle-3">
+          <div class="cross-line-3"></div>
+          <div class="cross-line-two-3"></div>
+        </div>
+      </div>
+      <!-- четвертый -->
+      <div class="rectangle-fake-4">
+        <div class="rectangle-4">
+          <div class="cross-line-4"></div>
+          <div class="cross-line-two-4"></div>
+        </div>
+      </div>
+      <!-- пятый -->
+      <div class="rectangle-fake-5">
+        <div class="rectangle-5">
+          <div class="cross-line-5"></div>
+          <div class="cross-line-two-5"></div>
+        </div>
+      </div>
+      <!-- шестой -->
+      <div class="rectangle-fake-6">
+        <div class="rectangle-6">
+          <div class="cross-line-6"></div>
+          <div class="cross-line-two-6"></div>
         </div>
       </div>
     </section>
