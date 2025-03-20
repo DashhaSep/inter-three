@@ -779,13 +779,49 @@
 /* ТРЕТИЙ ЭКРАН  */
 .img1:hover {
   background-image: url(../images/pystoty-full.svg);
+  margin-left: -3.5vw;
+  transition: background-image 0.3s ease-in-out;
+  /* transition: margin-left 0.2s ease-in-out; */
 }
-
-.img1:hover ~ .tri-scren {
+.img2:hover {
+  background-image: url(../images/regolit-full.svg);
+  transition: background-image 0.3s ease-in-out;
+  background-size: 109.29vw 17.61vw;
+  margin-left: -4.6vw;
+}
+.img3:hover {
+  background-image: url(../images/mantia-full.svg);
+  transition: background-image 0.3s ease-in-out;
+}
+.img4:hover {
+  background-image: url(../images/yadro-full.svg);
+  transition: background-image 0.3s ease-in-out;
+}
+.img1:hover + .TS-1 {
   display: none;
 }
 
 /* ПОДВАЛ  */
+@keyframes cross1 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(30vw, 5vw);
+  }
+  46% {
+    transform: translate(40vw, 13vw);
+  }
+  70% {
+    transform: translate(15vw, 4vw);
+  }
+  90% {
+    transform: translate(7vw, 13vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
 @keyframes rectangle {
   0% {
     transform: scale(1);
@@ -836,5 +872,25 @@
   }
   100% {
     transform: translate(-23.8vw, -13.2vw);
+  }
+}
+@keyframes uvki {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-20vw, 5vw);
+  }
+  46% {
+    transform: translate(-10vw, 13vw);
+  }
+  70% {
+    transform: translate(10vw, -7vw);
+  }
+  90% {
+    transform: translate(-10vw, 4vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
   }
 }

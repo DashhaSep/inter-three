@@ -15,8 +15,8 @@
           <p class="vnesite">
             внесите свои данные, чтобы получить <br />доступ к выставке
           </p>
-          <input type="text" id="textInput1" placeholder="user name" />
-          <input type="text2" id="textInput2" placeholder="Email" />
+          <input type="text" id="textInput1" placeholder="Никнейм" />
+          <input type="text2" id="textInput2" placeholder="Почта" />
           <input type="text3" id="textInput3" placeholder="Номер телефона" />
           <ul id="outputList"></ul>
           <button id="submitBtn">Отправить</button>
@@ -102,21 +102,26 @@
 
     <!-- второй экран  -->
     <section>
-      <p class="info-behind-a1">
-        <span>"Сердце Бурь" </span><br />
-        <span>подходит для: сильных </span><br />
-        <span>характером, смелых,</span> <br />
-        <span> решительных, стремящихся </span><br />
-        <span>к свободе и независимости.</span>
-      </p>
-      <!-- <div class="info-behind-a1">
+      <div class="expandable">
+        <span class="left-bracket">(</span>
+        <span class="question-mark">?</span>
+        <span class="text">cоедини астероид с правильной тенью</span>
+        <span class="right-bracket">)</span>
+      </div>
+
+      <div class="info-behind-a1">
         <p>"Сердце Бурь"</p>
         <p>подходит для: сильных</p>
         <p>характером, смелых,</p>
         <p>решительных, стремящихся</p>
         <p>к свободе и независимости.</p>
-      </div> -->
-      <img class="shadow sh1" src="images/shadow-one.svg" alt="" />
+      </div>
+      <img
+        class="shadow sh1"
+        id="target-zone"
+        src="images/shadow-one.svg"
+        alt=""
+      />
       <img class="shadow sh2" src="images/shadow-two.svg" alt="" />
       <img class="shadow sh3" src="images/shadow-three.svg" alt="" />
       <img class="shadow sh4" src="images/shadow-four.svg" alt="" />
@@ -138,7 +143,13 @@
       </div>
     </section>
     <!-- третий экран -->
-    <section>
+    <section class="TRI-SCREEN">
+      <div class="expandable2">
+        <span class="left-bracket2">(</span>
+        <span class="question-mark2">?</span>
+        <span class="text2">наведи курсор</span>
+        <span class="right-bracket2">)</span>
+      </div>
       <p class="tri-screen TS-1">пустоты</p>
       <p class="tri-screen TS-2">реголит</p>
       <p class="tri-screen TS-3">мантия</p>
@@ -151,33 +162,86 @@
 
     <!-- четвертый экран -->
     <section class="fourth">
-      <p class="marker-four">(?)</p>
-      <div class="p001 initial"></div>
-      <div class="p002 initialTwo"></div>
-      <div class="p003 initialThree"></div>
-      <div class="p004 initialFour"></div>
-      <div class="p005 initialFive"></div>
-      <div class="p006 initialSix"></div>
-      <div class="p007 initialSeven"></div>
-      <div class="p008 initialEight"></div>
-      <div class="p009 initialNine"></div>
-      <div class="p010 initialTen"></div>
-      <div class="p011 initialEleven"></div>
-      <div class="p012 initialTwelve"></div>
-      <div class="p013 initialThirteen"></div>
+      <div class="expandable3">
+        <span class="left-bracket3">(</span>
+        <span class="question-mark3">?</span>
+        <span class="text3">нажми на картинку</span>
+        <span class="right-bracket3">)</span>
+      </div>
+      <div class="all-p">
+        <div class="kartochki p001 initial"></div>
+        <div class="kartochki p002 initialTwo"></div>
+        <div class="kartochki p003 initialThree"></div>
+        <div class="kartochki p004 initialFour"></div>
+        <div class="kartochki p005 initialFive"></div>
+        <div class="kartochki p006 initialSix"></div>
+        <div class="kartochki p007 initialSeven"></div>
+        <div class="kartochki p008 initialEight"></div>
+        <div class="kartochki p009 initialNine"></div>
+        <div class="kartochki p010 initialTen"></div>
+        <div class="kartochki p011 initialEleven"></div>
+        <div class="kartochki p012 initialTwelve"></div>
+        <div class="kartochki p013 initialThirteen"></div>
+      </div>
     </section>
 
     <!-- пятый экран -->
     <section>
-      <div class="container">
-        <canvas id="canvas" id="art"></canvas>
-        <div id="buttons">
+      <div class="expandable4">
+        <span class="left-bracket4">(</span>
+        <span class="question-mark4">?</span>
+        <span class="text4">нажми на картинку</span>
+        <span class="right-bracket4">)</span>
+      </div>
+      <div class="stopwatch">00:00:00</div>
+      <div class="inter">интер</div>
+      <div class="container hover-area">
+        <div class="dot dot-one"><p class="dot-name">1</p></div>
+        <div class="dot dot-two"><p class="dot-name">3</p></div>
+        <div class="dot dot-three"><p class="dot-name">2</p></div>
+        <div class="dot dot-four"><p class="dot-name">5</p></div>
+        <div class="dot dot-five"><p class="dot-name">4</p></div>
+        <div class="dot dot-six"><p class="dot-name">6</p></div>
+        <div class="dot dot-seven"><p class="dot-name">7</p></div>
+        <div class="dot dot-eight"><p class="dot-name">8</p></div>
+        <div class="dot dot-nine"><p class="dot-name">9</p></div>
+        <div class="dot dot-ten"><p class="dot-name">10</p></div>
+        <div class="dot dot-eleven"><p class="dot-name">11</p></div>
+        <div class="dot dot-twelve"><p class="dot-name">12</p></div>
+        <div class="dot dot-thirteen"><p class="dot-name">13</p></div>
+        <div class="dot dot-fourteen"><p class="dot-name">14</p></div>
+        <div class="dot dot-fifteen"><p class="dot-name">15</p></div>
+        <div class="dot dot-sixteen"><p class="dot-name">16</p></div>
+        <div class="dot dot-seventeen"><p class="dot-name">17</p></div>
+        <div class="dot dot-eighteen"><p class="dot-name">18</p></div>
+        <div class="dot dot-nineteen"><p class="dot-name">19</p></div>
+        <div class="dot dot-twenty"><p class="dot-name">20</p></div>
+        <div class="dot dot-twentyone"><p class="dot-name">21</p></div>
+        <div class="dot dot-twentytwo"><p class="dot-name">22</p></div>
+        <div class="dot dot-twentythree"><p class="dot-name">23</p></div>
+        <div class="dot dot-twentyfour"><p class="dot-name">24</p></div>
+        <div class="dot dot-twentyfive"><p class="dot-name">25</p></div>
+        <div class="dot dot-twentysix"><p class="dot-name">26</p></div>
+        <canvas id="canvas" id="art"><p class="dot-name">27</p></canvas>
+        <!-- <div id="buttons">
           <input type="button" id="reset" value="Reset" />
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- шестой экран - подвал -->
     <section class="podval">
+      <div class="groupANDuvki">
+        <div class="group">группа</div>
+        <div class="uvki">Б24УвКИ05</div>
+      </div>
+      <div class="podval-rock-one"></div>
+      <div class="podval-rock-two"></div>
+      <div class="podval-rock-three"></div>
+      <div class="podval-rock-four"></div>
+      <div class="podval-rock-five"></div>
+      <div class="podval-rock-six"></div>
+      <div class="podval-rock-seven"></div>
+      <div class="podval-rock-eight"></div>
       <!-- первый -->
       <div class="crossed-one">
         <div class="rectangle-fake">
@@ -188,39 +252,25 @@
         </div>
       </div>
       <!-- второй -->
-      <div class="rectangle-fake-2">
-        <div class="rectangle-2">
-          <div class="cross-line-2"></div>
-          <div class="cross-line-two-2"></div>
+      <div class="crossed-one2">
+        <div class="rectangle-fake2">
+          <div class="rectangle2">
+            <div class="cross-line2"></div>
+            <div class="cross-line-two2"></div>
+          </div>
         </div>
       </div>
-      <!-- третий -->
-      <div class="rectangle-fake-3">
-        <div class="rectangle-3">
-          <div class="cross-line-3"></div>
-          <div class="cross-line-two-3"></div>
-        </div>
+      <div class="authorANDname">
+        <div class="author">автор</div>
+        <div class="my-name">Дарья Сеп</div>
       </div>
-      <!-- четвертый -->
-      <div class="rectangle-fake-4">
-        <div class="rectangle-4">
-          <div class="cross-line-4"></div>
-          <div class="cross-line-two-4"></div>
-        </div>
+      <div class="kuratorANDkamila">
+        <div class="kurator-1">куратор</div>
+        <div class="Kamila">Камила Рихтер</div>
       </div>
-      <!-- пятый -->
-      <div class="rectangle-fake-5">
-        <div class="rectangle-5">
-          <div class="cross-line-5"></div>
-          <div class="cross-line-two-5"></div>
-        </div>
-      </div>
-      <!-- шестой -->
-      <div class="rectangle-fake-6">
-        <div class="rectangle-6">
-          <div class="cross-line-6"></div>
-          <div class="cross-line-two-6"></div>
-        </div>
+      <div class="kuratorANDanna">
+        <div class="kurator-2">куратор</div>
+        <div class="Anna">Комкова Анна</div>
       </div>
     </section>
   </body>
