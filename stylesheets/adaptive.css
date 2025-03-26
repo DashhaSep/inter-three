@@ -1,0 +1,155 @@
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(../images/iphone-backgroung.png);
+    opacity: 0.5;
+    width: 414px;
+    height: 6000px;
+  }
+  .register {
+    height: 177vw;
+  }
+  .ramka {
+    height: 169.5vw;
+    width: 84vw;
+    margin-left: 8vw;
+    margin-top: 7vw;
+    border: 0.3vw black solid;
+  }
+  .line1,
+  .line2 {
+    height: 0.2vw;
+  }
+  .line1 {
+    margin-left: -95.5vw;
+    width: 291.5vw;
+  }
+  .line2 {
+    margin-top: -84.5vw;
+    width: 84.5vw;
+    margin-left: 8vw;
+  }
+  .black-box-one-1,
+  .black-box-one-2,
+  .black-box-one-3,
+  .black-box-one-4 {
+    width: 16.6vw;
+    height: 4.6vw;
+  }
+  .registration-words-one {
+    padding-top: 0.7vw;
+    padding-left: 5.8vw;
+    font-size: 3vw;
+  }
+  .registration-words-two {
+    margin-left: 6.3vw;
+    padding-top: 0.7vw;
+    font-size: 3vw;
+  }
+  .black-box-one-3 {
+    margin-top: -85.2vw;
+    margin-left: 42vw;
+  }
+  .black-box-one-4 {
+    width: 16.6vw;
+    height: 4.6vw;
+    margin-top: 79.6vw;
+    margin-left: 42vw;
+    position: absolute;
+  }
+  .register-box {
+    width: 41.7vw;
+    height: 7vw;
+    margin-top: -3.7vw;
+    margin-left: 29vw;
+  }
+  .main-registration {
+    font-size: 3.2vw;
+    padding-top: 1.5vw;
+  }
+  .black-box-one-1,
+  .registration-114,
+  .black-box-one-2 {
+    display: none;
+  }
+  .ball {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  /* ВТОРОЙ ЭКРАН */
+  .section-two-mediascreen {
+    height: 163vw;
+    margin-top: 30vw;
+  }
+  .info-behind-a4,
+  .info-behind-a3,
+  .info-behind-a2,
+  .info-behind-a1,
+  .info-behind-a5 {
+    display: none;
+  }
+  .sh1 {
+    width: 35.99vw;
+    height: 35.99vw;
+    margin-top: 45vw;
+    margin-left: 57vw;
+  }
+  .sh2 {
+    width: 36.2vw;
+    height: 27.19vw;
+    margin-left: 7vw;
+    margin-top: 12vw;
+  }
+  .sh3 {
+    margin-left: 62vw;
+    margin-top: 10.3vw;
+    width: 28.9vw;
+    height: 28.9vw;
+  }
+  .sh4 {
+    width: 28.89vw;
+    height: 31.2vw;
+    margin-top: 120vw;
+    margin-left: 60vw;
+  }
+  .sh5 {
+    width: 35.26vw;
+    height: 35.26vw;
+    margin-top: 106vw;
+    margin-left: 0vw;
+  }
+  #a1 {
+    width: 38.98vw;
+    height: 38.98vw;
+    margin-left: -14vw;
+    margin-top: 60.8vw;
+    position: absolute;
+  }
+  #a2 {
+    width: 36.2vw;
+    height: 27.19vw;
+    margin-left: 13.7vw;
+    margin-top: 100vw;
+  }
+  #a3 {
+    width: 28.89vw;
+    height: 31.2vw;
+    margin-left: -32.3vw;
+    margin-top: 22.6vw;
+  }
+  #a4 {
+    width: 40vw;
+    height: 40vw;
+    margin-left: 35.3vw;
+    margin-top: -44.8vw;
+  }
+  #a5 {
+    width: 25.99vw;
+    height: 25.99vw;
+    margin-top: 25vw;
+    margin-left: 20vw;
+  }
+  #a4header {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}

@@ -894,3 +894,12 @@
     transform: translate(0vw, 0vw);
   }
 }
+/* ХОЛСТ КНОПКИ */
+#clear:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#enter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

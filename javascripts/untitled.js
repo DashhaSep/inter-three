@@ -1,23 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  preloader();
   draggable();
   draggabletwo();
   draggablethree();
   draggablefour();
   draggablefive();
   transition();
-  // transitionTwo();
-  // transitionThree();
-  // transitionFour();
-  // transitionFive();
-  // transitionSix();
-  // transitionSeven();
-  // transitionEight();
-  // transitionNine();
-  // transitionTen();
-  // transitionTen();
-  // transitionEleven();
-  // transitionThirteen();
-  // transitionTwelve();
   // getMousePos();
   // mouseMove();
   openModal();
@@ -32,9 +20,27 @@ document.addEventListener("DOMContentLoaded", () => {
   Question3();
   Question4();
   timer();
-  kartochki();
   kuratorANDkamila();
+  KARTOCHKI();
+  interfaceChange();
 });
+
+/* <!-- загрузочный экран  --> */
+function preloader() {
+  const TIME_TO_WAIT = 4;
+  const preloader = document.querySelector(".vk-preloader");
+  const removePreloader = function () {
+    preloader.classList.add("none");
+    preloader.removeEventListener("transitionend", removePreloader);
+  };
+  const hidePreloader = function () {
+    preloader.classList.add("hidden");
+    preloader.addEventListener("transitionend", removePreloader);
+  };
+  if (preloader) {
+    setTimeout(hidePreloader, TIME_TO_WAIT * 1000);
+  }
+}
 
 function submitName() {
   let btn = document.querySelector("#submitBtn");
@@ -333,102 +339,14 @@ function transition() {
     });
   });
 }
-function transitionTwo() {
-  let imageFirst = document.querySelector(".p002");
 
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalTwo");
-    imageFirst.classList.remove("initialTwo");
-  });
-}
-function transitionThree() {
-  let imageFirst = document.querySelector(".p003");
+let imageFirst = document.querySelector(".p013");
 
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalThree");
-    imageFirst.classList.remove("initialThree");
-  });
-}
-function transitionFour() {
-  let imageFirst = document.querySelector(".p004");
+imageFirst.addEventListener("click", () => {
+  imageFirst.classList.add("finalThirteen");
+  imageFirst.classList.remove("initialThirteen");
+});
 
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalFour");
-    imageFirst.classList.remove("initialFour");
-  });
-}
-function transitionTwelve() {
-  let imageFirst = document.querySelector(".p012");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalTwelve");
-    imageFirst.classList.remove("initialTwelve");
-  });
-}
-function transitionFive() {
-  let imageFirst = document.querySelector(".p005");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalFive");
-    imageFirst.classList.remove("initialFive");
-  });
-}
-function transitionSix() {
-  let imageFirst = document.querySelector(".p006");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalSix");
-    imageFirst.classList.remove("initialSix");
-  });
-}
-function transitionSeven() {
-  let imageFirst = document.querySelector(".p007");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalSeven");
-    imageFirst.classList.remove("initialSeven");
-  });
-}
-function transitionEight() {
-  let imageFirst = document.querySelector(".p008");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalEight");
-    imageFirst.classList.remove("initialEight");
-  });
-}
-function transitionNine() {
-  let imageFirst = document.querySelector(".p009");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalNine");
-    imageFirst.classList.remove("initialNine");
-  });
-}
-function transitionTen() {
-  let imageFirst = document.querySelector(".p010");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalTen");
-    imageFirst.classList.remove("initialTen");
-  });
-}
-function transitionEleven() {
-  let imageFirst = document.querySelector(".p011");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalEleven");
-    imageFirst.classList.remove("initialEleven");
-  });
-}
-function transitionThirteen() {
-  let imageFirst = document.querySelector(".p013");
-
-  imageFirst.addEventListener("click", () => {
-    imageFirst.classList.add("finalThirteen");
-    imageFirst.classList.remove("initialThirteen");
-  });
-}
 function initCanvas() {
   let canvas = document.getElementById("canvas");
   if (!canvas) {
@@ -491,9 +409,9 @@ function initCanvas() {
   });
 
   // Кнопка очистки холста
-  // document.getElementById('clear').addEventListener('click', function () {
-  //   ctx.clearRect(0, 0, canvas.width, canvas.height)
-  // })
+  document.getElementById("clear").addEventListener("click", function () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
 }
 
 function oknoRegOdin() {
@@ -667,98 +585,120 @@ function timer() {
   });
 }
 
-function kartochki() {
-  // Получаем все картинки
-  const images = document.querySelectorAll(".image");
+// function kuratorANDkamila() {
+//   // Получаем элемент
+//   const box = document.querySelector(".kuratorANDkamila");
 
-  // Обработчик клика для каждой картинки
-  images.forEach((image) => {
-    image.addEventListener("click", () => {
-      // Возвращаем все картинки в исходное положение
-      images.forEach((img) => {
-        img.style.transform = "none";
-      });
+//   // Задаем маршрут движения (массив точек [x, y])
+//   const path = [
+//     [0, 0], // Точка 1
+//     [20, 5], // Точка 2
+//     [10, 13], // Точка 3
+//     [10, -7], // Точка 4
+//     [0, 0], // Точка 5
+//   ];
 
-      // Определяем маршрут движения из атрибута data-move
-      const move = image.getAttribute("data-move");
+//   // Флаг для проверки, находится ли курсор над элементом
+//   let isHovered = false;
 
-      // Разбираем маршрут (например, "x-50" -> ось X, смещение -50px)
-      const [axis, value] = move.match(/([xy])([-\d]+)/).slice(1);
-      const offset = parseInt(value, 10);
+//   // Индекс текущей точки маршрута
+//   let currentPointIndex = 0;
 
-      // Двигаем выбранную картинку
-      if (axis === "x") {
-        image.style.transform = `translateX(${offset}px)`;
-      } else if (axis === "y") {
-        image.style.transform = `translateY(${offset}px)`;
+//   // Функция для плавного движения к следующей точке
+//   function moveAlongPath() {
+//     if (!isHovered && currentPointIndex < path.length) {
+//       const [targetX, targetY] = path[currentPointIndex];
+//       const currentX = parseFloat(box.style.left || 0);
+//       const currentY = parseFloat(box.style.top || 0);
+
+//       // Вычисляем разницу между текущими координатами и целевой точкой
+//       const dx = targetX - currentX;
+//       const dy = targetY - currentY;
+
+//       // Двигаемся плавно (шаг = 1/10 расстояния до цели)
+//       const stepX = dx / 10;
+//       const stepY = dy / 10;
+
+//       // Обновляем координаты
+//       box.style.left = `${currentX + stepX}px`;
+//       box.style.top = `${currentY + stepY}px`;
+
+//       // Если достигли цели с допустимой погрешностью, переходим к следующей точке
+//       if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
+//         currentPointIndex++;
+//         if (currentPointIndex >= path.length) {
+//           currentPointIndex = 0; // Возвращаемся к началу маршрута
+//         }
+//       }
+//     }
+
+//     // Вызываем функцию снова через requestAnimationFrame
+//     requestAnimationFrame(moveAlongPath);
+//   }
+
+//   // Добавляем обработчики событий для hover
+//   box.addEventListener("mouseenter", () => {
+//     isHovered = true; // Останавливаем движение
+//   });
+
+//   box.addEventListener("mouseleave", () => {
+//     isHovered = false; // Возобновляем движение
+//   });
+
+//   // Инициализируем стартовые координаты
+//   box.style.left = `${path[0][0]}px`;
+//   box.style.top = `${path[0][1]}px`;
+
+//   // Запускаем анимацию
+//   moveAlongPath();
+// }
+
+function KARTOCHKI() {
+  const photos = document.querySelectorAll(".kartochki");
+  let activePhoto = null;
+
+  photos.forEach((photo) => {
+    photo.addEventListener("click", () => {
+      // Получаем данные о движении из атрибута data-move
+      const moveData = JSON.parse(photo.getAttribute("data-move"));
+      const { x, y } = moveData;
+
+      if (activePhoto === photo) {
+        // Если кликнули на уже активное изображение, ничего не делаем
+        return;
       }
+
+      if (activePhoto) {
+        // Возвращаем предыдущее активное изображение на место
+        activePhoto.style.transform = "translate(0, 0)";
+      }
+
+      // Перемещаем текущее изображение
+      photo.style.transform = `translate(${x}, ${y})`;
+      activePhoto = photo;
     });
   });
 }
-function kuratorANDkamila() {
-  // Получаем элемент
-  const box = document.querySelector(".kuratorANDkamila");
+function interfaceChange() {
+  const invertButton = document.getElementById("invertColorsButton");
 
-  // Задаем маршрут движения (массив точек [x, y])
-  const path = [
-    [0, 0], // Точка 1
-    [20, 5], // Точка 2
-    [10, 13], // Точка 3
-    [10, -7], // Точка 4
-    [0, 0], // Точка 5
-  ];
+  invertButton.addEventListener("click", () => {
+    // Получаем все элементы на странице
+    const elements = document.querySelectorAll("*");
 
-  // Флаг для проверки, находится ли курсор над элементом
-  let isHovered = false;
+    elements.forEach((element) => {
+      // Проверяем цвет фона элемента
+      const bgColor = window.getComputedStyle(element).backgroundColor;
 
-  // Индекс текущей точки маршрута
-  let currentPointIndex = 0;
-
-  // Функция для плавного движения к следующей точке
-  function moveAlongPath() {
-    if (!isHovered && currentPointIndex < path.length) {
-      const [targetX, targetY] = path[currentPointIndex];
-      const currentX = parseFloat(box.style.left || 0);
-      const currentY = parseFloat(box.style.top || 0);
-
-      // Вычисляем разницу между текущими координатами и целевой точкой
-      const dx = targetX - currentX;
-      const dy = targetY - currentY;
-
-      // Двигаемся плавно (шаг = 1/10 расстояния до цели)
-      const stepX = dx / 10;
-      const stepY = dy / 10;
-
-      // Обновляем координаты
-      box.style.left = `${currentX + stepX}px`;
-      box.style.top = `${currentY + stepY}px`;
-
-      // Если достигли цели с допустимой погрешностью, переходим к следующей точке
-      if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
-        currentPointIndex++;
-        if (currentPointIndex >= path.length) {
-          currentPointIndex = 0; // Возвращаемся к началу маршрута
-        }
+      if (bgColor === "rgb(245, 243, 244)" || bgColor === "white") {
+        // Если фон белый, делаем его черным
+        element.style.backgroundColor = "black";
+        element.style.color = "white"; // Меняем цвет текста на белый
+      } else if (bgColor === "rgb(0, 0, 0)" || bgColor === "black") {
+        // Если фон черный, делаем его белым
+        element.style.backgroundColor = "white";
+        element.style.color = "black"; // Меняем цвет текста на черный
       }
-    }
-
-    // Вызываем функцию снова через requestAnimationFrame
-    requestAnimationFrame(moveAlongPath);
-  }
-
-  // Добавляем обработчики событий для hover
-  box.addEventListener("mouseenter", () => {
-    isHovered = true; // Останавливаем движение
+    });
   });
-
-  box.addEventListener("mouseleave", () => {
-    isHovered = false; // Возобновляем движение
-  });
-
-  // Инициализируем стартовые координаты
-  box.style.left = `${path[0][0]}px`;
-  box.style.top = `${path[0][1]}px`;
-
-  // Запускаем анимацию
-  moveAlongPath();
 }
