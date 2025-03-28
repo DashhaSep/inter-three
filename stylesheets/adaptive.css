@@ -246,7 +246,7 @@
   /* конец шариков */
   .modal {
     width: 73vw;
-    height: 106.55vw;
+    height: 95vw;
     margin-left: 13.8vw;
     margin-top: 40.95vw;
   }
@@ -258,18 +258,18 @@
   #textInput2,
   #textInput3 {
     width: 66vw;
-    height: 5.6vw;
-    font-size: 2.5vw;
+    height: 7.6vw;
+    font-size: 3vw;
   }
   #textInput1 {
     margin-top: 20vw;
     margin-left: 3vw;
   }
   #textInput2 {
-    margin-top: 3vw;
+    margin-top: 5vw;
   }
   #textInput3 {
-    margin-top: 3vw;
+    margin-top: 5vw;
   }
   #submitBtn {
     padding: 1vw 2vw;
@@ -279,18 +279,23 @@
     border: none;
     border-radius: 1vw;
     cursor: pointer;
-    margin-top: 10vw;
+    margin-top: 16vw;
     margin-left: 18vw;
+  }
+  .RB.afterRB {
+    background-color: #000000;
+    transform: translateX(6.5vw);
+    transition: transform 0.5sease-in-out;
   }
   .inversionButton {
     background-color: black;
-    width: 7vw;
-    height: 5.3vw;
+    width: 12vw;
+    height: 5vw;
     border: none;
-    margin-left: 84vw;
+    margin-left: 79vw;
     border-radius: 40px;
     position: absolute;
-    margin-top: 7.9vw;
+    margin-top: 8.1vw;
     z-index: 100;
   }
   .round-ball {
@@ -352,6 +357,7 @@
   .text4 {
     margin-left: 1.8vw;
   }
+
   .info-behind-a4,
   .info-behind-a3,
   .info-behind-a2,

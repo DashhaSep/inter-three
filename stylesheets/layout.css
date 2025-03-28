@@ -45,8 +45,8 @@ body {
   z-index: 100;
 }
 .round-ball {
-  width: 2vw;
-  height: 2vw;
+  width: 1.5vw;
+  height: 1.5vw;
   border-radius: 100%;
   background-color: white;
 }
@@ -65,12 +65,12 @@ body {
 }
 .RB.afterRB {
   background-color: #000000;
-  transform: translateX(2vw);
+  transform: translateX(2.5vw);
   transition: transform 0.5s ease-in-out;
 }
 .RB {
   background-color: #ffffff;
-  transform: translateX(0vw);
+  transform: translateX(-0.3vw);
   transition: transform 0.5s ease-in-out;
 }
 .XX.AFTER3 {
@@ -661,27 +661,33 @@ p {
   color: rgb(0, 0, 0);
   font-size: 1vw;
   position: absolute;
-  text-align: center;
+  text-align: left;
+}
+.plus {
+  color: #8c8c8c;
+  /* font-size: 0.9vw; */
+  margin-bottom: 0.4vw;
+  margin-top: 0.2vw;
 }
 .info-behind-a1 {
-  margin-top: 18vw;
-  margin-left: 32.6vw;
+  margin-top: 17.6vw;
+  margin-left: 33.6vw;
 }
 .info-behind-a2 {
-  margin-top: 34vw;
-  margin-left: 11vw;
+  margin-top: 33vw;
+  margin-left: 15vw;
 }
 .info-behind-a3 {
-  margin-top: 24vw;
+  margin-top: 22vw;
   margin-left: 58vw;
 }
 .info-behind-a4 {
-  margin-top: 32.3vw;
-  margin-left: 81.9vw;
+  margin-top: 34.1vw;
+  margin-left: 82.9vw;
 }
 .info-behind-a5 {
-  margin-top: 53vw;
-  margin-left: 34vw;
+  margin-top: 52.4vw;
+  margin-left: 37vw;
 }
 /* .info-behind-a1::before {
   content: "GHBDTN";

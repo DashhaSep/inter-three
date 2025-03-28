@@ -803,7 +803,7 @@
   background-image: url(../images/yadro-full.svg);
   transition: background-image 0.3s ease-in-out;
 }
-.img1:hover + .TS-1 {
+.img1:hover ~ .TS-1 {
   display: none;
 }
 
