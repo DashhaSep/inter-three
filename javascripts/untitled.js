@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  preloader();
+  // preloader();
   draggable();
   draggabletwo();
   draggablethree();
@@ -20,33 +20,76 @@ document.addEventListener("DOMContentLoaded", () => {
   Question3();
   Question4();
   timer();
-  kuratorANDkamila();
   KARTOCHKI();
-  interfaceChange();
+  // interfaceChange();
+  secondInterface();
+  secondInterfacewhite();
+  secondInterfaceHELP();
+  secondInterfaceXX();
+  secondInterfacedot();
+  // borderBox();
+  WhiteBorder();
+  asteroidswhite();
+  secondInterfaceRoundBall();
+  imagesDarkVersion();
+  tralalelo();
 });
+
+function tralalelo() {
+  const elements = document.querySelectorAll(".number");
+  if (elements.length === 0) {
+    console.error('Элементы с классом "number" не найдены.');
+    return;
+  }
+
+  elements.forEach((element) => {
+    let text = element.textContent.trim();
+    let number = parseInt(text.slice(1, -1), 10);
+
+    if (isNaN(number)) {
+      console.error(`Текст элемента "${text}" не является числом.`);
+      return;
+    }
+    setInterval(() => {
+      number++;
+      element.textContent = `(${number})`;
+    }, 50);
+  });
+}
 
 /* <!-- загрузочный экран  --> */
 function preloader() {
-  const TIME_TO_WAIT = 4;
+  const TIME_TO_WAIT = 4; // Время ожидания в секундах
   const preloader = document.querySelector(".vk-preloader");
-  const removePreloader = function () {
-    preloader.classList.add("none");
-    preloader.removeEventListener("transitionend", removePreloader);
-  };
-  const hidePreloader = function () {
-    preloader.classList.add("hidden");
-    preloader.addEventListener("transitionend", removePreloader);
-  };
-  if (preloader) {
-    setTimeout(hidePreloader, TIME_TO_WAIT * 1000);
-  }
-}
 
+  if (!preloader) {
+    console.warn("Preloader element not found.");
+    return;
+  }
+
+  const removePreloader = function () {
+    preloader.classList.add("none"); // Полностью скрываем элемент
+    preloader.removeEventListener("transitionend", removePreloader); // Удаляем обработчик
+  };
+
+  const hidePreloader = function () {
+    preloader.classList.add("hiddenN"); // Запускаем CSS-переход
+    preloader.addEventListener("transitionend", removePreloader); // Ждем завершения анимации
+  };
+
+  setTimeout(hidePreloader, TIME_TO_WAIT * 1000); // Запускаем через 4 секунды
+}
+const removePreloader = function () {
+  console.log("Transition ended, hiding preloader...");
+  preloader.classList.add("none");
+  preloader.removeEventListener("transitionend", removePreloader);
+};
 function submitName() {
   let btn = document.querySelector("#submitBtn");
   let input = document.querySelector("#textInput1");
   let balls = document.querySelector(".all-balls");
   let modal = document.querySelector(".modal");
+  let words = document.querySelectorAll(".change-word");
 
   btn.addEventListener("click", () => {
     let ball = document.createElement("div");
@@ -61,6 +104,10 @@ function submitName() {
     balls.appendChild(ball);
 
     modal.style.display = "none";
+
+    words.forEach((word) => {
+      word.innerHTML = "114";
+    });
   });
 }
 
@@ -340,14 +387,11 @@ function transition() {
   });
 }
 
-let imageFirst = document.querySelector(".p013");
-
-imageFirst.addEventListener("click", () => {
-  imageFirst.classList.add("finalThirteen");
-  imageFirst.classList.remove("initialThirteen");
-});
-
 function initCanvas() {
+  const button = document.getElementById("toggleButton");
+  button.addEventListener("click", () => {
+    ctx.strokeStyle = "#FFFFFF";
+  });
   let canvas = document.getElementById("canvas");
   if (!canvas) {
     console.error("Canvas element not found!");
@@ -585,74 +629,6 @@ function timer() {
   });
 }
 
-// function kuratorANDkamila() {
-//   // Получаем элемент
-//   const box = document.querySelector(".kuratorANDkamila");
-
-//   // Задаем маршрут движения (массив точек [x, y])
-//   const path = [
-//     [0, 0], // Точка 1
-//     [20, 5], // Точка 2
-//     [10, 13], // Точка 3
-//     [10, -7], // Точка 4
-//     [0, 0], // Точка 5
-//   ];
-
-//   // Флаг для проверки, находится ли курсор над элементом
-//   let isHovered = false;
-
-//   // Индекс текущей точки маршрута
-//   let currentPointIndex = 0;
-
-//   // Функция для плавного движения к следующей точке
-//   function moveAlongPath() {
-//     if (!isHovered && currentPointIndex < path.length) {
-//       const [targetX, targetY] = path[currentPointIndex];
-//       const currentX = parseFloat(box.style.left || 0);
-//       const currentY = parseFloat(box.style.top || 0);
-
-//       // Вычисляем разницу между текущими координатами и целевой точкой
-//       const dx = targetX - currentX;
-//       const dy = targetY - currentY;
-
-//       // Двигаемся плавно (шаг = 1/10 расстояния до цели)
-//       const stepX = dx / 10;
-//       const stepY = dy / 10;
-
-//       // Обновляем координаты
-//       box.style.left = `${currentX + stepX}px`;
-//       box.style.top = `${currentY + stepY}px`;
-
-//       // Если достигли цели с допустимой погрешностью, переходим к следующей точке
-//       if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
-//         currentPointIndex++;
-//         if (currentPointIndex >= path.length) {
-//           currentPointIndex = 0; // Возвращаемся к началу маршрута
-//         }
-//       }
-//     }
-
-//     // Вызываем функцию снова через requestAnimationFrame
-//     requestAnimationFrame(moveAlongPath);
-//   }
-
-//   // Добавляем обработчики событий для hover
-//   box.addEventListener("mouseenter", () => {
-//     isHovered = true; // Останавливаем движение
-//   });
-
-//   box.addEventListener("mouseleave", () => {
-//     isHovered = false; // Возобновляем движение
-//   });
-
-//   // Инициализируем стартовые координаты
-//   box.style.left = `${path[0][0]}px`;
-//   box.style.top = `${path[0][1]}px`;
-
-//   // Запускаем анимацию
-//   moveAlongPath();
-// }
-
 function KARTOCHKI() {
   const photos = document.querySelectorAll(".kartochki");
   let activePhoto = null;
@@ -679,26 +655,202 @@ function KARTOCHKI() {
     });
   });
 }
-function interfaceChange() {
-  const invertButton = document.getElementById("invertColorsButton");
 
-  invertButton.addEventListener("click", () => {
-    // Получаем все элементы на странице
-    const elements = document.querySelectorAll("*");
-
-    elements.forEach((element) => {
-      // Проверяем цвет фона элемента
-      const bgColor = window.getComputedStyle(element).backgroundColor;
-
-      if (bgColor === "rgb(245, 243, 244)" || bgColor === "white") {
-        // Если фон белый, делаем его черным
-        element.style.backgroundColor = "black";
-        element.style.color = "white"; // Меняем цвет текста на белый
-      } else if (bgColor === "rgb(0, 0, 0)" || bgColor === "black") {
-        // Если фон черный, делаем его белым
-        element.style.backgroundColor = "white";
-        element.style.color = "black"; // Меняем цвет текста на черный
-      }
+function secondInterface() {
+  const button = document.getElementById("toggleButton");
+  const body = document.body;
+  button.addEventListener("click", () => {
+    if (body.classList.contains("SLAY")) {
+      body.classList.remove("SLAY");
+      body.classList.add("after");
+    } else {
+      body.classList.remove("after");
+      body.classList.add("SLAY");
+    }
+  });
+}
+function secondInterfacewhite() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const bomElement = document.querySelectorAll(".WG"); // Элемент .bom
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Добавляем класс .after к элементу .bom
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("AFTER");
     });
+  });
+}
+function secondInterfaceHELP() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const bomElement = document.querySelectorAll(".FG"); // Элемент .bom
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Добавляем класс .after к элементу .bom
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("AFTER2");
+    });
+  });
+}
+
+function secondInterfaceXX() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const bomElement = document.querySelectorAll(".XX"); // Элемент .bom
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Добавляем класс .after к элементу .bom
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("AFTER3");
+    });
+  });
+}
+function secondInterfaceRoundBall() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const bomElement = document.querySelectorAll(".RB"); // Элемент .bom
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Добавляем класс .after к элементу .bom
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("afterRB");
+    });
+  });
+}
+function secondInterfacedot() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const bomElement = document.querySelectorAll(".dot"); // Элемент .bom
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Добавляем класс .after к элементу .bom
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("afterAFT");
+    });
+  });
+}
+function WhiteBorder() {
+  const button = document.getElementById("toggleButton"); // Кнопка
+  const box = document.querySelector(".ramka");
+
+  // Добавляем обработчик события клика
+  button.addEventListener("click", () => {
+    box.classList.toggle("white-ramka");
+  });
+}
+
+function imagesDarkVersion() {
+  const button = document.getElementById("toggleButton");
+  const pystotа = document.querySelector(".img1");
+  const regolit = document.querySelector(".img2");
+  const mantia = document.querySelector(".img3");
+  const yadro = document.querySelector(".img4");
+  button.addEventListener("click", () => {
+    pystotа.classList.toggle("afterimage");
+    mantia.classList.toggle("afterimage3");
+    regolit.classList.toggle("afterimage2");
+    yadro.classList.toggle("afterimage4");
+  });
+}
+
+function asteroidswhite() {
+  const button = document.getElementById("toggleButton");
+  const image5 = document.getElementById("blackShFive");
+  const image55 = document.getElementById("whiteShFive");
+  const image2 = document.getElementById("blackShTwo");
+  const image22 = document.getElementById("whiteShTwo");
+  const image3 = document.getElementById("blackShThree");
+  const image33 = document.getElementById("whiteShThree");
+  const image4 = document.getElementById("blackShFour");
+  const image44 = document.getElementById("whiteShFour");
+  const image1 = document.getElementById("blackShOne");
+  const image11 = document.getElementById("whiteShOne");
+
+  // Добавляем обработчик события клика на кнопку
+  button.addEventListener("click", () => {
+    // Переключаем классы для первой картинки
+    if (image5.classList.contains("visible")) {
+      image5.classList.remove("visible");
+      image5.classList.add("hidden");
+    } else {
+      image5.classList.remove("hidden");
+      image5.classList.add("visible");
+    }
+    if (image55.classList.contains("hidden")) {
+      image55.classList.remove("hidden");
+      image55.classList.add("visible");
+    } else {
+      image55.classList.remove("visible");
+      image55.classList.add("hidden");
+    }
+    if (image2.classList.contains("visible")) {
+      image2.classList.remove("visible");
+      image2.classList.add("hidden");
+    } else {
+      image2.classList.remove("hidden");
+      image2.classList.add("visible");
+    }
+    if (image22.classList.contains("hidden")) {
+      image22.classList.remove("hidden");
+      image22.classList.add("visible");
+    } else {
+      image22.classList.remove("visible");
+      image22.classList.add("hidden");
+    }
+    if (image3.classList.contains("visible")) {
+      image3.classList.remove("visible");
+      image3.classList.add("hidden");
+    } else {
+      image3.classList.remove("hidden");
+      image3.classList.add("visible");
+    }
+    if (image33.classList.contains("hidden")) {
+      image33.classList.remove("hidden");
+      image33.classList.add("visible");
+    } else {
+      image33.classList.remove("visible");
+      image33.classList.add("hidden");
+    }
+    if (image4.classList.contains("visible")) {
+      image4.classList.remove("visible");
+      image4.classList.add("hidden");
+    } else {
+      image4.classList.remove("hidden");
+      image4.classList.add("visible");
+    }
+    if (image44.classList.contains("hidden")) {
+      image44.classList.remove("hidden");
+      image44.classList.add("visible");
+    } else {
+      image44.classList.remove("visible");
+      image44.classList.add("hidden");
+    }
+    if (image1.classList.contains("visible")) {
+      image1.classList.remove("visible");
+      image1.classList.add("hidden");
+    } else {
+      image1.classList.remove("hidden");
+      image1.classList.add("visible");
+    }
+    if (image11.classList.contains("hidden")) {
+      image11.classList.remove("hidden");
+      image11.classList.add("visible");
+    } else {
+      image11.classList.remove("visible");
+      image11.classList.add("hidden");
+    }
+  });
+}
+function Hover() {
+  const box = document.querySelector(".img1");
+  const toggleHoverBtn = document.getElementById("toggleButton");
+
+  // Добавляем обработчик события на кнопку
+  toggleHoverBtn.addEventListener("click", function () {
+    // Переключаем классы для hover
+    if (box.classList.contains("img1")) {
+      box.classList.remove("img1");
+      box.classList.add("afterimage");
+    }
+    // else {
+    //   box.classList.remove("alternate-hover");
+    //   box.classList.add("default-hover");
+    // }
   });
 }

@@ -7,10 +7,58 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascripts/untitled.js"></script>
   </head>
-  <body>
-    <button id="invertColorsButton">Инвертировать цвета</button>
+  <body class="SLAY">
+    <button class="inversionButton FG" id="toggleButton">
+      <div class="round-ball RB"></div>
+    </button>
     <!-- загрузочный экран  -->
-    <!-- <div class="vk-preloader">Hello World</div> -->
+    <!-- <div class="vk-preloader">
+      <div class="number">(10)</div>
+      <div class="number">( 871 )</div>
+      <div class="number">( 128 )</div>
+      <div class="number">( 44 )</div>
+      <div class="number">( 98 )</div>
+      <div class="number">( 657 )</div>
+      <div class="number">( 1187 )</div>
+      <div class="number">( 297 )</div>
+      <div class="number">( 928 )</div>
+      <div class="number">( 5678 )</div>
+      <div class="number">( 11 )</div>
+      <div class="number">(278)</div>
+      <div class="number">(645)</div>
+      <div class="number">(287)</div>
+      <div class="number">(87)</div>
+      <div class="number">(8765)</div>
+      <div class="number">(1762)</div>
+      <div class="number">(111)</div>
+      <div class="number">(27)</div>
+      <div class="number">(187)</div>
+      <div class="number">(1863)</div>
+      <div class="number">(287)</div>
+      <div class="number">(876)</div>
+      <div class="number">(378)</div>
+      <div class="number">(928)</div>
+      <div class="number">(298)</div>
+      <div class="number">(125)</div>
+      <div class="number">(87)</div>
+      <div class="number">(827)</div>
+      <div class="number">(218)</div>
+      <div class="number">(187)</div>
+      <div class="number">(187)</div>
+      <div class="number">(18)</div>
+      <div class="number">(7)</div>
+      <div class="number">(18)</div>
+      <div class="number">(287)</div>
+      <div class="number">(287)</div>
+      <div class="number">(27)</div>
+      <div class="number">(17)</div>
+      <div class="number">(3892)</div>
+      <div class="number">(287)</div>
+      <div class="number">(38)</div>
+      <div class="number">(38827)</div>
+      <div class="number">(38)</div>
+      <div class="number">(1)</div>
+    </div> -->
     <!-- первый экран регистрация -->
     <section class="register">
       <article id="register">
@@ -22,90 +70,89 @@
           <input type="text2" id="textInput2" placeholder="Почта" />
           <input type="text3" id="textInput3" placeholder="Номер телефона" />
           <ul id="outputList"></ul>
-          <button id="submitBtn">Отправить</button>
+          <button id="submitBtn">Зарегистрироваться</button>
           <p id="output"></p>
         </div>
       </article>
       <div class="ramka"></div>
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <!-- кнопка смены интерфейса -->
-      <div class="round-button">
-        <div class="button-ball"></div>
-      </div>
+      <div class="line1 FG"></div>
+      <div class="line2 FG"></div>
+
       <!-- шарики-пользователи -->
       <div class="all-balls">
-        <div class="ball b1">
-          <p class="b1-name">Арина</p>
+        <div class="ball b1 FG">
+          <p class="b1-name FG">Арина</p>
         </div>
-        <div class="ball b2"></div>
-        <div class="ball b3">
-          <p class="b3-name">user_1230</p>
+        <div class="ball b2 FG"></div>
+        <div class="ball b3 FG">
+          <p class="b3-name FG">user_1230</p>
         </div>
-        <div class="ball b4"></div>
-        <div class="ball b5"></div>
-        <div class="ball b6"></div>
-        <div class="ball b7"></div>
-        <div class="ball b8"></div>
-        <div class="ball b9">
-          <p class="b9-name">Екатерина</p>
+        <div class="ball b4 FG"></div>
+        <div class="ball b5 FG"></div>
+        <div class="ball b6 FG"></div>
+        <div class="ball b7 FG"></div>
+        <div class="ball b8 FG"></div>
+        <div class="ball b9 FG">
+          <p class="b9-name FG">Екатерина</p>
         </div>
-        <div class="ball b10"></div>
-        <div class="ball b11"></div>
-        <div class="ball b12"></div>
-        <div class="ball b13">
-          <p class="b13-name">Рада_1130</p>
+        <div class="ball b10 FG"></div>
+        <div class="ball b11 FG"></div>
+        <div class="ball b12 FG"></div>
+        <div class="ball b13 FG">
+          <p class="b13-name FG" FG>Рада_1130</p>
         </div>
-        <div class="ball b14"></div>
-        <div class="ball b15"></div>
-        <div class="ball b16"></div>
-        <div class="ball b17"></div>
-        <div class="ball b18"></div>
-        <div class="ball b19"></div>
-        <div class="ball b20"></div>
-        <div class="ball b21"></div>
-        <div class="ball b22"></div>
-        <div class="ball b23"></div>
-        <div class="ball b24"></div>
-        <div class="ball b25">
-          <p class="b25-name">+1</p>
+        <div class="ball b14 FG"></div>
+        <div class="ball b15 FG"></div>
+        <div class="ball b16 FG"></div>
+        <div class="ball b17 FG"></div>
+        <div class="ball b18 FG"></div>
+        <div class="ball b19 FG"></div>
+        <div class="ball b20 FG"></div>
+        <div class="ball b21 FG"></div>
+        <div class="ball b22 FG"></div>
+        <div class="ball b23 FG"></div>
+        <div class="ball b24 FG"></div>
+        <div class="ball b25 FG">
+          <p class="b25-name FG">+1</p>
         </div>
-        <div class="ball b26"></div>
-        <div class="ball b27"></div>
-        <div class="ball b28">
-          <p class="b28-name">Алекс</p>
+        <div class="ball b26 FG"></div>
+        <div class="ball b27 FG"></div>
+        <div class="ball b28 FG">
+          <p class="b28-name FG">Алекс</p>
         </div>
-        <div class="ball b29">
-          <p class="b29-name">Полина</p>
+        <div class="ball b29 FG">
+          <p class="b29-name FG">Полина</p>
         </div>
-        <div class="ball b30"></div>
-        <div class="ball b31"></div>
-        <div class="ball b32"></div>
-        <div class="ball b33"></div>
-        <div class="ball b34"></div>
-        <div class="ball b35"></div>
-        <div class="ball b36">
-          <p class="b36-name">Эля</p>
+        <div class="ball b30 FG"></div>
+        <div class="ball b31 FG"></div>
+        <div class="ball b32 FG"></div>
+        <div class="ball b33 FG"></div>
+        <div class="ball b34 FG"></div>
+        <div class="ball b35 FG"></div>
+        <div class="ball b36 FG">
+          <p class="b36-name FG">Эля</p>
         </div>
       </div>
-      <div class="black-box-one-1"><p class="registration-114">онлайн</p></div>
-      <div class="black-box-one-2">
-        <p class="registration-114">выставка</p>
+      <div class="black-box-one-1 FG">
+        <p class="registration-114 WG">онлайн</p>
       </div>
-      <div class="black-box-one-3">
-        <p class="registration-words-one">113</p>
+      <div class="black-box-one-2 FG">
+        <p class="registration-114 WG">выставка</p>
       </div>
-      <div class="black-box-one-4">
-        <p class="registration-words-two">113</p>
+      <div class="black-box-one-3 FG">
+        <p class="registration-words-one change-word WG">113</p>
       </div>
-      <div class="register-box">
-        <p class="main-registration">регистрация</p>
+      <div class="black-box-one-4 FG">
+        <p class="registration-words-two change-word WG">113</p>
+      </div>
+      <div class="register-box FG">
+        <p class="main-registration WG">регистрация</p>
       </div>
     </section>
 
     <!-- второй экран  -->
     <section class="section-two-mediascreen">
-      <div class="expandable">
+      <div class="expandable FG">
         <span class="left-bracket">(</span>
         <span class="question-mark">?</span>
         <span class="text">cоедини астероид с правильной тенью</span>
@@ -113,57 +160,111 @@
       </div>
 
       <div class="info-behind-a1">
-        <p>C-класс</p>
-        <p class="dark-grey">содержат много углерода,</p>
-        <p class="dark-grey">имеют темную поверхность</p>
-        <p class="dark-grey">считаются примитивными,</p>
-        <p class="dark-grey">cохранившими состав,</p>
-        <p class="dark-grey">близкий к тому, что был</p>
-        <p class="dark-grey">в ранней Солнечной</p>
-        <p class="dark-grey">системе</p>
+        <p class="XX">C-класс</p>
+        <p class="dark-grey XX">содержат много углерода,</p>
+        <p class="dark-grey XX">имеют темную поверхность</p>
+        <p class="dark-grey XX">считаются примитивными,</p>
+        <p class="dark-grey XX">cохранившими состав,</p>
+        <p class="dark-grey XX">близкий к тому, что был</p>
+        <p class="dark-grey XX">в ранней Солнечной</p>
+        <p class="dark-grey XX">системе</p>
       </div>
       <div class="info-behind-a4">
-        <p>D-класс</p>
-        <p>имеют низкую</p>
-        <p>альбедо,содержат</p>
-        <p>много углерода</p>
-        <p>и органических соеди</p>
-        <p>нений; часто нахо</p>
-        <p>дятся во внешней</p>
-        <p>части пояса</p>
-        <p>астероидов</p>
+        <p class="XX">D-класс</p>
+        <p class="XX">имеют низкую</p>
+        <p class="XX">альбедо,содержат</p>
+        <p class="XX">много углерода</p>
+        <p class="XX">и органических соеди</p>
+        <p class="XX">нений; часто нахо</p>
+        <p class="XX">дятся во внешней</p>
+        <p class="XX">части пояса</p>
+        <p class="XX">астероидов</p>
       </div>
       <div class="info-behind-a2">
-        <p>S-класс</p>
-        <p>состоят из силикатных минералов</p>
-        <p>и металлов, они более светлые</p>
-        <p>, чем C-классы, и часто имеют</p>
-        <p>более сложную</p>
-        <p>геологическую историю</p>
+        <p class="XX">S-класс</p>
+        <p class="XX">состоят из силикатных минералов</p>
+        <p class="XX">и металлов, они более светлые</p>
+        <p class="XX">, чем C-классы, и часто имеют</p>
+        <p class="XX">более сложную</p>
+        <p class="XX">геологическую историю</p>
       </div>
       <div class="info-behind-a3">
-        <p>M-класс</p>
-        <p>cостоят из металлов,</p>
-        <p>таких как никель и железо,</p>
+        <p class="XX">M-класс</p>
+        <p class="XX">cостоят из металлов,</p>
+        <p class="XX">таких как никель и железо,</p>
       </div>
       <div class="info-behind-a5">
-        <p>V-класс</p>
-        <p>связаны с более круп</p>
-        <p>ным астероидом Веста</p>
-        <p>имеют уникальный состав,</p>
-        <p>включая базальтовые</p>
-        <p>породы</p>
+        <p class="XX">V-класс</p>
+        <p class="XX">связаны с более круп</p>
+        <p class="XX">ным астероидом Веста</p>
+        <p class="XX">имеют уникальный состав,</p>
+        <p class="XX">включая базальтовые</p>
+        <p class="XX">породы</p>
       </div>
+      <!-- тени в светлом режиме -->
       <img
-        class="shadow sh1"
-        id="target-zone"
+        class="shadow sh1 visible"
+        id="blackShOne"
         src="images/shadow-one.svg"
         alt=""
       />
-      <img class="shadow sh2" src="images/shadow-two.svg" alt="" />
-      <img class="shadow sh3" src="images/shadow-three.svg" alt="" />
-      <img class="shadow sh4" src="images/shadow-four.svg" alt="" />
-      <img class="shadow sh5" src="images/shadow-five.svg" alt="" />
+      <img
+        class="shadow sh2 visible"
+        id="blackShTwo"
+        src="images/shadow-two.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh3 visible"
+        id="blackShThree"
+        src="images/shadow-three.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh4 visible"
+        id="blackShFour"
+        src="images/shadow-four.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh5 visible"
+        id="blackShFive"
+        src="images/shadow-five.svg"
+        alt=""
+      />
+      <!-- тени в темном режиме -->
+      <img
+        class="shadow sh1 hidden"
+        id="whiteShOne"
+        src="images/shadow-one-white.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh2 hidden"
+        id="whiteShTwo"
+        src="images/shadow-two-white.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh3 hidden"
+        id="whiteShThree"
+        src="images/shadow-three-white.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh4 hidden"
+        id="whiteShFour"
+        src="images/shadow-four-white.svg"
+        alt=""
+      />
+      <img
+        class="shadow sh5 hidden"
+        id="whiteShFive"
+        src="images/shadow-five-white.svg"
+        alt=""
+      />
+
+      <!-- end -->
       <div id="a1header">
         <img id="a1" src="images/asteroid-one.svg" />
       </div>
@@ -182,16 +283,16 @@
     </section>
     <!-- третий экран -->
     <section class="TRI-SCREEN">
-      <div class="expandable2">
+      <div class="expandable2 FG">
         <span class="left-bracket2">(</span>
         <span class="question-mark2">?</span>
         <span class="text2">наведи курсор</span>
         <span class="right-bracket2">)</span>
       </div>
-      <p class="tri-screen TS-1">пустоты</p>
-      <p class="tri-screen TS-2">реголит</p>
-      <p class="tri-screen TS-3">мантия</p>
-      <p class="tri-screen TS-4">ядро</p>
+      <p class="tri-screen TS-1 XX">пустоты</p>
+      <p class="tri-screen TS-2 XX">реголит</p>
+      <p class="tri-screen TS-3 XX">мантия</p>
+      <p class="tri-screen TS-4 XX">ядро</p>
       <div class="img1"></div>
       <div class="img2"></div>
       <div class="img3"></div>
@@ -200,16 +301,16 @@
 
     <!-- четвертый экран -->
     <section class="fourth">
-      <div class="expandable3">
+      <div class="expandable3 FG">
         <span class="left-bracket3">(</span>
         <span class="question-mark3">?</span>
         <span class="text3">нажми на картинку</span>
         <span class="right-bracket3">)</span>
       </div>
       <div class="text-p001">
-        <p class="gekata">Геката</p>
+        <p class="gekata XX">Геката</p>
         <p class="classC">класс С</p>
-        <p class="description-p001">
+        <p class="description-p001 XX">
           уникальность: 15% <br />
           номер: 100 <br />
           автор: Андер Лэй <br />
@@ -217,9 +318,9 @@
         </p>
       </div>
       <div class="text-p002">
-        <p class="trida">Трида</p>
+        <p class="trida XX">Трида</p>
         <p class="classV-002">класс V</p>
-        <p class="description-p002">
+        <p class="description-p002 XX">
           уникальность: <br />74% <br />
           номер: 2022 <br />
           автор: Дэвид Сэптембер<br />
@@ -227,9 +328,9 @@
         </p>
       </div>
       <div class="text-p003">
-        <p class="anna-maria">Анна-Мария</p>
+        <p class="anna-maria XX">Анна-Мария</p>
         <p class="classM-003">класс M</p>
-        <p class="description-p003">
+        <p class="description-p003 XX">
           уникальность: <br />81% <br />
           номер: 75<br />
           автор: Анна<br />
@@ -237,36 +338,36 @@
         </p>
       </div>
       <div class="text-p004">
-        <p class="kasta">Каста</p>
+        <p class="kasta XX">Каста</p>
         <p class="classC-004">класс C</p>
-        <p class="description-p004">
+        <p class="description-p004 XX">
           уникальность: <br />46% <br />
           номер: 327 <br />
           форма: вытянутая,<br />сужается к концу
         </p>
       </div>
       <div class="text-p005">
-        <p class="rai">Рай</p>
+        <p class="rai XX">Рай</p>
         <p class="classD-005">класс D</p>
-        <p class="description-p005">
+        <p class="description-p005 XX">
           уникальность: <br />70% <br />
           номер: 401<br />
           дата: 07.02.2007
         </p>
       </div>
       <div class="text-p006">
-        <p class="payer">Пайер</p>
+        <p class="payer XX">Пайер</p>
         <p class="classM-006">класс M</p>
-        <p class="description-p006">
+        <p class="description-p006 XX">
           уникальность: <br />33% <br />
           номер: 8009<br />
           дата: 17.07.1989
         </p>
       </div>
       <div class="text-p007">
-        <p class="diana">Диана</p>
+        <p class="diana XX">Диана</p>
         <p class="classC-007">класс С</p>
-        <p class="description-p007">
+        <p class="description-p007 XX">
           уникальность: <br />64% <br />
           номер: 21 <br />
           расстояние: <br />
@@ -274,9 +375,9 @@
         </p>
       </div>
       <div class="text-p008">
-        <p class="ayan">Аян</p>
+        <p class="ayan XX">Аян</p>
         <p class="classD-008">класс D</p>
-        <p class="description-p008">
+        <p class="description-p008 XX">
           уникальность: <br />98.2% <br />
           номер: 101 <br />
           дата: <br />
@@ -284,18 +385,18 @@
         </p>
       </div>
       <div class="text-p009">
-        <p class="kiana">Киана</p>
+        <p class="kiana XX">Киана</p>
         <p class="classD-009">класс D</p>
-        <p class="description-p009">
+        <p class="description-p009 XX">
           уникальность: <br />57% <br />
           номер: 2902 <br />
           автор: Калиб Стэлл
         </p>
       </div>
       <div class="text-p010">
-        <p class="seito">Сейто</p>
+        <p class="seito XX">Сейто</p>
         <p class="classS-010">класс S</p>
-        <p class="description-p010">
+        <p class="description-p010 XX">
           уникальность: <br />11% <br />
           номер: 22 <br />
           состав:<br />
@@ -303,99 +404,141 @@
         </p>
       </div>
       <div class="text-p011">
-        <p class="verist">Верист</p>
+        <p class="verist XX">Верист</p>
         <p class="classS-011">класс S</p>
-        <p class="description-p011">
+        <p class="description-p011 XX">
           уникальность: <br />100% <br />
           номер: 01 <br />
           дата: 25.07.2006
         </p>
       </div>
       <div class="text-p012">
-        <p class="alia">Алия</p>
+        <p class="alia XX">Алия</p>
         <p class="classV-012">класс V</p>
-        <p class="description-p012">
+        <p class="description-p012 XX">
           уникальность: 88% <br />
           номер: 1802 <br />
           состав: железо, метал
         </p>
       </div>
       <div class="text-p013">
-        <p class="stela">Стела</p>
+        <p class="stela XX">Стела</p>
         <p class="classS-013">класс S</p>
-        <p class="description-p013">
+        <p class="description-p013 XX">
           уникальность:<br />
           34% <br />
           номер: 345 <br />
           автор: <br />Джульетта С.
         </p>
       </div>
+      <!-- КАРТОЧКИ ДЕСКТОП   -->
       <div class="all-p">
         <div
-          class="kartochki p001 initial"
+          class="kartochki p001"
           data-move='{"x": "-15vw", "y": "0vw"}'
         ></div>
         <div
-          class="kartochki p002 initialTwo"
+          class="kartochki p002"
           data-move='{"x": "0vw", "y": "-14vw"}'
         ></div>
         <div
-          class="kartochki p003 initialThree"
+          class="kartochki p003"
           data-move='{"x": "32.7vw", "y": "0vw"}'
         ></div>
         <div
-          class="kartochki p004 initialFour"
+          class="kartochki p004"
           data-move='{"x": "0vw", "y": "-14vw"}'
         ></div>
+        <div class="kartochki p005" data-move='{"x": "0vw", "y": "14vw"}'></div>
         <div
-          class="kartochki p005 initialFive"
-          data-move='{"x": "0vw", "y": "14vw"}'
-        ></div>
-        <div
-          class="kartochki p006 initialSix"
+          class="kartochki p006"
           data-move='{"x": "0vw", "y": "27.4vw"}'
         ></div>
         <div
-          class="kartochki p007 initialSeven"
+          class="kartochki p007"
           data-move='{"x": "0vw", "y": "27.6vw"}'
         ></div>
         <div
-          class="kartochki p008 initialEight"
+          class="kartochki p008"
           data-move='{"x": "0vw", "y": "-14.3vw"}'
         ></div>
         <div
-          class="kartochki p009 initialNine"
+          class="kartochki p009"
           data-move='{"x": "0vw", "y": "-14vw"}'
         ></div>
+        <div class="kartochki p010" data-move='{"x": "0vw", "y": "14vw"}'></div>
         <div
-          class="kartochki p010 initialTen"
-          data-move='{"x": "0vw", "y": "14vw"}'
-        ></div>
-        <div
-          class="kartochki p011 initialEleven"
+          class="kartochki p011"
           data-move='{"x": "10.6vw", "y": "0vw"}'
         ></div>
         <div
-          class="kartochki p012 initialTwelve"
+          class="kartochki p012"
           data-move='{"x": "-16.5vw", "y": "0vw"}'
         ></div>
         <div
-          class="kartochki p013 initialThirteen"
+          class="kartochki p013"
+          data-move='{"x": "22.8vw", "y": "0vw"}'
+        ></div>
+      </div>
+      <!-- КАРТОЧКИ АДАПТИВ -->
+      <div class="all-p">
+        <div
+          class="kartochki p001Adapt"
+          data-move='{"x": "0", "y": "28vw"}'
+        ></div>
+        <div
+          class="kartochki p002Adapt"
+          data-move='{"x": "0vw", "y": "-14vw"}'
+        ></div>
+        <div
+          class="kartochki p003Adapt"
+          data-move='{"x": "32.7vw", "y": "0vw"}'
+        ></div>
+        <div
+          class="kartochki p004Adapt"
+          data-move='{"x": "0vw", "y": "-14vw"}'
+        ></div>
+        <div
+          class="kartochki p005Adapt"
+          data-move='{"x": "0vw", "y": "14vw"}'
+        ></div>
+        <div
+          class="kartochki p006Adapt"
+          data-move='{"x": "0vw", "y": "27.4vw"}'
+        ></div>
+        <div
+          class="kartochki p008Adapt"
+          data-move='{"x": "-47.5vw", "y": "0"}'
+        ></div>
+        <div
+          class="kartochki p009Adapt"
+          data-move='{"x": "0vw", "y": "-14vw"}'
+        ></div>
+        <div
+          class="kartochki p010Adapt"
+          data-move='{"x": "0vw", "y": "14vw"}'
+        ></div>
+        <div
+          class="kartochki p011Adapt"
+          data-move='{"x": "21.9vw", "y": "0vw"}'
+        ></div>
+        <div
+          class="kartochki p013Adapt"
           data-move='{"x": "22.8vw", "y": "0vw"}'
         ></div>
       </div>
     </section>
 
     <!-- пятый экран -->
-    <section>
-      <div class="expandable4">
+    <section class="fifth-screen">
+      <div class="expandable4 FG">
         <span class="left-bracket4">(</span>
         <span class="question-mark4">?</span>
         <span class="text4">соедини точки</span>
         <span class="right-bracket4">)</span>
       </div>
-      <div class="stopwatch">00:00:00</div>
-      <div class="inter">интер</div>
+      <div class="stopwatch XX">00:00:00</div>
+      <div class="inter XX">интер</div>
       <div class="container hover-area">
         <div class="dot dot-one"><p class="dot-name">1</p></div>
         <div class="dot dot-two"><p class="dot-name">3</p></div>
@@ -421,19 +564,23 @@
         <div class="dot dot-twentytwo"><p class="dot-name">22</p></div>
         <div class="dot dot-twentythree"><p class="dot-name">23</p></div>
         <div class="dot dot-twentyfour"><p class="dot-name">24</p></div>
-        <div class="dot dot-twentyfive"><p class="dot-name">25</p></div>
-        <div class="dot dot-twentysix"><p class="dot-name">26</p></div>
-        <canvas id="canvas" id="art"><p class="dot-name">27</p></canvas>
+
+        <canvas id="canvas" id="art">
+          <div class="dot dot-twentyfive"><p class="dot-name">25</p></div>
+          <div class="dot dot-twentysix"><p class="dot-name">26</p></div>
+        </canvas>
       </div>
       <!-- кнопка clear и enter -->
-      <div id="clear">clear</div>
-      <div id="enter">enter</div>
+      <div class="XX" id="clear">очистить</div>
+      <div class="XX" id="enter">подтвердить</div>
     </section>
     <!-- шестой экран - подвал -->
     <section class="podval">
       <div class="groupANDuvki">
-        <div class="group">группа</div>
-        <div class="uvki">Б24УвКИ05</div>
+        <div class="uvkiscale">
+          <div class="group">группа</div>
+          <div class="uvki">Б24УвКИ05</div>
+        </div>
       </div>
       <div class="podval-rock-one"></div>
       <div class="podval-rock-two"></div>
@@ -462,21 +609,40 @@
         </div>
       </div>
       <div class="authorANDname">
-        <div class="author">автор</div>
-        <div class="my-name">Дарья Сеп</div>
+        <div class="authorscale">
+          <div class="author">автор</div>
+          <div class="my-name">Дарья Сеп</div>
+        </div>
       </div>
       <div class="kuratorANDkamila">
-        <div class="kurator-1">куратор</div>
-        <div class="Kamila">Камила Рихтер</div>
+        <div class="kamilascale">
+          <div class="kurator-1" id="clickable-div">куратор</div>
+          <div class="Kamila" id="clickable-div">Камила Рихтер</div>
+        </div>
       </div>
       <div class="kuratorANDanna">
-        <div class="kurator-2">куратор</div>
-        <div class="Anna">Комкова Анна</div>
+        <div class="annascale">
+          <div class="kurator-2">куратор</div>
+          <div class="Anna">Комкова Анна</div>
+        </div>
       </div>
-      <div class="little-rectangle">
-        <div class="little-line-one"></div>
-        <div class="little-line-two"></div>
-      </div>
+
+      <div class="square"></div>
+      <div class="square2"></div>
+      <div class="square3"></div>
+      <div class="square4"></div>
+      <div class="square5"></div>
+      <div class="square6"></div>
+      <div class="square7"></div>
+      <div class="square8"></div>
+      <div class="square14-scale"><div class="square9"></div></div>
+      <div class="square14-scale"><div class="square10"></div></div>
+      <div class="square14-scale"><div class="square11"></div></div>
+      <!-- <div class="square12"></div> -->
+      <div class="square13"></div>
+      <div class="square14-scale"><div class="square14"></div></div>
+      <div class="square15"></div>
+      <!-- <div class="square16"></div> -->
     </section>
   </body>
 </html>

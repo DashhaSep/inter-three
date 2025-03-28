@@ -1,38 +1,85 @@
 /* <!-- загрузочный экран  --> */
 .vk-preloader {
-  position: absolute;
+  width: 100vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff5757;
-  text-align: center;
-  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  color: #333;
-  z-index: 100;
+  background-color: #f5f3f4;
+  font-family: "Helvetica";
+  font-size: 1.2vw;
+  color: #000000;
+  z-index: 99999;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); /* 9 колонок */
+  gap: 8.3vw; /* Расстояние между элементами */
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
-.vk-preloader.hidden {
+.vk-preloader.hiddenN {
   opacity: 0;
-  transition: opacity 2s;
 }
 
+/* Класс для полного скрытия элемента */
 .vk-preloader.none {
   display: none;
 }
-
-/* body {
-  background-image: url(../images/макет\ UPDATED.png);
+body {
+  /* background-image: url(../images/макет\ UPDATED.png);
   opacity: 0.5;
   width: 1280px;
   height: 6000px;
-} */
-body {
+  margin-top: -9.6vw; */
+}
+.inversionButton {
+  background-color: black;
+  width: 5vw;
+  height: 2.3vw;
+  border: none;
+  margin-left: 92vw;
+  border-radius: 40px;
+  position: absolute;
+  margin-top: 2.3vw;
+  z-index: 100;
+}
+.round-ball {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  background-color: white;
+}
+.after {
+  background-color: #000000;
+}
+.SLAY {
   background-color: #f5f3f4;
 }
-
+.WG.AFTER {
+  color: #000000;
+}
+.FG.AFTER2 {
+  color: white;
+  background-color: white;
+}
+.RB.afterRB {
+  background-color: #000000;
+  transform: translateX(2vw);
+  transition: transform 0.5s ease-in-out;
+}
+.RB {
+  background-color: #ffffff;
+  transform: translateX(0vw);
+  transition: transform 0.5s ease-in-out;
+}
+.XX.AFTER3 {
+  color: white;
+}
+.dot.afterAFT {
+  color: white;
+  background-color: white;
+}
 section {
   width: 100%;
   position: relative;
@@ -43,30 +90,16 @@ p {
 }
 
 /* ПЕРВЫЙ ЭКРАН */
-.round-button {
-  background-color: rgb(0, 0, 0);
-  width: 4.5vw;
-  height: 2vw;
-  border-radius: 2vw;
-  position: absolute;
-  margin-left: 92vw;
-  margin-top: -22.5vw;
-}
-.button-ball {
-  width: 1.5vw;
-  height: 1.5vw;
-  background-color: #f5f3f4;
-  position: absolute;
-  border-radius: 100%;
-  margin-top: 0.25vw;
-  margin-left: 0.3vw;
-}
+
 .ramka {
   border: 0.2vw black solid;
   width: 95.6vw;
   height: 46.5vw;
   margin-left: 2vw;
   margin-top: 1.8vw;
+}
+.white-ramka {
+  border: 0.2vw white solid;
 }
 .line1,
 .line2 {
@@ -123,43 +156,32 @@ p {
   height: 46.55vw;
   margin-left: 28vw;
   margin-top: 1.95vw;
-  background-color: #000000;
-  opacity: 0.5;
+  background-color: rgb(0 0 0 / 47%);
   z-index: 100;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(0.5vw);
   animation: registration 0.2s ease-in-out;
 }
-
-#textInput1 {
-  width: 36vw;
-  height: 2.6vw;
-  font-size: 1vw;
-  margin-top: 10vw;
-  margin-left: 3vw;
-  border: 0vw solid #ccc;
-  border-radius: 4px;
-  padding-left: 1vw;
-}
-#textInput2 {
-  width: 36vw;
-  height: 2.6vw;
-  font-size: 1vw;
-  margin-top: 1vw;
-  margin-left: 3vw;
-  border: 0vw solid #ccc;
-  border-radius: 4px;
-  padding-left: 1vw;
-}
+#textInput1,
+#textInput2,
 #textInput3 {
   width: 36vw;
   height: 2.6vw;
-
   font-size: 1vw;
-  margin-top: 1vw;
-  margin-left: 3vw;
   border: 0vw solid #ccc;
   border-radius: 4px;
   padding-left: 1vw;
+}
+#textInput1 {
+  margin-top: 10vw;
+  margin-left: 3vw;
+}
+#textInput2 {
+  margin-top: 1vw;
+  margin-left: 3vw;
+}
+#textInput3 {
+  margin-top: 1vw;
+  margin-left: 3vw;
 }
 /* Стили для кнопки  */
 #submitBtn {
@@ -171,7 +193,7 @@ p {
   border-radius: 1vw;
   cursor: pointer;
   margin-top: 10vw;
-  margin-left: 16vw;
+  margin-left: 13vw;
 }
 
 #submitBtn:hover {
@@ -597,6 +619,13 @@ p {
   width: 25.63vw;
   height: 25.63vw;
 }
+.visible {
+  display: flex; /* Показываем элемент */
+}
+
+.hidden {
+  display: none; /* Скрываем элемент */
+}
 .sh2 {
   margin-left: 72vw;
   margin-top: 7.8vw;
@@ -756,6 +785,18 @@ p {
   background-image: url(../images/regolit-emoty.svg);
   margin-top: -11.1vw;
   margin-left: -4.8vw;
+}
+.img1.afterimage {
+  background-image: url(../images/pystoty-empty-white.svg);
+}
+.img2.afterimage3 {
+  background-image: url(../images/regolit-empty-white.svg);
+}
+.img3.afterimage3 {
+  background-image: url(../images/mantia-empty-white.svg);
+}
+.img4.afterimage4 {
+  background-image: url(../images/yadro-empty-white.svg);
 }
 .img3 {
   width: 109.5vw;
@@ -1292,7 +1333,7 @@ p {
   margin-left: 94vw;
   margin-top: 5vw;
 }
-canvas {
+цршеу {
   /* border: 1px solid #000; */
   position: absolute;
   height: 33vw;
@@ -1302,10 +1343,10 @@ canvas {
 #clear,
 #enter {
   border: 0.16vw solid black;
-  width: 10.23vw;
+
   height: 3vw;
   font-family: "Helvetica";
-  font-size: 2.1vw;
+  font-size: 1.9vw;
   color: black;
   text-align: center;
   padding-top: 0.5vw;
@@ -1313,10 +1354,12 @@ canvas {
 #clear {
   margin-left: 40vw;
   margin-top: 3vw;
+  width: 10.23vw;
 }
 #enter {
   margin-left: 56vw;
   margin-top: -3.7vw;
+  width: 13.23vw;
 }
 .container {
   width: 100vw;
@@ -1346,7 +1389,7 @@ canvas {
   text-align: center;
 }
 .podval {
-  height: 76.64vw;
+  height: 65.64vw;
 }
 /* первый */
 .rectangle {
@@ -1354,10 +1397,10 @@ canvas {
   width: 10vw;
   height: 10vw;
   margin-top: -7vw;
-  /* animation: rectangle 10s infinite; */
+  animation: rectangle 13s infinite;
 }
 .rectangle-fake {
-  /* animation: cross1 10s infinite; */
+  animation: cross1 15s infinite;
 }
 .crossed-one {
   margin-left: 10vw;
@@ -1384,10 +1427,10 @@ canvas {
   border: 0.2vw solid rgb(0, 0, 0);
   width: 10vw;
   height: 10vw;
-  /* animation: rectangle 10s infinite; */
+  animation: rectangle 10s infinite;
 }
 .rectangle-fake2 {
-  /* animation: b6 10s infinite; */
+  animation: square15 14s infinite -8s;
 }
 .crossed-one-2 {
   margin-left: 10vw;
@@ -1416,7 +1459,8 @@ canvas {
   background-image: url(../images/podval-rock-one.svg);
   background-size: 10.39vw 12.81vw;
   margin-left: 67vw;
-  margin-top: 4vw;
+  margin-top: 2vw;
+  animation: asteroid-one-podval 30s infinite;
 }
 .podval-rock-two {
   width: 14.84vw;
@@ -1424,7 +1468,8 @@ canvas {
   background-image: url(../images/podval-rock-dva.svg);
   background-size: 14.84vw 14.84vw;
   margin-left: 48vw;
-  margin-top: 27vw;
+  margin-top: 25vw;
+  animation: asteroid-two-podval 20s infinite;
 }
 .podval-rock-three {
   width: 11.09vw;
@@ -1432,15 +1477,17 @@ canvas {
   background-image: url(../images/podval-tri.svg);
   background-size: 11.09vw 10vw;
   margin-left: 85.3vw;
-  margin-top: 27.6vw;
+  margin-top: 25.9vw;
+  animation: asteroid-three-podval 19s infinite;
 }
 .podval-rock-four {
   width: 17.26vw;
   height: 10.23vw;
   background-image: url(../images/podval-rock-four.svg);
   background-size: 17.26vw 10.23vw;
-  margin-top: -7vw;
+  margin-top: -9vw;
   margin-left: 4.5vw;
+  animation: asteroid-four-podval 18s infinite;
 }
 .podval-rock-five {
   width: 11.09vw;
@@ -1448,7 +1495,8 @@ canvas {
   background-image: url(../images/podval-rock-five.svg);
   background-size: 11.09vw 10vw;
   margin-left: 48.5vw;
-  margin-top: -5.5vw;
+  margin-top: -6.5vw;
+  animation: asteroid-five-podval 20s infinite;
 }
 .podval-rock-six {
   width: 10.859vw;
@@ -1456,7 +1504,8 @@ canvas {
   background-image: url(../images/podval-rock-six.svg);
   background-size: 10.859vw 10.7vw;
   margin-left: 2vw;
-  margin-top: 20vw;
+  margin-top: 19vw;
+  animation: asteroid-six-podval 25s infinite;
 }
 .podval-rock-seven {
   width: 11.56vw;
@@ -1464,15 +1513,17 @@ canvas {
   background-image: url(../images/podval-rock-seven.svg);
   background-size: 11.56vw 11.718vw;
   margin-left: 64.5vw;
-  margin-top: 18.3vw;
+  margin-top: 17vw;
+  animation: asteroid-seven-podval 20s infinite;
 }
 .podval-rock-eight {
   width: 10.7vw;
   height: 11.56vw;
   background-image: url(../images/podval-rock-eight.svg);
   background-size: 10.7vw 11.56vw;
-  margin-top: 20vw;
+  margin-top: 18.7vw;
   margin-left: 22.5vw;
+  animation: asteroid-eight-podval 20s infinite;
 }
 .podval-rock-eight,
 .podval-rock-seven,
@@ -1544,30 +1595,240 @@ canvas {
   height: 3vw;
 }
 .groupANDuvki {
-  /* animation: uvki 14s infinite; */
+  animation: uvki 24s infinite;
+  margin-top: 15.4vw;
+  transition: transform 0.3s ease;
 }
-.authorANDname {
-}
-.kuratorANDkamila {
-  transform: scale(1); /* Начальный масштаб */
-  transition: transform 0.3s ease; /* Плавное изменение масштаба */
+.authorANDname,
+.kuratorANDkamila,
+.kuratorANDanna {
   position: absolute;
 }
-.kuratorANDkamila:hover {
-  transform: scale(1.5); /* Увеличиваем масштаб при hover */
-  cursor: pointer;
+.authorANDname {
+  margin-top: -10.5vw;
+  transition: transform 0.3s ease;
+  animation: author 23s infinite;
+}
+.authorANDname:hover,
+.kuratorANDkamila:hover,
+.groupANDuvki:hover,
+.kuratorANDanna:hover {
+  animation-play-state: paused;
+}
+.authorscale:hover,
+.uvkiscale:hover,
+.annascale:hover,
+.kamilascale:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+.kuratorANDkamila {
+  transition: transform 0.3s ease;
+  margin-top: -0.3vw;
+  animation: kamila 20s infinite;
 }
 .kuratorANDanna {
+  margin-top: 8.5vw;
+  transition: transform 0.3s ease;
+  animation: anna 20s infinite;
 }
 .kartochki {
   transition: transform 1s ease-in-out;
 }
-.little-rectangle {
-  height: 4.218vw;
-  width: 8.375vw;
-  border: 0.2vw solid black;
+
+.square,
+.square2,
+.square3,
+.square4,
+.square5,
+.square7 {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 8.3vw;
+  height: 4vw;
 }
-.little-line-one,
-.little-line-two {
-  width: 8.2vw;
+.square {
+  margin-top: 2.6vw;
+  margin-left: 9.5vw;
+}
+.square2 {
+  margin-top: -17.4vw;
+  margin-left: 30.2vw;
+  animation: square2 20s infinite;
+}
+.square3 {
+  margin-top: 26vw;
+  margin-left: 56.2vw;
+  animation: asteroid-two-podval 20s infinite;
+}
+.square4 {
+  margin-top: 12vw;
+  margin-left: 88.2vw;
+  animation: square4 24s infinite;
+}
+.square5 {
+  margin-top: 3.5vw;
+  margin-left: 80.2vw;
+  animation: square5 20s infinite;
+}
+.square6,
+.square8,
+.square9 {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 6.3vw;
+  height: 8vw;
+}
+.square6 {
+  margin-top: 11vw;
+  margin-left: 71.2vw;
+  animation: square6 18s infinite;
+}
+.square7 {
+  margin-top: 27.6vw;
+  margin-left: 4.2vw;
+  animation: square7 17s infinite;
+}
+.square8 {
+  margin-top: 17.6vw;
+  margin-left: 91.6vw;
+  animation: square8 15s infinite;
+}
+.square9 {
+  margin-top: 14vw;
+  margin-left: 47vw;
+  animation: asteroid-two-podval 20s infinite;
+}
+.square10 {
+  margin-top: 12.5vw;
+  margin-left: 12vw;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 4vw;
+  height: 4vw;
+  animation: square10 18s infinite;
+}
+.square11 {
+  margin-top: 9vw;
+  margin-left: 2vw;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 8vw;
+  height: 8vw;
+  animation: square11 21s infinite;
+}
+/* .square12 {
+  margin-top: -10.4vw;
+  margin-left: 0.3vw;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 10vw;
+  height: 10vw;
+  animation: square12 20s infinite;
+} */
+.square13 {
+  margin-top: -20.4vw;
+  margin-left: 46.3vw;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 8vw;
+  height: 14vw;
+  animation: square13 19s infinite;
+}
+.square14 {
+  margin-top: -6.4vw;
+  margin-left: 62.6vw;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 11vw;
+  height: 10vw;
+  animation: square14 25s infinite -4s;
+}
+.square15,
+.square16 {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 10.7vw;
+  height: 10vw;
+}
+.square15 {
+  margin-top: 8.8vw;
+  margin-left: 25.6vw;
+  animation: square15 21s infinite;
+}
+/* .square16 {
+  margin-top: -17.8vw;
+  margin-left: 9.6vw;
+  animation: square16 21s infinite;
+} */
+.square16::before,
+.square15::before,
+.square14::before,
+.square13::before,
+.square12::before,
+.square11::before,
+.square10::before,
+.square9::before,
+.square8::before,
+.square7::before,
+.square6::before,
+.square5::before,
+.square4::before,
+.square3::before,
+.square2::before,
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 49%,
+    black 49%,
+    black 50%,
+    transparent 50%
+  );
+}
+.square16::after,
+.square15::after,
+.square14::after,
+.square13::after,
+.square12::after,
+.square11::after,
+.square10::after,
+.square9::after,
+.square8::after,
+.square7::after,
+.square6::after,
+.square5::after,
+.square4::after,
+.square3::after,
+.square2::after,
+.square::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom left,
+    transparent 49%,
+    black 49%,
+    black 50%,
+    transparent 50%
+  );
+}
+.square14-scale {
+  animation: rectangle 10s infinite;
 }

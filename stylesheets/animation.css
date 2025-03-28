@@ -783,6 +783,12 @@
   transition: background-image 0.3s ease-in-out;
   /* transition: margin-left 0.2s ease-in-out; */
 }
+.afterimage:hover {
+  background-image: url(../images/pystoty-full-white.svg);
+  margin-left: -3.5vw;
+  transition: background-image 0.3s ease-in-out;
+  /* transition: margin-left 0.2s ease-in-out; */
+}
 .img2:hover {
   background-image: url(../images/regolit-full.svg);
   transition: background-image 0.3s ease-in-out;
@@ -827,16 +833,16 @@
     transform: scale(1);
   }
   40% {
-    transform: scaleX(1.5);
+    transform: scale(1.2, 0.5);
   }
   60% {
-    transform: scaleY(2);
+    transform: scale(1.4, 0.8);
   }
   80% {
-    transform: scaleX(2);
+    transform: scale(1.3, 1);
   }
   100% {
-    transform: scale(1 2);
+    transform: scale(0.9, 1);
   }
 }
 
@@ -874,26 +880,6 @@
     transform: translate(-23.8vw, -13.2vw);
   }
 }
-@keyframes uvki {
-  0% {
-    transform: translate(0vw, 0vw);
-  }
-  30% {
-    transform: translate(-20vw, 5vw);
-  }
-  46% {
-    transform: translate(-10vw, 13vw);
-  }
-  70% {
-    transform: translate(10vw, -7vw);
-  }
-  90% {
-    transform: translate(-10vw, 4vw);
-  }
-  100% {
-    transform: translate(0vw, 0vw);
-  }
-}
 /* ХОЛСТ КНОПКИ */
 #clear:hover {
   text-decoration: underline;
@@ -902,4 +888,1010 @@
 #enter:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+/* ПОДВАЛ АСТЕРОИДЫ КВАДРАТЫ И ИМЕНА */
+@keyframes asteroid-two-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, -10vw);
+  }
+  46% {
+    transform: translate(10vw, -15vw);
+  }
+  70% {
+    transform: translate(-30vw, 3vw);
+  }
+  90% {
+    transform: translate(-20vw, 8vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-three-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-5vw, -40vw);
+  }
+  46% {
+    transform: translate(-10vw, -33vw);
+  }
+  70% {
+    transform: translate(-7vw, 0vw);
+  }
+  90% {
+    transform: translate(-43vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-four-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(4vw, 26vw);
+  }
+  46% {
+    transform: translate(10vw, 13vw);
+  }
+  70% {
+    transform: translate(19vw, 10vw);
+  }
+  90% {
+    transform: translate(5vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-five-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(16vw, -5vw);
+  }
+  46% {
+    transform: translate(18vw, 13vw);
+  }
+  70% {
+    transform: translate(10vw, 40vw);
+  }
+  90% {
+    transform: translate(3vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-six-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(10vw, -25vw);
+  }
+  46% {
+    transform: translate(58vw, -26vw);
+  }
+  70% {
+    transform: translate(78vw, -10vw);
+  }
+  90% {
+    transform: translate(3vw, -12vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-seven-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-25vw, -7vw);
+  }
+  46% {
+    transform: translate(-10vw, 10vw);
+  }
+  70% {
+    transform: translate(-12vw, -30vw);
+  }
+  90% {
+    transform: translate(10vw, -25vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-eight-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-20vw, 10vw);
+  }
+  46% {
+    transform: translate(-10vw, 8vw);
+  }
+  70% {
+    transform: translate(42vw, -5vw);
+  }
+  90% {
+    transform: translate(10vw, -25vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes asteroid-one-podval {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, -10vw);
+  }
+  46% {
+    transform: translate(-10vw, -15vw);
+  }
+  70% {
+    transform: translate(-30vw, 3vw);
+  }
+  90% {
+    transform: translate(-20vw, -2vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square2 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(50vw, -3vw);
+  }
+  46% {
+    transform: translate(35vw, 3vw);
+  }
+  70% {
+    transform: translate(6vw, 15vw);
+  }
+  90% {
+    transform: translate(50vw, 30vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square4 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-15vw, -20vw);
+  }
+  46% {
+    transform: translate(-30vw, -14vw);
+  }
+  70% {
+    transform: translate(6vw, -15vw);
+  }
+  90% {
+    transform: translate(-15vw, -12vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square5 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(7vw, -22vw);
+  }
+  46% {
+    transform: translate(-4vw, -20vw);
+  }
+  70% {
+    transform: translate(10vw, -15vw);
+  }
+  90% {
+    transform: translate(-5vw, -12vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square6 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  20% {
+    transform: translate(7vw, 3vw);
+  }
+  46% {
+    transform: translate(-9vw, -20vw);
+  }
+  70% {
+    transform: translate(10vw, 6vw);
+  }
+  90% {
+    transform: translate(-5vw, -2vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square7 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  28% {
+    transform: translate(81vw, -2vw);
+  }
+  46% {
+    transform: translate(59vw, -14vw);
+  }
+  70% {
+    transform: translate(30vw, -20vw);
+  }
+  90% {
+    transform: translate(4vw, -13vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square8 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  28% {
+    transform: translate(-17vw, -5vw);
+  }
+  46% {
+    transform: translate(-29vw, 4vw);
+  }
+  70% {
+    transform: translate(-6vw, -36vw);
+  }
+  90% {
+    transform: translate(-12vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square13 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  28% {
+    transform: translate(-17vw, 2vw);
+  }
+  46% {
+    transform: translate(-29vw, 4vw);
+  }
+  70% {
+    transform: translate(-6vw, 36vw);
+  }
+  90% {
+    transform: translate(-12vw, 10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square10 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  28% {
+    transform: translate(5vw, 4vw);
+  }
+  46% {
+    transform: translate(-2vw, 10vw);
+  }
+  70% {
+    transform: translate(-6vw, -30vw);
+  }
+  90% {
+    transform: translate(1vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square11 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  28% {
+    transform: translate(27vw, -5vw);
+  }
+  46% {
+    transform: translate(9vw, 4vw);
+  }
+  70% {
+    transform: translate(6vw, -29vw);
+  }
+  90% {
+    transform: translate(12vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square14 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(15vw, -12vw);
+  }
+  46% {
+    transform: translate(-15vw, -10vw);
+  }
+  70% {
+    transform: translate(-35vw, 6vw);
+  }
+  90% {
+    transform: translate(-25vw, -7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square15 {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(15vw, -12vw);
+  }
+  46% {
+    transform: translate(45vw, -10vw);
+  }
+  70% {
+    transform: translate(55vw, 16vw);
+  }
+  90% {
+    transform: translate(25vw, -7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+
+@keyframes uvki {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-50vw, -5vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-20vw, 30vw);
+  }
+  90% {
+    transform: translate(-14vw, 15vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes kamila {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(8vw, -15vw);
+  }
+  46% {
+    transform: translate(-10vw, 16vw);
+  }
+  70% {
+    transform: translate(0vw, 0vw);
+  }
+  90% {
+    transform: translate(-14vw, 15vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes anna {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(14vw, 4vw);
+  }
+  46% {
+    transform: translate(17vw, -14vw);
+  }
+  70% {
+    transform: translate(6vw, -24vw);
+  }
+  90% {
+    transform: translate(16vw, -35vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes author {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(14vw, 4vw);
+  }
+  46% {
+    transform: translate(-5vw, 14vw);
+  }
+  70% {
+    transform: translate(-3vw, -3vw);
+  }
+  90% {
+    transform: translate(12vw, 7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+/* АДАПТИВЫ */
+
+/* ШАРИКИ */
+@keyframes b1Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, 4vw);
+  }
+  40% {
+    transform: translate(3vw, 37vw);
+  }
+  60% {
+    transform: translate(-5vw, 55vw);
+  }
+  80% {
+    transform: translate(4vw, 44vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b2Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-20vw, -10vw);
+  }
+  40% {
+    transform: translate(-30vw, 37vw);
+  }
+  60% {
+    transform: translate(-5vw, 55vw);
+  }
+  80% {
+    transform: translate(6vw, 24vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b3Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+
+  10% {
+    transform: translate(13vw, 30vw);
+  }
+  40% {
+    transform: translate(-3vw, 35vw);
+  }
+  60% {
+    transform: translate(-5vw, -20vw);
+  }
+  80% {
+    transform: translate(10vw, 10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b4Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, -30vw);
+  }
+  40% {
+    transform: translate(-3vw, -15vw);
+  }
+  60% {
+    transform: translate(-5vw, 29vw);
+  }
+  80% {
+    transform: translate(3vw, 34vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b5Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(2vw, 17vw);
+  }
+  40% {
+    transform: translate(-5vw, 20vw);
+  }
+  60% {
+    transform: translate(-7vw, 15vw);
+  }
+  80% {
+    transform: translate(3vw, 10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b6Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(5vw, 4vw);
+  }
+  40% {
+    transform: translate(9vw, -10vw);
+  }
+  60% {
+    transform: translate(-5w, -30vw);
+  }
+  80% {
+    transform: translate(4vw, -24vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b7Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-5vw, -6vw);
+  }
+  40% {
+    transform: translate(-7vw, 20vw);
+  }
+  60% {
+    transform: translate(7vw, 40vw);
+  }
+  80% {
+    transform: translate(4vw, 29vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b8Adapt {
+  00% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(7vw, -9vw);
+  }
+  40% {
+    transform: translate(2vw, -24vw);
+  }
+  60% {
+    transform: translate(-5vw, 40vw);
+  }
+  80% {
+    transform: translate(7vw, 34vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b9Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-14vw, -4vw);
+  }
+  40% {
+    transform: translate(7vw, -17vw);
+  }
+  60% {
+    transform: translate(-10vw, 16vw);
+  }
+  80% {
+    transform: translate(6vw, 14vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b10Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-18vw, -14vw);
+  }
+  40% {
+    transform: translate(10vw, 20vw);
+  }
+  60% {
+    transform: translate(-10vw, 25vw);
+  }
+  80% {
+    transform: translate(6vw, -12vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b11Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, 5vw);
+  }
+  40% {
+    transform: translate(-10vw, -20vw);
+  }
+  60% {
+    transform: translate(-15vw, -40vw);
+  }
+  80% {
+    transform: translate(6vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b12Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(10vw, 10vw);
+  }
+  40% {
+    transform: translate(5vw, 50vw);
+  }
+  60% {
+    transform: translate(-10vw, 70vw);
+  }
+  80% {
+    transform: translate(6vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b13Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(7vw, -10vw);
+  }
+  40% {
+    transform: translate(7.7vw, 20vw);
+  }
+  60% {
+    transform: translate(-10vw, 10w);
+  }
+  80% {
+    transform: translate(3vw, -14vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b14Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(15vw, -5vw);
+  }
+  40% {
+    transform: translate(6vw, 10vw);
+  }
+  60% {
+    transform: translate(-4vw, 24vw);
+  }
+  80% {
+    transform: translate(7vw, -14vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b15Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-5vw, 20vw);
+  }
+  40% {
+    transform: translate(-24vw, 35vw);
+  }
+  60% {
+    transform: translate(-4vw, -10vw);
+  }
+  80% {
+    transform: translate(4vw, 10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b16Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-8vw, 10vw);
+  }
+  40% {
+    transform: translate(14vw, 55vw);
+  }
+  60% {
+    transform: translate(6w, -40vw);
+  }
+  80% {
+    transform: translate(-4vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b17Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-8vw, -5vw);
+  }
+  40% {
+    transform: translate(17.22vw, 25vw);
+  }
+  60% {
+    transform: translate(3vw, 70vw);
+  }
+  80% {
+    transform: translate(10vw, 40vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b18Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-2vw, 66vw);
+  }
+  40% {
+    transform: translate(11vw, 33vw);
+  }
+  60% {
+    transform: translate(-13vw, 40vw);
+  }
+  80% {
+    transform: translate(8vw, 60vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b19Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-19vw, 20vw);
+  }
+  40% {
+    transform: translate(-10vw, 43vw);
+  }
+  60% {
+    transform: translate(-19vw, 55vw);
+  }
+  80% {
+    transform: translate(5vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b20Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6.7vw, -15vw);
+  }
+  40% {
+    transform: translate(-3vw, -3vw);
+  }
+  60% {
+    transform: translate(8vw, 3vw);
+  }
+  80% {
+    transform: translate(-5vw, -30vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b21Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-3vw, -15vw);
+  }
+  40% {
+    transform: translate(14vw, -30vw);
+  }
+  60% {
+    transform: translate(3vw, 30vw);
+  }
+  80% {
+    transform: translate(10vw, -30vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b22Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(6vw, 10vw);
+  }
+  40% {
+    transform: translate(17vw, 15vw);
+  }
+  60% {
+    transform: translate(-5vw, -50vw);
+  }
+  80% {
+    transform: translate(10vw, -40vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b23Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-14vw, 7vw);
+  }
+  40% {
+    transform: translate(-10vw, -15vw);
+  }
+  60% {
+    transform: translate(15vw, -30vw);
+  }
+  80% {
+    transform: translate(20vw, -40vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b24Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(14vw, 10vw);
+  }
+  40% {
+    transform: translate(10vw, -20vw);
+  }
+  60% {
+    transform: translate(-2vw, -40vw);
+  }
+  80% {
+    transform: translate(8vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b25Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-4vw, 20vw);
+  }
+  40% {
+    transform: translate(-8vw, 30vw);
+  }
+  60% {
+    transform: translate(7vw, -10vw);
+  }
+  80% {
+    transform: translate(10vw, -20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b26Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-4vw, -16vw);
+  }
+  40% {
+    transform: translate(4vw, 20vw);
+  }
+  60% {
+    transform: translate(-3vw, -40vw);
+  }
+  80% {
+    transform: translate(-6vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes b27Adapt {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  10% {
+    transform: translate(-7vw, 16vw);
+  }
+  40% {
+    transform: translate(7vw, -10vw);
+  }
+  60% {
+    transform: translate(-5vw, -30vw);
+  }
+  80% {
+    transform: translate(3vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
 }
