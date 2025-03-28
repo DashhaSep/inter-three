@@ -885,6 +885,11 @@
   text-decoration: underline;
   cursor: pointer;
 }
+#clear-white:hover,
+#enter-white:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 #enter:hover {
   text-decoration: underline;
   cursor: pointer;

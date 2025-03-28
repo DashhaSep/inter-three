@@ -1,10 +1,15 @@
 @media screen and (max-width: 767px) {
+  .vk-preloader {
+    font-size: 4.2vw;
+
+    grid-template-columns: repeat(5, 1fr);
+  }
   body {
     /* background-image: url(../images/iphone-background-update.png);
     opacity: 0.5;
     width: 414px;
-    height: 5000px;
-    margin-top: 80vw; */
+    height: 5000px; */
+    /* margin-top: 80vw; */
   }
   .register {
     height: 177vw;
@@ -309,7 +314,7 @@
   }
   /* ВТОРОЙ ЭКРАН */
   .section-two-mediascreen {
-    height: 187vw;
+    height: 191vw;
     margin-top: 15vw;
   }
   .left-bracket,
@@ -357,19 +362,52 @@
   .text4 {
     margin-left: 1.8vw;
   }
-
-  .info-behind-a4,
-  .info-behind-a3,
-  .info-behind-a2,
   .info-behind-a1,
+  .info-behind-a2,
+  .info-behind-a3,
+  .info-behind-a4,
   .info-behind-a5 {
     display: none;
+  }
+  .info-behind-a1-adapt,
+  .info-behind-a2-adapt,
+  .info-behind-a3-adapt,
+  .info-behind-a4-adapt,
+  .info-behind-a5-adapt {
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 3.3vw;
+  }
+  .info-behind-a1-adapt {
+    margin-top: 114vw;
+    margin-left: 20vw;
+  }
+  .info-behind-a2-adapt {
+    margin-top: 127vw;
+    margin-left: 57vw;
+  }
+  .info-behind-a3-adapt {
+    margin-top: 83vw;
+    margin-left: 37vw;
+  }
+  .info-behind-a4-adapt {
+    margin-top: 22vw;
+    margin-left: 47vw;
+  }
+  .info-behind-a5-adapt {
+    margin-top: 170vw;
+    margin-left: 40vw;
+  }
+  .plus {
+    font-size: 2.7vw;
+    margin-top: 0.6vw;
   }
   .sh1 {
     width: 35.99vw;
     height: 35.99vw;
-    margin-top: 78vw;
-    margin-left: 57vw;
+    margin-top: 81vw;
+    margin-left: 59vw;
     rotate: -95deg;
   }
   .sh2 {
@@ -389,20 +427,20 @@
   .sh4 {
     width: 28.89vw;
     height: 31.2vw;
-    margin-top: 143vw;
-    margin-left: 61vw;
+    margin-top: 147vw;
+    margin-left: 64vw;
   }
   .sh5 {
-    width: 35.26vw;
-    height: 35.26vw;
-    margin-top: 130vw;
+    width: 40vw;
+    height: 40vw;
+    margin-top: 134vw;
     margin-left: 6vw;
   }
   #a1 {
     width: 38.98vw;
     height: 38.98vw;
     margin-left: -23vw;
-    margin-top: 88.8vw;
+    margin-top: 90.8vw;
     position: absolute;
     rotate: -80deg;
   }
@@ -411,26 +449,26 @@
     height: 27.19vw;
     margin-left: 13.7vw;
     margin-left: 17.7vw;
-    margin-top: 131vw;
+    margin-top: 135vw;
     rotate: -60deg;
   }
   #a3 {
     width: 28.89vw;
     height: 31.2vw;
-    margin-left: -32.3vw;
-    margin-top: 54.6vw;
+    margin-left: -28.3vw;
+    margin-top: 56.6vw;
   }
   #a4 {
     width: 40vw;
     height: 40vw;
-    margin-left: 30.3vw;
-    margin-top: -30.8vw;
+    margin-left: 32.3vw;
+    margin-top: 6.8vw;
   }
   #a5 {
     width: 25.99vw;
     height: 25.99vw;
-    margin-top: 53vw;
-    margin-left: 16vw;
+    margin-top: 72vw;
+    margin-left: 18vw;
     rotate: -95deg;
   }
   #a4header {
@@ -626,8 +664,48 @@
     display: none;
   }
   .text-p001 {
-    margin-left: 23vw;
+    margin-left: 1.4vw;
     margin-top: 21vw;
+  }
+  .text-p002 {
+    margin-left: 25vw;
+    margin-top: 171vw;
+  }
+  .text-p003 {
+    margin-left: 3vw;
+    margin-top: 108vw;
+  }
+  .text-p004 {
+    margin-left: 71vw;
+    margin-top: 50vw;
+  }
+  .text-p005 {
+    margin-left: 47vw;
+    margin-top: 107vw;
+  }
+  .text-p006 {
+    margin-left: 1.7vw;
+    margin-top: 172vw;
+  }
+  .text-p008 {
+    margin-left: 55vw;
+    margin-top: 47.6vw;
+  }
+  .text-p009 {
+    margin-left: 1vw;
+    margin-top: 135vw;
+  }
+  .text-p010 {
+    margin-left: 26vw;
+    margin-top: 78vw;
+  }
+  .text-p011 {
+    margin-left: 23.6vw;
+    margin-top: 23vw;
+  }
+  .text-p013 {
+    margin-left: 70vw;
+    margin-top: 137vw;
   }
   .gekata,
   .description-p001,
@@ -672,18 +750,9 @@
   .classS-011 {
     font-size: 1.69vw;
   }
-  .text-p002,
-  .text-p003,
-  .text-p004,
-  .text-p005,
-  .text-p006,
+
   .text-p007,
-  .text-p008,
-  .text-p009,
-  .text-p010,
-  .text-p011,
-  .text-p012,
-  .text-p013 {
+  .text-p012 {
     display: none;
   }
 
@@ -701,10 +770,20 @@
     height: 108.9vw;
     margin-top: 15vw;
   }
-  body #canvas {
+  #canvas {
+    display: none;
+  }
+  #drawingCanvas {
+    display: block;
+    width: 100vw;
+    height: 110vw;
+    position: relative;
+    z-index: 999;
+  }
+  /* body #canvas {
     width: 100vw;
     height: 108.9vw;
-  }
+  } */
   .dot-name {
     margin-left: 2.8vw;
     margin-top: 2.4vw;

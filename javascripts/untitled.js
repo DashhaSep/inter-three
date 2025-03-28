@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // preloader();
+  preloader();
   draggable();
   draggabletwo();
   draggablethree();
   draggablefour();
   draggablefive();
   transition();
+  ADAPTIVECANVAS();
   // getMousePos();
   // mouseMove();
   openModal();
@@ -124,6 +125,53 @@ function openModal() {
   // });
 }
 
+// function draggable() {
+//   // Make the DIV element draggable:
+//   dragElement(document.getElementById("a1"));
+
+//   function dragElement(elmnt) {
+//     let pos1 = 0,
+//       pos2 = 0,
+//       pos3 = 0,
+//       pos4 = 0;
+//     if (document.getElementById(elmnt.id + "header")) {
+//       // if present, the header is where you move the DIV from:
+//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//     } else {
+//       // otherwise, move the DIV from anywhere inside the DIV:
+//       elmnt.onmousedown = dragMouseDown;
+//     }
+
+//     function dragMouseDown(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // get the mouse cursor position at startup:
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       document.onmouseup = closeDragElement;
+//       // call a function whenever the cursor moves:
+//       document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // calculate the new cursor position:
+//       pos1 = pos3 - e.clientX;
+//       pos2 = pos4 - e.clientY;
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       // set the element's new position:
+//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+//     }
+
+//     function closeDragElement() {
+//       document.onmouseup = null;
+//       document.onmousemove = null;
+//     }
+//   }
+// }
 function draggable() {
   // Make the DIV element draggable:
   dragElement(document.getElementById("a1"));
@@ -133,6 +181,7 @@ function draggable() {
       pos2 = 0,
       pos3 = 0,
       pos4 = 0;
+
     if (document.getElementById(elmnt.id + "header")) {
       // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -155,14 +204,24 @@ function draggable() {
     function elementDrag(e) {
       e = e || window.event;
       e.preventDefault();
+
       // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+
+      // Convert pixel values to vw
+      const viewportWidth = window.innerWidth; // Get the current viewport width
+      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+
+      // Update the element's position using vw units
+      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+
+      elmnt.style.top = `${currentTop - deltaY}vw`;
+      elmnt.style.left = `${currentLeft - deltaX}vw`;
     }
 
     function closeDragElement() {
@@ -171,8 +230,8 @@ function draggable() {
     }
   }
 }
-
 function draggabletwo() {
+  // Make the DIV element draggable:
   dragElement(document.getElementById("a2"));
 
   function dragElement(elmnt) {
@@ -180,20 +239,23 @@ function draggabletwo() {
       pos2 = 0,
       pos3 = 0,
       pos4 = 0;
+
     if (document.getElementById(elmnt.id + "header")) {
+      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-
+      // get the mouse cursor position at startup:
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-
+      // call a function whenever the cursor moves:
       document.onmousemove = elementDrag;
     }
 
@@ -201,13 +263,23 @@ function draggabletwo() {
       e = e || window.event;
       e.preventDefault();
 
+      // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+      // Convert pixel values to vw
+      const viewportWidth = window.innerWidth; // Get the current viewport width
+      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+
+      // Update the element's position using vw units
+      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+
+      elmnt.style.top = `${currentTop - deltaY}vw`;
+      elmnt.style.left = `${currentLeft - deltaX}vw`;
     }
 
     function closeDragElement() {
@@ -225,6 +297,7 @@ function draggablethree() {
       pos2 = 0,
       pos3 = 0,
       pos4 = 0;
+
     if (document.getElementById(elmnt.id + "header")) {
       // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -247,18 +320,27 @@ function draggablethree() {
     function elementDrag(e) {
       e = e || window.event;
       e.preventDefault();
+
       // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+
+      // Convert pixel values to vw
+      const viewportWidth = window.innerWidth; // Get the current viewport width
+      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+
+      // Update the element's position using vw units
+      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+
+      elmnt.style.top = `${currentTop - deltaY}vw`;
+      elmnt.style.left = `${currentLeft - deltaX}vw`;
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null;
       document.onmousemove = null;
     }
@@ -273,6 +355,7 @@ function draggablefour() {
       pos2 = 0,
       pos3 = 0,
       pos4 = 0;
+
     if (document.getElementById(elmnt.id + "header")) {
       // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -295,18 +378,27 @@ function draggablefour() {
     function elementDrag(e) {
       e = e || window.event;
       e.preventDefault();
+
       // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+
+      // Convert pixel values to vw
+      const viewportWidth = window.innerWidth; // Get the current viewport width
+      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+
+      // Update the element's position using vw units
+      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+
+      elmnt.style.top = `${currentTop - deltaY}vw`;
+      elmnt.style.left = `${currentLeft - deltaX}vw`;
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null;
       document.onmousemove = null;
     }
@@ -321,6 +413,7 @@ function draggablefive() {
       pos2 = 0,
       pos3 = 0,
       pos4 = 0;
+
     if (document.getElementById(elmnt.id + "header")) {
       // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -343,23 +436,220 @@ function draggablefive() {
     function elementDrag(e) {
       e = e || window.event;
       e.preventDefault();
+
       // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-      elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+
+      // Convert pixel values to vw
+      const viewportWidth = window.innerWidth; // Get the current viewport width
+      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+
+      // Update the element's position using vw units
+      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+
+      elmnt.style.top = `${currentTop - deltaY}vw`;
+      elmnt.style.left = `${currentLeft - deltaX}vw`;
     }
 
     function closeDragElement() {
-      // stop moving when mouse button is released:
       document.onmouseup = null;
       document.onmousemove = null;
     }
   }
 }
+// function draggabletwo() {
+//   dragElement(document.getElementById("a2"));
+
+//   function dragElement(elmnt) {
+//     let pos1 = 0,
+//       pos2 = 0,
+//       pos3 = 0,
+//       pos4 = 0;
+//     if (document.getElementById(elmnt.id + "header")) {
+//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//     } else {
+//       elmnt.onmousedown = dragMouseDown;
+//     }
+
+//     function dragMouseDown(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       document.onmouseup = closeDragElement;
+
+//       document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+
+//       pos1 = pos3 - e.clientX;
+//       pos2 = pos4 - e.clientY;
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+
+//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+//     }
+
+//     function closeDragElement() {
+//       document.onmouseup = null;
+//       document.onmousemove = null;
+//     }
+//   }
+// }
+// function draggablethree() {
+//   // Make the DIV element draggable:
+//   dragElement(document.getElementById("a3"));
+
+//   function dragElement(elmnt) {
+//     let pos1 = 0,
+//       pos2 = 0,
+//       pos3 = 0,
+//       pos4 = 0;
+//     if (document.getElementById(elmnt.id + "header")) {
+//       // if present, the header is where you move the DIV from:
+//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//     } else {
+//       // otherwise, move the DIV from anywhere inside the DIV:
+//       elmnt.onmousedown = dragMouseDown;
+//     }
+
+//     function dragMouseDown(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // get the mouse cursor position at startup:
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       document.onmouseup = closeDragElement;
+//       // call a function whenever the cursor moves:
+//       document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // calculate the new cursor position:
+//       pos1 = pos3 - e.clientX;
+//       pos2 = pos4 - e.clientY;
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       // set the element's new position:
+//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+//     }
+
+//     function closeDragElement() {
+//       // stop moving when mouse button is released:
+//       document.onmouseup = null;
+//       document.onmousemove = null;
+//     }
+//   }
+// }
+// function draggablefour() {
+//   // Make the DIV element draggable:
+//   dragElement(document.getElementById("a4"));
+
+//   function dragElement(elmnt) {
+//     let pos1 = 0,
+//       pos2 = 0,
+//       pos3 = 0,
+//       pos4 = 0;
+//     if (document.getElementById(elmnt.id + "header")) {
+//       // if present, the header is where you move the DIV from:
+//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//     } else {
+//       // otherwise, move the DIV from anywhere inside the DIV:
+//       elmnt.onmousedown = dragMouseDown;
+//     }
+
+//     function dragMouseDown(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // get the mouse cursor position at startup:
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       document.onmouseup = closeDragElement;
+//       // call a function whenever the cursor moves:
+//       document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // calculate the new cursor position:
+//       pos1 = pos3 - e.clientX;
+//       pos2 = pos4 - e.clientY;
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       // set the element's new position:
+//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+//     }
+
+//     function closeDragElement() {
+//       // stop moving when mouse button is released:
+//       document.onmouseup = null;
+//       document.onmousemove = null;
+//     }
+//   }
+// }
+// function draggablefive() {
+//   // Make the DIV element draggable:
+//   dragElement(document.getElementById("a5"));
+
+//   function dragElement(elmnt) {
+//     let pos1 = 0,
+//       pos2 = 0,
+//       pos3 = 0,
+//       pos4 = 0;
+//     if (document.getElementById(elmnt.id + "header")) {
+//       // if present, the header is where you move the DIV from:
+//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//     } else {
+//       // otherwise, move the DIV from anywhere inside the DIV:
+//       elmnt.onmousedown = dragMouseDown;
+//     }
+
+//     function dragMouseDown(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // get the mouse cursor position at startup:
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       document.onmouseup = closeDragElement;
+//       // call a function whenever the cursor moves:
+//       document.onmousemove = elementDrag;
+//     }
+
+//     function elementDrag(e) {
+//       e = e || window.event;
+//       e.preventDefault();
+//       // calculate the new cursor position:
+//       pos1 = pos3 - e.clientX;
+//       pos2 = pos4 - e.clientY;
+//       pos3 = e.clientX;
+//       pos4 = e.clientY;
+//       // set the element's new position:
+//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+//     }
+
+//     function closeDragElement() {
+//       // stop moving when mouse button is released:
+//       document.onmouseup = null;
+//       document.onmousemove = null;
+//     }
+//   }
+// }
 
 // ЧЕТВЕРТЫЙ ЭКРАН
 // фотографии-карточки
@@ -386,11 +676,60 @@ function transition() {
     });
   });
 }
+function ADAPTIVECANVAS() {
+  const canvas = document.getElementById("drawingCanvas");
+  const ctx = canvas.getContext("2d");
+
+  // Устанавливаем размеры canvas в пикселях
+  function resizeCanvas() {
+    canvas.width = window.innerWidth; // 100vw
+    canvas.height = (window.innerWidth * 110) / 100; // 88vw
+  }
+
+  // Инициализация размеров при загрузке страницы
+  resizeCanvas();
+
+  // Обновляем размеры canvas при изменении размера окна
+  window.addEventListener("resize", resizeCanvas);
+
+  // Настройка кисти
+  ctx.strokeStyle = "#000000"; // Черный цвет
+  ctx.lineWidth = 1; // Толщина линии
+  ctx.lineCap = "round"; // Закругленные концы линий
+
+  // Переменная для отслеживания состояния рисования
+  let isDrawing = false;
+  canvas.addEventListener("mousedown", (e) => {
+    isDrawing = true;
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY); // Начало новой линии
+  });
+
+  canvas.addEventListener("mousemove", (e) => {
+    if (isDrawing) {
+      ctx.lineTo(e.offsetX, e.offsetY); // Продолжение линии
+      ctx.stroke(); // Отрисовка линии
+    }
+  });
+
+  canvas.addEventListener("mouseup", () => {
+    isDrawing = false;
+    ctx.closePath(); // Завершение линии
+  });
+
+  canvas.addEventListener("mouseleave", () => {
+    isDrawing = false; // Если курсор покидает область canvas
+  });
+}
 
 function initCanvas() {
   const button = document.getElementById("toggleButton");
+  let isBlack = true; // Флаг для отслеживания текущего цвета
   button.addEventListener("click", () => {
-    ctx.strokeStyle = "#FFFFFF";
+    ctx.strokeStyle = "#000000"; // Черный цвет по умолчанию
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = isBlack ? "#FFFFFF" : "#000000";
+    isBlack = !isBlack; // Инвертируем флаг
   });
   let canvas = document.getElementById("canvas");
   if (!canvas) {
@@ -403,14 +742,9 @@ function initCanvas() {
     console.error("2D context is not supported!");
     return;
   }
-
-  // // Устанавливаем размеры холста
-  // canvas.width = window.innerWidth * 0.8;
-  // canvas.height = window.innerHeight * 0.6;
-
   // Настройки кисти
-  ctx.strokeStyle = "#00000";
-  ctx.lineWidth = 1;
+  // ctx.strokeStyle = "#00000";
+  // ctx.lineWidth = 1;
 
   // Функция для получения координат мыши
   function getMousePos(canvas, evt) {
@@ -446,18 +780,78 @@ function initCanvas() {
   canvas.addEventListener("mouseup", function () {
     canvas.removeEventListener("mousemove", mouseMove, false);
   });
-
   // Обработка выхода за пределы холста
   canvas.addEventListener("mouseout", function () {
     canvas.removeEventListener("mousemove", mouseMove, false);
   });
-
   // Кнопка очистки холста
   document.getElementById("clear").addEventListener("click", function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   });
 }
+// function initCanvasAdapt() {
+//   const button = document.getElementById("toggleButton");
+//   button.addEventListener("click", () => {
+//     ctx.strokeStyle = "#FFFFFF";
+//   });
+//   let canvas = document.getElementById("canvasAdapt");
+//   if (!canvas) {
+//     console.error("Canvas element not found!");
+//     return;
+//   }
 
+//   let ctx = canvas.getContext("2d");
+//   if (!ctx) {
+//     console.error("2D context is not supported!");
+//     return;
+//   }
+//   // Настройки кисти
+//   ctx.strokeStyle = "#000000";
+//   ctx.lineWidth = 1;
+
+//   // Функция для получения координат мыши
+//   function getMousePos(canvas, evt) {
+//     let rect = canvas.getBoundingClientRect();
+//     return {
+//       x: evt.clientX - rect.left,
+//       y: evt.clientY - rect.top,
+//     };
+//   }
+
+//   // Функция для рисования при движении мыши
+//   function mouseMove(evt) {
+//     let mousePos = getMousePos(canvas, evt);
+//     ctx.lineTo(mousePos.x, mousePos.y);
+//     ctx.stroke();
+//   }
+
+//   // Начало рисования
+//   canvas.addEventListener("mousedown", function (evt) {
+//     let mousePos = getMousePos(canvas, evt);
+//     ctx.beginPath();
+//     ctx.moveTo(mousePos.x, mousePos.y);
+//     evt.preventDefault();
+//     canvas.addEventListener("mousemove", mouseMove, false);
+//   });
+//   const dpr = window.devicePixelRatio || 1; // Учёт плотности пикселей
+//   canvas.style.width = "100vw";
+//   canvas.style.height = "108vw";
+//   canvas.width = Math.floor(window.innerWidth * dpr);
+//   canvas.height = Math.floor(window.innerWidth * 1.08 * dpr); // Соотношение сторон 98vw : 33vw
+//   ctx.scale(dpr, dpr);
+//   // Остановка рисования
+//   canvas.addEventListener("mouseup", function () {
+//     canvas.removeEventListener("mousemove", mouseMove, false);
+//   });
+//   // Обработка выхода за пределы холста
+//   canvas.addEventListener("mouseout", function () {
+//     canvas.removeEventListener("mousemove", mouseMove, false);
+//   });
+//   // Кнопка очистки холста
+//   document.getElementById("clear").addEventListener("click", function () {
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//   });
+// }
 function oknoRegOdin() {
   // Получаем элементы DOM
   const textInput = document.getElementById("textInput1");
@@ -728,10 +1122,26 @@ function secondInterfacedot() {
 function WhiteBorder() {
   const button = document.getElementById("toggleButton"); // Кнопка
   const box = document.querySelector(".ramka");
+  const element = document.querySelector("#clear");
+  const element2 = document.querySelector("#enter");
 
   // Добавляем обработчик события клика
   button.addEventListener("click", () => {
     box.classList.toggle("white-ramka");
+  });
+  button.addEventListener("click", function () {
+    // Переключаем ID между "element1" и "element2"
+    element.id = element.id === "clear" ? "clear-white" : "clear";
+
+    // Выводим текущий ID в консоль для проверки
+    console.log("Текущий ID:", element.id);
+  });
+  button.addEventListener("click", function () {
+    // Переключаем ID между "element1" и "element2"
+    element2.id = element2.id === "enter" ? "enter-white" : "enter";
+
+    // Выводим текущий ID в консоль для проверки
+    console.log("Текущий ID:", element.id);
   });
 }
 
