@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   draggablefive();
   transition();
   ADAPTIVECANVAS();
+  anotherCanvas();
   // getMousePos();
   // mouseMove();
   openModal();
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   secondInterfaceRoundBall();
   imagesDarkVersion();
   tralalelo();
+  podvalInversion();
 });
 
 function tralalelo() {
@@ -462,198 +464,6 @@ function draggablefive() {
     }
   }
 }
-// function draggabletwo() {
-//   dragElement(document.getElementById("a2"));
-
-//   function dragElement(elmnt) {
-//     let pos1 = 0,
-//       pos2 = 0,
-//       pos3 = 0,
-//       pos4 = 0;
-//     if (document.getElementById(elmnt.id + "header")) {
-//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//     } else {
-//       elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       document.onmouseup = closeDragElement;
-
-//       document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-
-//       pos1 = pos3 - e.clientX;
-//       pos2 = pos4 - e.clientY;
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-
-//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-//     }
-
-//     function closeDragElement() {
-//       document.onmouseup = null;
-//       document.onmousemove = null;
-//     }
-//   }
-// }
-// function draggablethree() {
-//   // Make the DIV element draggable:
-//   dragElement(document.getElementById("a3"));
-
-//   function dragElement(elmnt) {
-//     let pos1 = 0,
-//       pos2 = 0,
-//       pos3 = 0,
-//       pos4 = 0;
-//     if (document.getElementById(elmnt.id + "header")) {
-//       // if present, the header is where you move the DIV from:
-//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//     } else {
-//       // otherwise, move the DIV from anywhere inside the DIV:
-//       elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // get the mouse cursor position at startup:
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       document.onmouseup = closeDragElement;
-//       // call a function whenever the cursor moves:
-//       document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // calculate the new cursor position:
-//       pos1 = pos3 - e.clientX;
-//       pos2 = pos4 - e.clientY;
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       // set the element's new position:
-//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-//     }
-
-//     function closeDragElement() {
-//       // stop moving when mouse button is released:
-//       document.onmouseup = null;
-//       document.onmousemove = null;
-//     }
-//   }
-// }
-// function draggablefour() {
-//   // Make the DIV element draggable:
-//   dragElement(document.getElementById("a4"));
-
-//   function dragElement(elmnt) {
-//     let pos1 = 0,
-//       pos2 = 0,
-//       pos3 = 0,
-//       pos4 = 0;
-//     if (document.getElementById(elmnt.id + "header")) {
-//       // if present, the header is where you move the DIV from:
-//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//     } else {
-//       // otherwise, move the DIV from anywhere inside the DIV:
-//       elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // get the mouse cursor position at startup:
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       document.onmouseup = closeDragElement;
-//       // call a function whenever the cursor moves:
-//       document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // calculate the new cursor position:
-//       pos1 = pos3 - e.clientX;
-//       pos2 = pos4 - e.clientY;
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       // set the element's new position:
-//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-//     }
-
-//     function closeDragElement() {
-//       // stop moving when mouse button is released:
-//       document.onmouseup = null;
-//       document.onmousemove = null;
-//     }
-//   }
-// }
-// function draggablefive() {
-//   // Make the DIV element draggable:
-//   dragElement(document.getElementById("a5"));
-
-//   function dragElement(elmnt) {
-//     let pos1 = 0,
-//       pos2 = 0,
-//       pos3 = 0,
-//       pos4 = 0;
-//     if (document.getElementById(elmnt.id + "header")) {
-//       // if present, the header is where you move the DIV from:
-//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//     } else {
-//       // otherwise, move the DIV from anywhere inside the DIV:
-//       elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // get the mouse cursor position at startup:
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       document.onmouseup = closeDragElement;
-//       // call a function whenever the cursor moves:
-//       document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // calculate the new cursor position:
-//       pos1 = pos3 - e.clientX;
-//       pos2 = pos4 - e.clientY;
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       // set the element's new position:
-//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-//     }
-
-//     function closeDragElement() {
-//       // stop moving when mouse button is released:
-//       document.onmouseup = null;
-//       document.onmousemove = null;
-//     }
-//   }
-// }
-
-// ЧЕТВЕРТЫЙ ЭКРАН
-// фотографии-карточки
-
 function transition() {
   // let imageFirst = document.querySelector('.p001')
 
@@ -677,6 +487,15 @@ function transition() {
   });
 }
 function ADAPTIVECANVAS() {
+  const button = document.getElementById("toggleButton");
+  let isBlack = true; // Флаг для отслеживания текущего цвета
+  button.addEventListener("click", () => {
+    ctx.strokeStyle = "#000000"; // Черный цвет по умолчанию
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = isBlack ? "#FFFFFF" : "#000000";
+    isBlack = !isBlack; // Инвертируем флаг
+  });
+
   const canvas = document.getElementById("drawingCanvas");
   const ctx = canvas.getContext("2d");
 
@@ -789,69 +608,54 @@ function initCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   });
 }
-// function initCanvasAdapt() {
-//   const button = document.getElementById("toggleButton");
-//   button.addEventListener("click", () => {
-//     ctx.strokeStyle = "#FFFFFF";
-//   });
-//   let canvas = document.getElementById("canvasAdapt");
-//   if (!canvas) {
-//     console.error("Canvas element not found!");
-//     return;
-//   }
+function anotherCanvas() {
+  const toggleButton = document.getElementById("enter");
+  const dot = document.querySelectorAll(".dot");
+  const dot2 = document.querySelectorAll(".dot-paint");
 
-//   let ctx = canvas.getContext("2d");
-//   if (!ctx) {
-//     console.error("2D context is not supported!");
-//     return;
-//   }
-//   // Настройки кисти
-//   ctx.strokeStyle = "#000000";
-//   ctx.lineWidth = 1;
+  // Флаг для отслеживания текущего состояния
+  let isGroup1Visible = true;
 
-//   // Функция для получения координат мыши
-//   function getMousePos(canvas, evt) {
-//     let rect = canvas.getBoundingClientRect();
-//     return {
-//       x: evt.clientX - rect.left,
-//       y: evt.clientY - rect.top,
-//     };
-//   }
+  // Добавляем обработчик события на кнопку
+  toggleButton.addEventListener("click", () => {
+    if (isGroup1Visible) {
+      // Скрываем группу 1 и показываем группу 2
+      dot.forEach((box) => box.classList.add("hidden"));
+      dot2.forEach((box) => box.classList.remove("hidden"));
+    } else {
+      // Скрываем группу 2 и показываем группу 1
+      dot2.forEach((box) => box.classList.add("hidden"));
+      dot.forEach((box) => box.classList.remove("hidden"));
+    }
 
-//   // Функция для рисования при движении мыши
-//   function mouseMove(evt) {
-//     let mousePos = getMousePos(canvas, evt);
-//     ctx.lineTo(mousePos.x, mousePos.y);
-//     ctx.stroke();
-//   }
+    // Инвертируем флаг
+    isGroup1Visible = !isGroup1Visible;
+  });
+}
+function podvalInversion() {
+  const toggleButton = document.getElementById("toggleButton");
+  const normal = document.querySelector(".PODVAL-ALL-NORMAL");
+  const inversion = document.querySelector(".PODVAL-ALL-INVERSION");
 
-//   // Начало рисования
-//   canvas.addEventListener("mousedown", function (evt) {
-//     let mousePos = getMousePos(canvas, evt);
-//     ctx.beginPath();
-//     ctx.moveTo(mousePos.x, mousePos.y);
-//     evt.preventDefault();
-//     canvas.addEventListener("mousemove", mouseMove, false);
-//   });
-//   const dpr = window.devicePixelRatio || 1; // Учёт плотности пикселей
-//   canvas.style.width = "100vw";
-//   canvas.style.height = "108vw";
-//   canvas.width = Math.floor(window.innerWidth * dpr);
-//   canvas.height = Math.floor(window.innerWidth * 1.08 * dpr); // Соотношение сторон 98vw : 33vw
-//   ctx.scale(dpr, dpr);
-//   // Остановка рисования
-//   canvas.addEventListener("mouseup", function () {
-//     canvas.removeEventListener("mousemove", mouseMove, false);
-//   });
-//   // Обработка выхода за пределы холста
-//   canvas.addEventListener("mouseout", function () {
-//     canvas.removeEventListener("mousemove", mouseMove, false);
-//   });
-//   // Кнопка очистки холста
-//   document.getElementById("clear").addEventListener("click", function () {
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//   });
-// }
+  // Флаг для отслеживания текущего состояния
+  let isGroup1Visible = true;
+
+  // Добавляем обработчик события на кнопку
+  toggleButton.addEventListener("click", () => {
+    if (isGroup1Visible) {
+      // Скрываем группу 1 и показываем группу 2
+      normal.classList.add("hidden");
+      inversion.classList.remove("hidden");
+    } else {
+      // Скрываем группу 2 и показываем группу 1
+      inversion.classList.add("hidden");
+      normal.classList.remove("hidden");
+    }
+
+    // Инвертируем флаг
+    isGroup1Visible = !isGroup1Visible;
+  });
+}
 function oknoRegOdin() {
   // Получаем элементы DOM
   const textInput = document.getElementById("textInput1");
@@ -1124,6 +928,7 @@ function WhiteBorder() {
   const box = document.querySelector(".ramka");
   const element = document.querySelector("#clear");
   const element2 = document.querySelector("#enter");
+  const element3 = document.querySelector(".square");
 
   // Добавляем обработчик события клика
   button.addEventListener("click", () => {
@@ -1132,16 +937,8 @@ function WhiteBorder() {
   button.addEventListener("click", function () {
     // Переключаем ID между "element1" и "element2"
     element.id = element.id === "clear" ? "clear-white" : "clear";
-
-    // Выводим текущий ID в консоль для проверки
-    console.log("Текущий ID:", element.id);
-  });
-  button.addEventListener("click", function () {
-    // Переключаем ID между "element1" и "element2"
     element2.id = element2.id === "enter" ? "enter-white" : "enter";
-
-    // Выводим текущий ID в консоль для проверки
-    console.log("Текущий ID:", element.id);
+    element3.id = element3.id === "square" ? "enter-white" : "square";
   });
 }
 

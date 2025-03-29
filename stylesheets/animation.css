@@ -1900,3 +1900,465 @@
     transform: translate(0vw, 0vw);
   }
 }
+@keyframes podval-four-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(15vw, 56vw);
+  }
+  46% {
+    transform: translate(-8vw, 30vw);
+  }
+  70% {
+    transform: translate(39vw, 80vw);
+  }
+  90% {
+    transform: translate(10vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-five-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-30vw, 106vw);
+  }
+  46% {
+    transform: translate(-10vw, 80vw);
+  }
+  70% {
+    transform: translate(6vw, 100vw);
+  }
+  90% {
+    transform: translate(-13vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-six-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(10vw, -40vw);
+  }
+  46% {
+    transform: translate(-4vw, 20vw);
+  }
+  70% {
+    transform: translate(18vw, 50vw);
+  }
+  90% {
+    transform: translate(10vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+
+@keyframes podval-eight-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(15vw, 10vw);
+  }
+  46% {
+    transform: translate(-4vw, 25vw);
+  }
+  70% {
+    transform: translate(10vw, 50vw);
+  }
+  90% {
+    transform: translate(-10vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-two-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-45vw, 20vw);
+  }
+  46% {
+    transform: translate(-4vw, -25vw);
+  }
+  70% {
+    transform: translate(4vw, -50vw);
+  }
+  90% {
+    transform: translate(-40vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-seven-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-20vw, -70vw);
+  }
+  46% {
+    transform: translate(30vw, -95vw);
+  }
+  70% {
+    transform: translate(36vw, -120vw);
+  }
+  90% {
+    transform: translate(20vw, -40vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-three-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(4vw, -145vw);
+  }
+  46% {
+    transform: translate(-10vw, -125vw);
+  }
+  70% {
+    transform: translate(-36vw, -120vw);
+  }
+  90% {
+    transform: translate(-20vw, -40vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes podval-one-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(5vw, 20vw);
+  }
+  46% {
+    transform: translate(-10vw, 25vw);
+  }
+  70% {
+    transform: translate(36vw, -80vw);
+  }
+  90% {
+    transform: translate(20vw, 33vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes uvki-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 40vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, -30vw);
+  }
+  90% {
+    transform: translate(-24vw, 30vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+
+@keyframes square5-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 50vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square6-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 50vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square7-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-10vw, 50vw);
+  }
+  46% {
+    transform: translate(-15vw, -16vw);
+  }
+  70% {
+    transform: translate(-5vw, 30vw);
+  }
+  90% {
+    transform: translate(-10vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square9-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-4vw, 10vw);
+  }
+  46% {
+    transform: translate(-20vw, 26vw);
+  }
+  70% {
+    transform: translate(-30vw, 10vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square4-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 50vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square10-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 50vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square2-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-30vw, -30vw);
+  }
+  46% {
+    transform: translate(40vw, 16vw);
+  }
+  70% {
+    transform: translate(20vw, -10vw);
+  }
+  90% {
+    transform: translate(40vw, -13vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square3-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-50vw, -30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-40vw, -50vw);
+  }
+  90% {
+    transform: translate(-24vw, -20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square14-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-10vw, 30vw);
+  }
+  46% {
+    transform: translate(-30vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 50vw);
+  }
+  90% {
+    transform: translate(-24vw, 20vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square8-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(20vw, 70vw);
+  }
+  46% {
+    transform: translate(50vw, 16vw);
+  }
+  70% {
+    transform: translate(-30vw, 30vw);
+  }
+  80% {
+    transform: translate(-24vw, 110vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes square15-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-10vw, 70vw);
+  }
+  46% {
+    transform: translate(-7vw, 90vw);
+  }
+  70% {
+    transform: translate(15vw, 30vw);
+  }
+  80% {
+    transform: translate(24vw, 96vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes author-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(24vw, -4vw);
+  }
+  46% {
+    transform: translate(-26vw, 14vw);
+  }
+  70% {
+    transform: translate(-20vw, 3vw);
+  }
+  90% {
+    transform: translate(-22vw, -7vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes kamila-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-8vw, 70vw);
+  }
+  46% {
+    transform: translate(-10vw, 80vw);
+  }
+  70% {
+    transform: translate(-20vw, 50vw);
+  }
+  90% {
+    transform: translate(-14vw, 15vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}
+@keyframes anna-iphone {
+  0% {
+    transform: translate(0vw, 0vw);
+  }
+  30% {
+    transform: translate(-8vw, 30vw);
+  }
+  46% {
+    transform: translate(-10vw, -20vw);
+  }
+  70% {
+    transform: translate(-20vw, -10vw);
+  }
+  90% {
+    transform: translate(34vw, -35vw);
+  }
+  100% {
+    transform: translate(0vw, 0vw);
+  }
+}

@@ -29,11 +29,11 @@
   display: none;
 }
 body {
-  /* background-image: url(../images/макет\ UPDATED.png);
+  /* background-image: url(../images/макет\ новый\ новый\ 1280.png);
   opacity: 0.5;
   width: 1280px;
   height: 6000px;
-  margin-top: -9.6vw; */
+  margin-top: -2vw; */
 }
 .inversionButton {
   background-color: black;
@@ -1146,7 +1146,8 @@ p {
 #drawingCanvas {
   display: none;
 }
-.dot {
+.dot,
+.dot-paint {
   background-color: rgb(0, 0, 0);
   width: 0.85vw;
   height: 0.85vw;
@@ -1265,6 +1266,209 @@ p {
   margin-left: 83.2vw;
   margin-top: 25.9vw;
 }
+
+/* ТУТ */
+
+/* ТОЧКИ РИСУНОК АСТЕРОИД */
+
+/* ТУТ */
+
+.paint-one {
+  margin-left: 20vw;
+  margin-top: 5.5vw;
+}
+.paint-two {
+  margin-left: 21.4vw;
+  margin-top: 7vw;
+}
+.paint-three {
+  margin-left: 20.8vw;
+  margin-top: 8.6vw;
+}
+.paint-four {
+  margin-left: 20vw;
+  margin-top: 10.3vw;
+}
+.paint-five {
+  margin-left: 17.7vw;
+  margin-top: 10.7vw;
+}
+.paint-six {
+  margin-left: 17.6vw;
+  margin-top: 9.3vw;
+}
+.paint-seven {
+  margin-left: 17.5vw;
+  margin-top: 7vw;
+}
+.paint-eight {
+  margin-left: 25.8vw;
+  margin-top: 10vw;
+}
+.paint-nine {
+  margin-left: 26.5vw;
+  margin-top: 8.4vw;
+}
+.paint-ten {
+  margin-left: 25.8vw;
+  margin-top: 10vw;
+}
+.paint-eleven {
+  margin-left: 28.4vw;
+  margin-top: 8.2vw;
+}
+.paint-twelve {
+  margin-left: 30.9vw;
+  margin-top: 8.8vw;
+}
+.paint-thirteen {
+  margin-left: 33vw;
+  margin-top: 9.8vw;
+}
+.paint-fourteen {
+  margin-left: 32.4vw;
+  margin-top: 11.8vw;
+}
+.paint-fifteen {
+  margin-left: 30vw;
+  margin-top: 12.7vw;
+}
+.paint-sixteen {
+  margin-left: 27.6vw;
+  margin-top: 12vw;
+}
+.paint-seventeen {
+  margin-left: 19.8vw;
+  margin-top: 13.6vw;
+}
+.paint-eighteen {
+  margin-left: 21vw;
+  margin-top: 12.6vw;
+}
+.paint-nineteen {
+  margin-left: 23.4vw;
+  margin-top: 12.4vw;
+}
+.paint-twenty {
+  margin-left: 24.6vw;
+  margin-top: 14.3vw;
+}
+.paint-twentyone {
+  margin-left: 23vw;
+  margin-top: 15.5vw;
+}
+.paint-twentytwo {
+  margin-left: 20.4vw;
+  margin-top: 15.6vw;
+}
+.paint-twentythree {
+  margin-left: 53.6vw;
+  margin-top: 13.9vw;
+}
+.paint-twentyfour {
+  margin-left: 55.3vw;
+  margin-top: 14.3vw;
+}
+.paint-twentyfive {
+  margin-left: 55vw;
+  margin-top: 15.3vw;
+}
+.paint-twentysix {
+  margin-left: 53.4vw;
+  margin-top: 15vw;
+}
+.paint-twentyseven {
+  margin-left: 58.2vw;
+  margin-top: 9.6vw;
+}
+.paint-twentyeight {
+  margin-left: 60vw;
+  margin-top: 10vw;
+}
+.paint-twentynine {
+  margin-left: 59.6vw;
+  margin-top: 11.3vw;
+}
+.paint-thirty {
+  margin-left: 58vw;
+  margin-top: 9.7vw;
+}
+.paint-thirtyone {
+  margin-left: 64.6vw;
+  margin-top: 12.8vw;
+}
+.paint-thirtytwo {
+  margin-left: 67vw;
+  margin-top: 12vw;
+}
+.paint-thirtythree {
+  margin-left: 70vw;
+  margin-top: 12.4vw;
+}
+.paint-thirtyfour {
+  margin-left: 72.6vw;
+  margin-top: 13.7vw;
+}
+.paint-thirtyfive {
+  margin-left: 74vw;
+  margin-top: 14.7vw;
+}
+.paint-thirtysix {
+  margin-left: 74.7vw;
+  margin-top: 16.7vw;
+}
+.paint-thirtyseven {
+  margin-left: 73.2vw;
+  margin-top: 16.7vw;
+}
+.paint-thirtyeight {
+  margin-left: 71.4vw;
+  margin-top: 16.4vw;
+}
+.paint-thirtynine {
+  margin-left: 69vw;
+  margin-top: 16.7vw;
+}
+.paint-fourty {
+  margin-left: 66vw;
+  margin-top: 15.9vw;
+}
+.paint-fourtyone {
+  margin-left: 16.7vw;
+  margin-top: 13.4vw;
+}
+.paint-fourtytwo {
+  margin-left: 15.8vw;
+  margin-top: 10.6vw;
+}
+.paint-fourtythree {
+  margin-left: 15.5vw;
+  margin-top: 8.1vw;
+}
+.paint-fourtyfour {
+  margin-left: 18.2vw;
+  margin-top: 5.7vw;
+}
+.paint-fourtyfive {
+  margin-left: 18.9vw;
+  margin-top: 4.1vw;
+}
+.paint-fourtysix {
+  margin-left: 21vw;
+  margin-top: 2.7vw;
+}
+.paint-fourtyseven {
+  margin-left: 22.4vw;
+  margin-top: 1.4vw;
+}
+.paint-fourtyeight {
+  margin-left: 71.4vw;
+  margin-top: 16vw;
+}
+.paintfourtyynine {
+  margin-left: 69vw;
+  margin-top: 16.7vw;
+}
 .expandable4 {
   position: absolute;
   align-items: center;
@@ -1318,7 +1522,7 @@ p {
   color: #000000;
   font-family: "Helvetica";
   position: absolute;
-  margin-left: 50vw;
+  margin-left: 47.6vw;
   margin-top: 5vw;
 }
 .inter {
@@ -1347,7 +1551,7 @@ p {
   padding-top: 0.5vw;
 }
 #clear {
-  margin-left: 40vw;
+  margin-left: 35vw;
   margin-top: 3vw;
   width: 10.23vw;
 }
@@ -1364,7 +1568,7 @@ p {
   height: 3vw;
 }
 #enter {
-  margin-left: 56vw;
+  margin-left: 55vw;
   margin-top: -3.7vw;
   width: 13.23vw;
 }
@@ -1443,7 +1647,7 @@ p {
 }
 /* второй */
 .rectangle2 {
-  border: 0.2vw solid rgb(0, 0, 0);
+  border: 0.15vw solid rgb(0, 0, 0);
   width: 10vw;
   height: 10vw;
   animation: rectangle 10s infinite;
@@ -1488,7 +1692,7 @@ p {
   background-size: 14.84vw 14.84vw;
   margin-left: 48vw;
   margin-top: 25vw;
-  animation: asteroid-two-podval 20s infinite;
+  animation: asteroid-two-podval 23s infinite;
 }
 .podval-rock-three {
   width: 11.09vw;
@@ -1497,7 +1701,7 @@ p {
   background-size: 11.09vw 10vw;
   margin-left: 85.3vw;
   margin-top: 25.9vw;
-  animation: asteroid-three-podval 19s infinite;
+  animation: asteroid-three-podval 26s infinite;
 }
 .podval-rock-four {
   width: 17.26vw;
@@ -1506,7 +1710,7 @@ p {
   background-size: 17.26vw 10.23vw;
   margin-top: -9vw;
   margin-left: 4.5vw;
-  animation: asteroid-four-podval 18s infinite;
+  animation: asteroid-four-podval 30s infinite;
 }
 .podval-rock-five {
   width: 11.09vw;
@@ -1515,7 +1719,7 @@ p {
   background-size: 11.09vw 10vw;
   margin-left: 48.5vw;
   margin-top: -6.5vw;
-  animation: asteroid-five-podval 20s infinite;
+  animation: asteroid-five-podval 21s infinite;
 }
 .podval-rock-six {
   width: 10.859vw;
@@ -1533,7 +1737,7 @@ p {
   background-size: 11.56vw 11.718vw;
   margin-left: 64.5vw;
   margin-top: 17vw;
-  animation: asteroid-seven-podval 20s infinite;
+  animation: asteroid-seven-podval 26s infinite;
 }
 .podval-rock-eight {
   width: 10.7vw;
@@ -1542,7 +1746,7 @@ p {
   background-size: 10.7vw 11.56vw;
   margin-top: 18.7vw;
   margin-left: 22.5vw;
-  animation: asteroid-eight-podval 20s infinite;
+  animation: asteroid-eight-podval 24s infinite;
 }
 .podval-rock-eight,
 .podval-rock-seven,
@@ -1622,6 +1826,7 @@ p {
 .kuratorANDkamila,
 .kuratorANDanna {
   position: absolute;
+  z-index: 100;
 }
 .authorANDname {
   margin-top: -10.5vw;
@@ -1663,7 +1868,7 @@ p {
 .square7 {
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
+
   width: 8.3vw;
   height: 4vw;
 }
@@ -1674,88 +1879,90 @@ p {
 .square2 {
   margin-top: -17.4vw;
   margin-left: 30.2vw;
-  animation: square2 20s infinite;
+  animation: square2 37s infinite;
 }
 .square3 {
   margin-top: 26vw;
   margin-left: 56.2vw;
-  animation: asteroid-two-podval 20s infinite;
+  animation: asteroid-two-podval 25s infinite;
 }
 .square4 {
   margin-top: 12vw;
   margin-left: 88.2vw;
-  animation: square4 24s infinite;
+  animation: square4 33s infinite;
 }
 .square5 {
   margin-top: 3.5vw;
   margin-left: 80.2vw;
-  animation: square5 20s infinite;
+  animation: square5 24s infinite;
 }
 .square6,
 .square8,
 .square9 {
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
   width: 6.3vw;
   height: 8vw;
 }
 .square6 {
   margin-top: 11vw;
   margin-left: 71.2vw;
-  animation: square6 18s infinite;
+  animation: square6 30s infinite;
 }
 .square7 {
   margin-top: 27.6vw;
   margin-left: 4.2vw;
-  animation: square7 17s infinite;
+  animation: square7 21s infinite;
 }
 .square8 {
   margin-top: 17.6vw;
   margin-left: 91.6vw;
-  animation: square8 15s infinite;
+  animation: square8 35s infinite;
 }
 .square9 {
   margin-top: 14vw;
   margin-left: 47vw;
-  animation: asteroid-two-podval 20s infinite;
+  animation: asteroid-two-podval 26s infinite;
 }
 .square10 {
   margin-top: 12.5vw;
   margin-left: 12vw;
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
   width: 4vw;
   height: 4vw;
-  animation: square10 18s infinite;
+  animation: square10 22s infinite;
 }
 .square11 {
   margin-top: 9vw;
   margin-left: 2vw;
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
   width: 8vw;
   height: 8vw;
-  animation: square11 21s infinite;
+  animation: square11 29s infinite;
 }
-/* .square12 {
-  margin-top: -10.4vw;
-  margin-left: 0.3vw;
-  position: absolute;
-  background-color: transparent;
-  border: 2px solid black;
-  width: 10vw;
-  height: 10vw;
-  animation: square12 20s infinite;
-} */
+.square13,
+.square14,
+.square,
+.square2,
+.square3,
+.square4,
+.square5,
+.square7,
+.square6,
+.square8,
+.square9,
+.square11,
+.square15,
+.square10 {
+  border: 0.15vw solid black;
+}
 .square13 {
   margin-top: -20.4vw;
   margin-left: 46.3vw;
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
   width: 8vw;
   height: 14vw;
   animation: square13 19s infinite;
@@ -1765,7 +1972,6 @@ p {
   margin-left: 62.6vw;
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
   width: 11vw;
   height: 10vw;
   animation: square14 25s infinite -4s;
@@ -1774,7 +1980,7 @@ p {
 .square16 {
   position: absolute;
   background-color: transparent;
-  border: 2px solid black;
+
   width: 10.7vw;
   height: 10vw;
 }
@@ -1783,11 +1989,7 @@ p {
   margin-left: 25.6vw;
   animation: square15 21s infinite;
 }
-/* .square16 {
-  margin-top: -17.8vw;
-  margin-left: 9.6vw;
-  animation: square16 21s infinite;
-} */
+
 .square16::before,
 .square15::before,
 .square14::before,
@@ -1850,4 +2052,317 @@ p {
 }
 .square14-scale {
   animation: rectangle 10s infinite;
+}
+/* ТЕМНАЯ ВЕРСИЯ */
+.uvkiADAPT,
+.groupADAPT,
+.kurator-1ADAPT,
+.kurator-2ADAPT,
+.KamilaADAPT,
+.AnnaADAPT,
+.my-nameADAPT,
+.authorADAPT {
+  font-family: "Helvetica";
+  font-size: 2vw;
+  color: #ffffff;
+  border: 0.1vw #ffffff solid;
+  text-align: center;
+}
+.square13ADAPT,
+.square14ADAPT,
+.squareADAPT,
+.square2ADAPT,
+.square3ADAPT,
+.square4ADAPT,
+.square5ADAPT,
+.square7ADAPT,
+.square6ADAPT,
+.square8ADAPT,
+.square9ADAPT,
+.square11ADAPT,
+.square15ADAPT,
+.square10ADAPT {
+  border: 0.15vw solid rgb(255, 255, 255);
+}
+.square16ADAPT::before,
+.square15ADAPT::before,
+.square14ADAPT::before,
+.square13ADAPT::before,
+.square12ADAPT::before,
+.square11ADAPT::before,
+.square10ADAPT::before,
+.square9ADAPT::before,
+.square8ADAPT::before,
+.square7ADAPT::before,
+.square6ADAPT::before,
+.square5ADAPT::before,
+.square4ADAPT::before,
+.square3ADAPT::before,
+.square2ADAPT::before,
+.squareADAPT::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 49%,
+    rgb(255, 255, 255) 49%,
+    rgb(255, 255, 255) 50%,
+    transparent 50%
+  );
+}
+.square16ADAPT::after,
+.square15ADAPT::after,
+.square14ADAPT::after,
+.square13ADAPT::after,
+.square12ADAPT::after,
+.square11ADAPT::after,
+.square10ADAPT::after,
+.square9ADAPT::after,
+.square8ADAPT::after,
+.square7ADAPT::after,
+.square6ADAPT::after,
+.square5ADAPT::after,
+.square4ADAPT::after,
+.square3ADAPT::after,
+.square2ADAPT::after,
+.squareADAPT::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom left,
+    transparent 49%,
+    rgb(255, 255, 255) 49%,
+    rgb(255, 255, 255) 50%,
+    transparent 50%
+  );
+}
+.authorADAPT {
+  width: 12.3vw;
+  margin-top: 3.8vw;
+  margin-left: 24.5vw;
+  height: 2.5vw;
+}
+.my-nameADAPT {
+  width: 13vw;
+  height: 3.7vw;
+  margin-left: 18vw;
+}
+.groupADAPT {
+  width: 11vw;
+  height: 2.5vw;
+  margin-left: 70.5vw;
+  margin-top: 14.2vw;
+}
+.uvkiADAPT {
+  width: 15vw;
+  height: 3vw;
+  margin-left: 79.6vw;
+}
+.kurator-1ADAPT {
+  width: 11.1vw;
+  height: 2.5vw;
+  margin-left: 37.7vw;
+  margin-top: 3vw;
+}
+.kurator-2ADAPT {
+  margin-top: 12.4vw;
+  width: 11vw;
+  height: 2.5vw;
+  margin-left: 8.8vw;
+}
+.AnnaADAPT {
+  width: 15vw;
+  height: 3.2vw;
+  margin-left: 17.7vw;
+}
+.KamilaADAPT {
+  width: 15vw;
+  margin-left: 46vw;
+  height: 3vw;
+}
+.groupANDuvkiADAPT {
+  animation: uvki 24s infinite;
+  margin-top: 15.4vw;
+  transition: transform 0.3s ease;
+}
+.squareADAPT {
+  margin-top: 2.6vw;
+  margin-left: 9.5vw;
+}
+.square2ADAPT {
+  margin-top: -17.4vw;
+  margin-left: 30.2vw;
+  animation: square2 37s infinite;
+}
+.square3ADAPT {
+  margin-top: 26vw;
+  margin-left: 56.2vw;
+  animation: asteroid-two-podval 25s infinite;
+}
+.square4ADAPT {
+  margin-top: 12vw;
+  margin-left: 88.2vw;
+  animation: square4 33s infinite;
+}
+.square5ADAPT {
+  margin-top: 3.5vw;
+  margin-left: 80.2vw;
+  animation: square5 24s infinite;
+}
+.square6ADAPT,
+.square8ADAPT,
+.square9ADAPT {
+  position: absolute;
+  background-color: transparent;
+  width: 6.3vw;
+  height: 8vw;
+}
+.square6ADAPT {
+  margin-top: 11vw;
+  margin-left: 71.2vw;
+  animation: square6 30s infinite;
+}
+.square7ADAPT {
+  margin-top: 27.6vw;
+  margin-left: 4.2vw;
+  animation: square7 21s infinite;
+}
+.square8ADAPT {
+  margin-top: 17.6vw;
+  margin-left: 91.6vw;
+  animation: square8 35s infinite;
+}
+.square9ADAPT {
+  margin-top: 14vw;
+  margin-left: 47vw;
+  animation: asteroid-two-podval 26s infinite;
+}
+.square10ADAPT {
+  margin-top: 12.5vw;
+  margin-left: 12vw;
+  position: absolute;
+  background-color: transparent;
+  width: 4vw;
+  height: 4vw;
+  animation: square10 22s infinite;
+}
+.square11ADAPT {
+  margin-top: 9vw;
+  margin-left: 2vw;
+  position: absolute;
+  background-color: transparent;
+  width: 8vw;
+  height: 8vw;
+  animation: square11 29s infinite;
+}
+.square13ADAPT {
+  margin-top: -20.4vw;
+  margin-left: 46.3vw;
+  position: absolute;
+  background-color: transparent;
+  width: 8vw;
+  height: 14vw;
+  animation: square13 19s infinite;
+}
+.square14ADAPT {
+  margin-top: -6.4vw;
+  margin-left: 62.6vw;
+  position: absolute;
+  background-color: transparent;
+  width: 11vw;
+  height: 10vw;
+  animation: square14 25s infinite -4s;
+}
+.square15ADAPT,
+.square16ADAPT {
+  position: absolute;
+  background-color: transparent;
+
+  width: 10.7vw;
+  height: 10vw;
+}
+.square15ADAPT {
+  margin-top: 8.8vw;
+  margin-left: 25.6vw;
+  animation: square15 21s infinite;
+}
+/* первый */
+.rectangleADAPT {
+  border: 0.2vw solid rgb(255, 255, 255);
+  width: 10vw;
+  height: 10vw;
+  margin-top: -7vw;
+  animation: rectangle 13s infinite;
+}
+
+.cross-line-twoADAPT,
+.cross-lineADAPT {
+  background-color: #ffffff;
+  width: 14.3vw;
+  height: 0.1vw;
+}
+.cross-line-twoADAPT {
+  rotate: 45deg;
+  margin-left: -2.1vw;
+  margin-top: -0.3vw;
+}
+.cross-lineADAPT {
+  rotate: -45deg;
+  margin-top: 5vw;
+  margin-left: -2.3vw;
+}
+/* второй */
+.rectangle2ADAPT {
+  border: 0.15vw solid rgb(255, 255, 255);
+  width: 10vw;
+  height: 10vw;
+  animation: rectangle 10s infinite;
+}
+.rectangle-fake2 {
+  animation: square15 14s infinite -8s;
+}
+
+.cross-line-two2ADAPT,
+.cross-line2ADAPT {
+  background-color: #ffffff;
+  width: 14.3vw;
+  height: 0.1vw;
+}
+.cross-line-two2ADAPT {
+  rotate: 45deg;
+  margin-left: -2.1vw;
+  margin-top: -0.3vw;
+}
+.cross-line2ADAPT {
+  rotate: -45deg;
+  margin-top: 5vw;
+  margin-left: -2.3vw;
+}
+.squareADAPT,
+.square2ADAPT,
+.square3ADAPT,
+.square4ADAPT,
+.square5ADAPT,
+.square7ADAPT {
+  position: absolute;
+  background-color: transparent;
+
+  width: 8.3vw;
+  height: 4vw;
+}
+.square6ADAPT,
+.square8ADAPT,
+.square9ADAPT {
+  position: absolute;
+  background-color: transparent;
+  width: 6.3vw;
+  height: 8vw;
 }

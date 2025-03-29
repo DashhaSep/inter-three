@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 414px) {
   .vk-preloader {
     font-size: 4.2vw;
 
@@ -8,8 +8,8 @@
     /* background-image: url(../images/iphone-background-update.png);
     opacity: 0.5;
     width: 414px;
-    height: 5000px; */
-    /* margin-top: 80vw; */
+    height: 5000px;
+    margin-top: 90vw; */
   }
   .register {
     height: 177vw;
@@ -847,22 +847,445 @@
   .dot-twentysix {
     display: none;
   }
-  #clear {
+  #clear,
+  #clear-white {
     display: none;
   }
+
   .fifth-screen {
     height: 150vw;
   }
-  #enter {
-    margin-left: 38vw;
-    margin-top: 10.7vw;
-    width: 24.23vw;
-    border: 0.16vw solid black;
-    height: 5vw;
+  #enter,
+  #enter-white {
+    margin-left: 29vw;
+    margin-top: 9.7vw;
+    width: 40.23vw;
+    height: 9vw;
     font-family: "Helvetica";
-    font-size: 3.3vw;
-    color: black;
+    font-size: 4.3vw;
     text-align: center;
-    padding-top: 0.5vw;
+    padding-top: 2vw;
+    z-index: 999;
+    position: relative;
+  }
+  #enter {
+    border: 0.16vw solid black;
+    color: black;
+  }
+  #enter-white {
+    border: 0.16vw solid rgb(255, 255, 255);
+    color: #ffffff;
+  }
+
+  /* ПОДВАЛ */
+  .podval-rock-four {
+    width: 34.64vw;
+    height: 28.98vw;
+    background-size: 34.64vw 28.98vw;
+    margin-top: 13vw;
+    margin-left: 11.5vw;
+    animation: podval-four-iphone 21s infinite;
+  }
+  .podval-rock-five {
+    width: 20.55vw;
+    height: 20.77vw;
+    background-size: 20.55vw 20.77vw;
+    margin-left: 71.5vw;
+    margin-top: 23.5vw;
+    animation: podval-five-iphone 21s infinite;
+  }
+  .podval-rock-six {
+    width: 19.8vw;
+    height: 19.56vw;
+
+    background-size: 19.8vw 19.56vw;
+    margin-left: 9vw;
+    margin-top: 68vw;
+    animation: podval-six-iphone 25s infinite;
+  }
+  .podval-rock-eight {
+    width: 17.15vw;
+    height: 18.6vw;
+    background-size: 17.15vw 18.6vw;
+    margin-top: 67.7vw;
+    margin-left: 47.5vw;
+    animation: podval-eight-iphone 24s infinite;
+  }
+  .podval {
+    height: 185.64vw;
+
+    margin-top: -25vw;
+  }
+  .podval-rock-two {
+    width: 23.91vw;
+    height: 23.91vw;
+    background-size: 23.91vw 23.91vw;
+    margin-left: 68vw;
+    margin-top: 120vw;
+    animation: podval-two-iphone 23s infinite;
+  }
+  .podval-rock-three {
+    width: 17.87vw;
+    height: 16.81vw;
+
+    background-size: 17.87vw 16.81vw;
+    margin-left: 67.3vw;
+    margin-top: 160.9vw;
+    animation: podval-three-iphone 26s infinite;
+  }
+  .podval-rock-seven {
+    width: 20.53vw;
+    height: 20.7vw;
+
+    background-size: 20.53vw 20.7vw;
+    margin-left: 32.5vw;
+    margin-top: 148vw;
+    animation: podval-seven-iphone 26s infinite;
+  }
+  .podval-rock-one {
+    width: 21.25vw;
+    height: 21.25vw;
+
+    background-size: 21.25vw 21.25vw;
+    margin-left: 17vw;
+    margin-top: 120vw;
+    animation: podval-one-iphone 30s infinite;
+  }
+  .uvki,
+  .group,
+  .kurator-1,
+  .kurator-2,
+  .Kamila,
+  .Anna,
+  .my-name,
+  .author {
+    font-size: 3vw;
+  }
+  .groupANDuvki {
+    animation: uvki 24s infinite;
+    margin-top: 97.4vw;
+    margin-left: -38vw;
+    transition: transform 0.3sease;
+    position: absolute;
+    animation: uvki-iphone 24s infinite;
+  }
+  .group {
+    width: 20vw;
+
+    margin-left: 70.5vw;
+    margin-top: 14.2vw;
+  }
+  .uvki {
+    width: 26vw;
+    height: 5vw;
+    padding-top: 1.8vw;
+    margin-left: 86.6vw;
+    padding-left: 1.2vw;
+  }
+  .kurator-1 {
+    width: 20.1vw;
+
+    margin-left: 37.7vw;
+    margin-top: 3vw;
+  }
+  .Kamila {
+    width: 26vw;
+    margin-left: 53vw;
+    height: 6vw;
+  }
+  .kuratorANDkamila {
+    transition: transform 0.3sease;
+    margin-top: 50.7vw;
+    margin-left: 17vw;
+    animation: kamila-iphone 20s infinite;
+  }
+  .kurator-2 {
+    margin-top: 12.4vw;
+    width: 20vw;
+    margin-left: 8.8vw;
+  }
+  .author,
+  .kurator-1,
+  .kurator-2,
+  .group {
+    height: 4.5vw;
+  }
+  .author {
+    width: 22.3vw;
+    margin-top: 3.8vw;
+    margin-left: 24.5vw;
+  }
+  .my-name {
+    width: 23vw;
+    height: 5.7vw;
+    margin-left: 13vw;
+    padding-top: 0.7vw;
+  }
+  .kuratorANDanna {
+    margin-top: 77.5vw;
+    margin-left: 13vw;
+
+    animation: anna-iphone 20s infinite;
+  }
+  .authorANDname {
+    margin-top: 35.5vw;
+    margin-left: 16vw;
+    animation: author-iphone 23s infinite;
+  }
+  .Anna {
+    width: 26vw;
+    height: 6vw;
+    padding-top: 0.8vw;
+    margin-left: 24.7vw;
+  }
+  .square {
+    margin-top: 148.6vw;
+    margin-left: 14.5vw;
+  }
+  .square2 {
+    margin-top: 132.6vw;
+    margin-left: 46.2vw;
+    animation: square2-iphone 30s infinite;
+  }
+  .square3 {
+    margin-top: 154vw;
+    margin-left: 72.2vw;
+    animation: square3-iphone 33s infinite;
+  }
+  .square5 {
+    margin-top: 57.5vw;
+    margin-left: 23.2vw;
+  }
+  .square7 {
+    margin-top: 101.6vw;
+    margin-left: 14.2vw;
+    animation: square7-iphone 30s infinite;
+  }
+  .square4 {
+    margin-top: 22vw;
+    margin-left: 50.2vw;
+    animation: square4-iphone 33s infinite;
+  }
+  .square11 {
+    margin-top: 75vw;
+    margin-left: 27vw;
+  }
+  .square8 {
+    margin-top: 17.6vw;
+    margin-left: 33.6vw;
+    animation: square8-iphone 33s infinite;
+  }
+  .square14 {
+    margin-top: 91.6vw;
+    margin-left: 73.6vw;
+    animation: square14-iphone 28s infinite;
+  }
+  .square15 {
+    margin-top: 31.8vw;
+    margin-left: 11.6vw;
+    animation: square15-iphone 33s infinite;
+  }
+  .square6 {
+    margin-top: 71vw;
+    margin-left: 63.2vw;
+  }
+  .square9 {
+    margin-top: 124vw;
+    margin-left: 85vw;
+    animation: square9-iphone 26s infinite;
+  }
+  .square13,
+  .crossed-one,
+  .crossed-one2,
+  .square10 {
+    display: none;
+  }
+
+  .square,
+  .square2,
+  .square3,
+  .square4,
+  .square5,
+  .square7 {
+    width: 14.3vw;
+    height: 8vw;
+  }
+  /* ТЕМНЫЙ РЕЖИМММ */
+
+  .uvkiADAPT,
+  .groupADAPT,
+  .kurator-1ADAPT,
+  .kurator-2ADAPT,
+  .KamilaADAPT,
+  .AnnaADAPT,
+  .my-nameADAPT,
+  .authorADAPT {
+    font-size: 3vw;
+  }
+  .groupANDuvkiADAPT {
+    animation: uvki 24s infinite;
+    margin-top: 97.4vw;
+    margin-left: -38vw;
+    transition: transform 0.3sease;
+    position: absolute;
+  }
+  .groupADAPT {
+    width: 20vw;
+
+    margin-left: 70.5vw;
+    margin-top: 14.2vw;
+  }
+  .uvkiADAPT {
+    width: 26vw;
+    height: 5vw;
+    padding-top: 1.8vw;
+    margin-left: 86.6vw;
+    padding-left: 1.2vw;
+  }
+  .kurator-1ADAPT {
+    width: 20.1vw;
+
+    margin-left: 37.7vw;
+    margin-top: 3vw;
+  }
+  .KamilaADAPT {
+    width: 26vw;
+    margin-left: 53vw;
+    height: 6vw;
+  }
+  .kuratorANDkamilaADAPT {
+    transition: transform 0.3sease;
+    margin-top: 50.7vw;
+    margin-left: 17vw;
+    animation: kamila 20s infinite;
+  }
+  .kurator-2ADAPT {
+    margin-top: 12.4vw;
+    width: 20vw;
+    margin-left: 8.8vw;
+  }
+  .authorADAPT,
+  .kurator-1ADAPT,
+  .kurator-2ADAPT,
+  .groupADAPT {
+    height: 4.5vw;
+  }
+  .authorADAPT {
+    width: 22.3vw;
+    margin-top: 3.8vw;
+    margin-left: 24.5vw;
+  }
+  .my-nameADAPT {
+    width: 23vw;
+    height: 5.7vw;
+    margin-left: 13vw;
+    padding-top: 0.7vw;
+  }
+  .kuratorANDannaADAPT {
+    margin-top: 77.5vw;
+    margin-left: 13vw;
+
+    animation: anna 20s infinite;
+  }
+  .authorANDnameADAPT {
+    margin-top: 35.5vw;
+    margin-left: 16vw;
+
+    animation: author 23s infinite;
+  }
+  .AnnaADAPT {
+    width: 26vw;
+    height: 6vw;
+    padding-top: 0.8vw;
+    margin-left: 24.7vw;
+  }
+  .squareADAPT {
+    margin-top: 148.6vw;
+    margin-left: 14.5vw;
+  }
+  .square2ADAPT {
+    margin-top: 132.6vw;
+    margin-left: 46.2vw;
+    animation: square9-iphone 30s infinite;
+  }
+  .square3ADAPT {
+    margin-top: 154vw;
+    margin-left: 72.2vw;
+    animation: square9-iphone 33s infinite;
+  }
+  .square5ADAPT {
+    margin-top: 57.5vw;
+    margin-left: 23.2vw;
+  }
+  .square7ADAPT {
+    margin-top: 101.6vw;
+    margin-left: 14.2vw;
+    animation: square9-iphone 30s infinite;
+  }
+  .square4ADAPT {
+    margin-top: 22vw;
+    margin-left: 50.2vw;
+    animation: square4-iphone 33s infinite;
+  }
+
+  .square11ADAPT {
+    margin-top: 75vw;
+    margin-left: 27vw;
+  }
+  .square8ADAPT {
+    margin-top: 17.6vw;
+    margin-left: 33.6vw;
+    animation: square9-iphone 33s infinite;
+  }
+  .square14ADAPT {
+    margin-top: 91.6vw;
+    margin-left: 73.6vw;
+    animation: square9-iphone 28s infinite;
+  }
+  .square15ADAPT {
+    margin-top: 31.8vw;
+    margin-left: 11.6vw;
+    animation: square15-iphone 30s infinite;
+  }
+  .square6ADAPT {
+    margin-top: 71vw;
+    margin-left: 63.2vw;
+  }
+  .square9ADAPT {
+    margin-top: 124vw;
+    margin-left: 85vw;
+    animation: square9-iphone 26s infinite;
+  }
+  .square13,
+  .crossed-one,
+  .crossed-one2,
+  .square10 {
+    display: none;
+  }
+
+  .square,
+  .square2,
+  .square3,
+  .square4,
+  .square5,
+  .square7 {
+    width: 14.3vw;
+    height: 8vw;
+  }
+  .square13ADAPT,
+  .crossed-oneADAPT,
+  .crossed-one2ADAPT,
+  .square10ADAPT {
+    display: none;
+  }
+
+  .squareADAPT,
+  .square2ADAPT,
+  .square3ADAPT,
+  .square4ADAPT,
+  .square5ADAPT,
+  .square7ADAPT {
+    width: 14.3vw;
+    height: 8vw;
   }
 }
