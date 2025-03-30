@@ -289,7 +289,7 @@
   }
   .RB.afterRB {
     background-color: #000000;
-    transform: translateX(6.5vw);
+    transform: translateX(6vw);
     transition: transform 0.5sease-in-out;
   }
   .inversionButton {
@@ -558,6 +558,9 @@
   .kartochki {
     position: absolute;
   }
+  .all-p {
+    margin-left: 2.4vw;
+  }
   .p001Adapt {
     background-image: url(../images/001.svg);
     width: 21.98vw;
@@ -583,11 +586,11 @@
     margin-top: 40.5vw;
   }
   .p003Adapt {
-    width: 24.39vw;
+    width: 22.8vw;
     height: 28.98vw;
     background-image: url(../images/003.svg);
     background-size: 24.39vw 28.98vw;
-    margin-left: -1.9vw;
+    margin-left: -0.4vw;
     margin-top: 98vw;
   }
   .p004Adapt {
@@ -607,11 +610,11 @@
     margin-top: 98vw;
   }
   .p009Adapt {
-    width: 23.94vw;
+    width: 22.94vw;
     height: 29.8vw;
     background-image: url(../images/009.svg);
     background-size: 27.94vw 31.8vw;
-    margin-left: -1.5vw;
+    margin-left: -0.5vw;
     margin-top: 124.2vw;
   }
   .p010Adapt {
@@ -664,7 +667,7 @@
     display: none;
   }
   .text-p001 {
-    margin-left: 1.4vw;
+    margin-left: 2.5vw;
     margin-top: 21vw;
   }
   .text-p002 {
@@ -676,7 +679,7 @@
     margin-top: 108vw;
   }
   .text-p004 {
-    margin-left: 71vw;
+    margin-left: 72vw;
     margin-top: 50vw;
   }
   .text-p005 {
@@ -684,15 +687,15 @@
     margin-top: 107vw;
   }
   .text-p006 {
-    margin-left: 1.7vw;
+    margin-left: 2.2vw;
     margin-top: 172vw;
   }
   .text-p008 {
-    margin-left: 55vw;
+    margin-left: 49vw;
     margin-top: 47.6vw;
   }
   .text-p009 {
-    margin-left: 1vw;
+    margin-left: 2vw;
     margin-top: 135vw;
   }
   .text-p010 {
@@ -700,11 +703,11 @@
     margin-top: 78vw;
   }
   .text-p011 {
-    margin-left: 23.6vw;
+    margin-left: 25.4vw;
     margin-top: 23vw;
   }
   .text-p013 {
-    margin-left: 70vw;
+    margin-left: 70.9vw;
     margin-top: 137vw;
   }
   .gekata,

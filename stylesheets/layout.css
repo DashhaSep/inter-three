@@ -13,18 +13,13 @@
   z-index: 99999;
   display: grid;
   grid-template-columns: repeat(9, 1fr); /* 9 колонок */
-  gap: 8.3vw; /* Расстояние между элементами */
+  gap: 8.3vw;
   opacity: 1;
   transition: opacity 1s ease-in-out;
-}
-.section-two-mediascreen {
-  height: 63vw;
 }
 .vk-preloader.hiddenN {
   opacity: 0;
 }
-
-/* Класс для полного скрытия элемента */
 .vk-preloader.none {
   display: none;
 }
@@ -50,6 +45,7 @@ body {
   width: 1.5vw;
   height: 1.5vw;
   border-radius: 100%;
+  margin-left: 0.3vw;
   background-color: white;
 }
 .after {
@@ -197,12 +193,10 @@ p {
   margin-top: 10vw;
   margin-left: 13vw;
 }
-
 #submitBtn:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-
 .vnesite {
   color: white;
   position: absolute;
@@ -211,7 +205,6 @@ p {
   margin-top: 3vw;
   font-size: 1.2vw;
 }
-
 .register-box {
   width: 21.4vw;
   height: 3vw;
@@ -221,7 +214,6 @@ p {
   position: absolute;
   z-index: 11;
 }
-
 .registration-114,
 .registration-words-one,
 .registration-words-two,
@@ -237,6 +229,9 @@ p {
   text-align: center;
   padding-top: 0.7vw;
   padding-left: 2.8vw;
+}
+.registration-words-one,
+.registration-words-two {
   font-size: 1.2vw;
   z-index: 10;
   position: absolute;
@@ -244,9 +239,6 @@ p {
 .registration-words-two {
   margin-left: 2.9vw;
   padding-top: 0.7vw;
-  font-size: 1.2vw;
-  z-index: 10;
-  position: absolute;
 }
 .main-registration {
   font-size: 1.2vw;
@@ -490,6 +482,9 @@ p {
   animation: arina 16s infinite;
 }
 /* ВТОРОЙ ЭКРАН */
+.section-two-mediascreen {
+  height: 63vw;
+}
 .expandable {
   position: absolute;
   align-items: center;
@@ -1146,8 +1141,7 @@ p {
 #drawingCanvas {
   display: none;
 }
-.dot,
-.dot-paint {
+.dot {
   background-color: rgb(0, 0, 0);
   width: 0.85vw;
   height: 0.85vw;
@@ -1267,208 +1261,6 @@ p {
   margin-top: 25.9vw;
 }
 
-/* ТУТ */
-
-/* ТОЧКИ РИСУНОК АСТЕРОИД */
-
-/* ТУТ */
-
-.paint-one {
-  margin-left: 20vw;
-  margin-top: 5.5vw;
-}
-.paint-two {
-  margin-left: 21.4vw;
-  margin-top: 7vw;
-}
-.paint-three {
-  margin-left: 20.8vw;
-  margin-top: 8.6vw;
-}
-.paint-four {
-  margin-left: 20vw;
-  margin-top: 10.3vw;
-}
-.paint-five {
-  margin-left: 17.7vw;
-  margin-top: 10.7vw;
-}
-.paint-six {
-  margin-left: 17.6vw;
-  margin-top: 9.3vw;
-}
-.paint-seven {
-  margin-left: 17.5vw;
-  margin-top: 7vw;
-}
-.paint-eight {
-  margin-left: 25.8vw;
-  margin-top: 10vw;
-}
-.paint-nine {
-  margin-left: 26.5vw;
-  margin-top: 8.4vw;
-}
-.paint-ten {
-  margin-left: 25.8vw;
-  margin-top: 10vw;
-}
-.paint-eleven {
-  margin-left: 28.4vw;
-  margin-top: 8.2vw;
-}
-.paint-twelve {
-  margin-left: 30.9vw;
-  margin-top: 8.8vw;
-}
-.paint-thirteen {
-  margin-left: 33vw;
-  margin-top: 9.8vw;
-}
-.paint-fourteen {
-  margin-left: 32.4vw;
-  margin-top: 11.8vw;
-}
-.paint-fifteen {
-  margin-left: 30vw;
-  margin-top: 12.7vw;
-}
-.paint-sixteen {
-  margin-left: 27.6vw;
-  margin-top: 12vw;
-}
-.paint-seventeen {
-  margin-left: 19.8vw;
-  margin-top: 13.6vw;
-}
-.paint-eighteen {
-  margin-left: 21vw;
-  margin-top: 12.6vw;
-}
-.paint-nineteen {
-  margin-left: 23.4vw;
-  margin-top: 12.4vw;
-}
-.paint-twenty {
-  margin-left: 24.6vw;
-  margin-top: 14.3vw;
-}
-.paint-twentyone {
-  margin-left: 23vw;
-  margin-top: 15.5vw;
-}
-.paint-twentytwo {
-  margin-left: 20.4vw;
-  margin-top: 15.6vw;
-}
-.paint-twentythree {
-  margin-left: 53.6vw;
-  margin-top: 13.9vw;
-}
-.paint-twentyfour {
-  margin-left: 55.3vw;
-  margin-top: 14.3vw;
-}
-.paint-twentyfive {
-  margin-left: 55vw;
-  margin-top: 15.3vw;
-}
-.paint-twentysix {
-  margin-left: 53.4vw;
-  margin-top: 15vw;
-}
-.paint-twentyseven {
-  margin-left: 58.2vw;
-  margin-top: 9.6vw;
-}
-.paint-twentyeight {
-  margin-left: 60vw;
-  margin-top: 10vw;
-}
-.paint-twentynine {
-  margin-left: 59.6vw;
-  margin-top: 11.3vw;
-}
-.paint-thirty {
-  margin-left: 58vw;
-  margin-top: 9.7vw;
-}
-.paint-thirtyone {
-  margin-left: 64.6vw;
-  margin-top: 12.8vw;
-}
-.paint-thirtytwo {
-  margin-left: 67vw;
-  margin-top: 12vw;
-}
-.paint-thirtythree {
-  margin-left: 70vw;
-  margin-top: 12.4vw;
-}
-.paint-thirtyfour {
-  margin-left: 72.6vw;
-  margin-top: 13.7vw;
-}
-.paint-thirtyfive {
-  margin-left: 74vw;
-  margin-top: 14.7vw;
-}
-.paint-thirtysix {
-  margin-left: 74.7vw;
-  margin-top: 16.7vw;
-}
-.paint-thirtyseven {
-  margin-left: 73.2vw;
-  margin-top: 16.7vw;
-}
-.paint-thirtyeight {
-  margin-left: 71.4vw;
-  margin-top: 16.4vw;
-}
-.paint-thirtynine {
-  margin-left: 69vw;
-  margin-top: 16.7vw;
-}
-.paint-fourty {
-  margin-left: 66vw;
-  margin-top: 15.9vw;
-}
-.paint-fourtyone {
-  margin-left: 16.7vw;
-  margin-top: 13.4vw;
-}
-.paint-fourtytwo {
-  margin-left: 15.8vw;
-  margin-top: 10.6vw;
-}
-.paint-fourtythree {
-  margin-left: 15.5vw;
-  margin-top: 8.1vw;
-}
-.paint-fourtyfour {
-  margin-left: 18.2vw;
-  margin-top: 5.7vw;
-}
-.paint-fourtyfive {
-  margin-left: 18.9vw;
-  margin-top: 4.1vw;
-}
-.paint-fourtysix {
-  margin-left: 21vw;
-  margin-top: 2.7vw;
-}
-.paint-fourtyseven {
-  margin-left: 22.4vw;
-  margin-top: 1.4vw;
-}
-.paint-fourtyeight {
-  margin-left: 71.4vw;
-  margin-top: 16vw;
-}
-.paintfourtyynine {
-  margin-left: 69vw;
-  margin-top: 16.7vw;
-}
 .expandable4 {
   position: absolute;
   align-items: center;
@@ -2354,7 +2146,6 @@ p {
 .square7ADAPT {
   position: absolute;
   background-color: transparent;
-
   width: 8.3vw;
   height: 4vw;
 }

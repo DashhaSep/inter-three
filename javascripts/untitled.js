@@ -1,21 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+  tralalelo();
   preloader();
   draggable();
   draggabletwo();
   draggablethree();
   draggablefour();
   draggablefive();
-  transition();
   ADAPTIVECANVAS();
   anotherCanvas();
-  // getMousePos();
-  // mouseMove();
   openModal();
   initCanvas();
-  oknoRegOdin();
-  oknoRegDva();
-  oknoRegTri();
-  ColorChange();
   submitName();
   Question();
   Question2();
@@ -23,21 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
   Question4();
   timer();
   KARTOCHKI();
-  // interfaceChange();
   secondInterface();
-  secondInterfacewhite();
-  secondInterfaceHELP();
-  secondInterfaceXX();
-  secondInterfacedot();
-  // borderBox();
   WhiteBorder();
   asteroidswhite();
-  secondInterfaceRoundBall();
   imagesDarkVersion();
-  tralalelo();
   podvalInversion();
 });
-
+// цифры на загрузочной экране
 function tralalelo() {
   const elements = document.querySelectorAll(".number");
   if (elements.length === 0) {
@@ -87,6 +73,7 @@ const removePreloader = function () {
   preloader.classList.add("none");
   preloader.removeEventListener("transitionend", removePreloader);
 };
+// регистрация и появление шарика
 function submitName() {
   let btn = document.querySelector("#submitBtn");
   let input = document.querySelector("#textInput1");
@@ -113,7 +100,7 @@ function submitName() {
     });
   });
 }
-
+// окно регистрации
 function openModal() {
   let button = document.querySelector(".register-box");
   let modal = document.querySelector("#register");
@@ -121,61 +108,9 @@ function openModal() {
   button.addEventListener("click", () => {
     modal.style.cssText = "display: flex";
   });
-
-  // modal.addEventListener("click", () => {
-  //   modal.style.cssText = "display: none";
-  // });
 }
-
-// function draggable() {
-//   // Make the DIV element draggable:
-//   dragElement(document.getElementById("a1"));
-
-//   function dragElement(elmnt) {
-//     let pos1 = 0,
-//       pos2 = 0,
-//       pos3 = 0,
-//       pos4 = 0;
-//     if (document.getElementById(elmnt.id + "header")) {
-//       // if present, the header is where you move the DIV from:
-//       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//     } else {
-//       // otherwise, move the DIV from anywhere inside the DIV:
-//       elmnt.onmousedown = dragMouseDown;
-//     }
-
-//     function dragMouseDown(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // get the mouse cursor position at startup:
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       document.onmouseup = closeDragElement;
-//       // call a function whenever the cursor moves:
-//       document.onmousemove = elementDrag;
-//     }
-
-//     function elementDrag(e) {
-//       e = e || window.event;
-//       e.preventDefault();
-//       // calculate the new cursor position:
-//       pos1 = pos3 - e.clientX;
-//       pos2 = pos4 - e.clientY;
-//       pos3 = e.clientX;
-//       pos4 = e.clientY;
-//       // set the element's new position:
-//       elmnt.style.top = elmnt.offsetTop - pos2 + "px";
-//       elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
-//     }
-
-//     function closeDragElement() {
-//       document.onmouseup = null;
-//       document.onmousemove = null;
-//     }
-//   }
-// }
+// перетаскивания второй экран
 function draggable() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById("a1"));
 
   function dragElement(elmnt) {
@@ -464,33 +399,13 @@ function draggablefive() {
     }
   }
 }
-function transition() {
-  // let imageFirst = document.querySelector('.p001')
 
-  // imageFirst.addEventListener('click', () => {
-  //   imageFirst.classList.add('final')
-  //   imageFirst.classList.remove('initial')
-  // })
-  let images = document.querySelectorAll(".fourth div");
-
-  images.forEach((image) => {
-    image.addEventListener("click", () => {
-      let imageClass = image.className;
-      imageClass = imageClass.split();
-      imageClass = imageClass.shift();
-
-      console.log(imageClass);
-      if (imageClass == "p001") {
-        imageFirst.classList.add("final");
-      }
-    });
-  });
-}
+// рисование для телефона  холст
 function ADAPTIVECANVAS() {
   const button = document.getElementById("toggleButton");
   let isBlack = true; // Флаг для отслеживания текущего цвета
   button.addEventListener("click", () => {
-    ctx.strokeStyle = "#000000"; // Черный цвет по умолчанию
+    ctx.strokeStyle = "#000000";
     ctx.lineWidth = 1;
     ctx.strokeStyle = isBlack ? "#FFFFFF" : "#000000";
     isBlack = !isBlack; // Инвертируем флаг
@@ -499,7 +414,6 @@ function ADAPTIVECANVAS() {
   const canvas = document.getElementById("drawingCanvas");
   const ctx = canvas.getContext("2d");
 
-  // Устанавливаем размеры canvas в пикселях
   function resizeCanvas() {
     canvas.width = window.innerWidth; // 100vw
     canvas.height = (window.innerWidth * 110) / 100; // 88vw
@@ -540,7 +454,7 @@ function ADAPTIVECANVAS() {
     isDrawing = false; // Если курсор покидает область canvas
   });
 }
-
+// холст десктоп
 function initCanvas() {
   const button = document.getElementById("toggleButton");
   let isBlack = true; // Флаг для отслеживания текущего цвета
@@ -608,23 +522,17 @@ function initCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   });
 }
+// функция скрытия точек рисование
 function anotherCanvas() {
   const toggleButton = document.getElementById("enter");
   const dot = document.querySelectorAll(".dot");
-  const dot2 = document.querySelectorAll(".dot-paint");
-
   // Флаг для отслеживания текущего состояния
   let isGroup1Visible = true;
 
-  // Добавляем обработчик события на кнопку
   toggleButton.addEventListener("click", () => {
     if (isGroup1Visible) {
-      // Скрываем группу 1 и показываем группу 2
       dot.forEach((box) => box.classList.add("hidden"));
-      dot2.forEach((box) => box.classList.remove("hidden"));
     } else {
-      // Скрываем группу 2 и показываем группу 1
-      dot2.forEach((box) => box.classList.add("hidden"));
       dot.forEach((box) => box.classList.remove("hidden"));
     }
 
@@ -632,6 +540,7 @@ function anotherCanvas() {
     isGroup1Visible = !isGroup1Visible;
   });
 }
+// темный режим подвал
 function podvalInversion() {
   const toggleButton = document.getElementById("toggleButton");
   const normal = document.querySelector(".PODVAL-ALL-NORMAL");
@@ -656,114 +565,7 @@ function podvalInversion() {
     isGroup1Visible = !isGroup1Visible;
   });
 }
-function oknoRegOdin() {
-  // Получаем элементы DOM
-  const textInput = document.getElementById("textInput1");
-  // const submitBtn = document.getElementById("submitBtn");
-  // const output = document.getElementById("output");
-  const addButton = document.getElementById("addButton");
-  const outputList = document.getElementById("outputList");
-
-  // Добавляем обработчик события для кнопки
-  // addButton.addEventListener('click', () => {
-  //   const enteredText = textInput.value.trim() // Получаем введенный текст и убираем лишние пробелы
-
-  //   if (enteredText) {
-  //     // Создаем новый элемент списка
-  //     const listItem = document.createElement('li')
-  //     listItem.textContent = enteredText
-
-  //     // Добавляем элемент в список
-  //     outputList.appendChild(listItem)
-
-  //     // Очищаем текстовое поле
-  //     textInput.value = ''
-  //   } else {
-  //     alert('Пожалуйста, введите данные!')
-  //   }
-  // })
-  // Обработчик для кнопки "Отправить"
-  submitBtn.addEventListener("click", () => {
-    const enteredText = textInput.value.trim(); // Получаем введенный текст
-    if (enteredText) {
-      output.textContent = `Вы ввели: ${enteredText}`; // Выводим текст на страницу
-    } else {
-      output.textContent = "Пожалуйста, введите текст!"; // Сообщение об ошибке
-    }
-  });
-}
-
-function oknoRegDva() {
-  // Получаем элементы DOM
-  const textInput = document.getElementById("textInput2");
-  // const submitBtn = document.getElementById("submitBtn");
-  // const output = document.getElementById("output");
-
-  // Обработчик для кнопки "Отправить"
-  submitBtn.addEventListener("click", () => {
-    const enteredText = textInput.value.trim(); // Получаем введенный текст
-    if (enteredText) {
-      output.textContent = `Вы ввели: ${enteredText}`; // Выводим текст на страницу
-    } else {
-      output.textContent = "Пожалуйста, введите текст!"; // Сообщение об ошибке
-    }
-  });
-}
-function oknoRegTri() {
-  // Получаем элементы DOM
-  const textInput = document.getElementById("textInput3");
-  // const submitBtn = document.getElementById("submitBtn");
-  // const output = document.getElementById("output");
-
-  // Обработчик для кнопки "Отправить"
-  submitBtn.addEventListener("click", () => {
-    const enteredText = textInput.value.trim(); // Получаем введенный текст
-    if (enteredText) {
-      output.textContent = `Вы ввели: ${enteredText}`; // Выводим текст на страницу
-    } else {
-      output.textContent = "Пожалуйста, введите текст!"; // Сообщение об ошибке
-    }
-  });
-}
-
-function ColorChange() {
-  const themeButton = document.getElementById("themeButton");
-  const body = document.body;
-
-  // Флаг для отслеживания текущего состояния
-  let isDarkMode = true;
-
-  // Добавляем обработчик события для кнопки
-  // themeButton.addEventListener('click', () => {
-  //   if (isDarkMode) {
-  //     // Если сейчас темная тема, меняем на светлую
-  //     body.style.backgroundColor = 'black'
-  //     body.style.color = 'white'
-  //     themeButton.textContent = 'Переключить на темный режим'
-  //     const allElements = document.querySelectorAll('*') // Выбираем все элементы
-  //     allElements.forEach((element) => {
-  //       element.style.color = 'white' // Устанавливаем черный цвет текста
-  //     })
-  //   } else {
-  //     // Возвращаем исходное состояние немедленно
-  //     resetStyles()
-  //   }
-  // })
-
-  // Функция для возврата исходных стилей
-  function resetStyles() {
-    body.style.backgroundColor = ""; // Очищаем стиль фона
-    body.style.color = ""; // Очищаем стиль текста
-
-    // Возвращаем цвет текста всех элементов к исходному
-    const allElements = document.querySelectorAll("*");
-    allElements.forEach((element) => {
-      element.style.color = ""; // Очищаем стиль текста
-    });
-    // Переключаем состояние
-    isDarkMode = !isDarkMode;
-  }
-}
+// элементы подсказки (?)
 function Question() {
   document.querySelector(".expandable").addEventListener("click", function () {
     this.classList.toggle("expanded");
@@ -784,7 +586,7 @@ function Question4() {
     this.classList.toggle("expanded4");
   });
 }
-
+// таймер холст для рисования
 function timer() {
   let stopwatchElement = document.querySelector(".stopwatch");
   let hoverArea = document.querySelector(".hover-area");
@@ -826,7 +628,7 @@ function timer() {
     clearInterval(timerInterval);
   });
 }
-
+// перетаскивание карточек четвертый экран
 function KARTOCHKI() {
   const photos = document.querySelectorAll(".kartochki");
   let activePhoto = null;
@@ -853,7 +655,7 @@ function KARTOCHKI() {
     });
   });
 }
-
+// ТЕМНЫЙ РЕЖИМ BODY
 function secondInterface() {
   const button = document.getElementById("toggleButton");
   const body = document.body;
@@ -867,62 +669,7 @@ function secondInterface() {
     }
   });
 }
-function secondInterfacewhite() {
-  const button = document.getElementById("toggleButton"); // Кнопка
-  const bomElement = document.querySelectorAll(".WG"); // Элемент .bom
-  // Добавляем обработчик события клика на кнопку
-  button.addEventListener("click", () => {
-    // Добавляем класс .after к элементу .bom
-    bomElement.forEach((bom) => {
-      bom.classList.toggle("AFTER");
-    });
-  });
-}
-function secondInterfaceHELP() {
-  const button = document.getElementById("toggleButton"); // Кнопка
-  const bomElement = document.querySelectorAll(".FG"); // Элемент .bom
-  // Добавляем обработчик события клика на кнопку
-  button.addEventListener("click", () => {
-    // Добавляем класс .after к элементу .bom
-    bomElement.forEach((bom) => {
-      bom.classList.toggle("AFTER2");
-    });
-  });
-}
-
-function secondInterfaceXX() {
-  const button = document.getElementById("toggleButton"); // Кнопка
-  const bomElement = document.querySelectorAll(".XX"); // Элемент .bom
-  // Добавляем обработчик события клика на кнопку
-  button.addEventListener("click", () => {
-    // Добавляем класс .after к элементу .bom
-    bomElement.forEach((bom) => {
-      bom.classList.toggle("AFTER3");
-    });
-  });
-}
-function secondInterfaceRoundBall() {
-  const button = document.getElementById("toggleButton"); // Кнопка
-  const bomElement = document.querySelectorAll(".RB"); // Элемент .bom
-  // Добавляем обработчик события клика на кнопку
-  button.addEventListener("click", () => {
-    // Добавляем класс .after к элементу .bom
-    bomElement.forEach((bom) => {
-      bom.classList.toggle("afterRB");
-    });
-  });
-}
-function secondInterfacedot() {
-  const button = document.getElementById("toggleButton"); // Кнопка
-  const bomElement = document.querySelectorAll(".dot"); // Элемент .bom
-  // Добавляем обработчик события клика на кнопку
-  button.addEventListener("click", () => {
-    // Добавляем класс .after к элементу .bom
-    bomElement.forEach((bom) => {
-      bom.classList.toggle("afterAFT");
-    });
-  });
-}
+// ТЕМНЫЙ РЕЖИМ РАМКИ
 function WhiteBorder() {
   const button = document.getElementById("toggleButton"); // Кнопка
   const box = document.querySelector(".ramka");
@@ -941,21 +688,42 @@ function WhiteBorder() {
     element3.id = element3.id === "square" ? "enter-white" : "square";
   });
 }
-
+// ТЕМНЫЙ РЕЖИМ ВСЕ ЭЛЕМЕНТЫ
 function imagesDarkVersion() {
   const button = document.getElementById("toggleButton");
   const pystotа = document.querySelector(".img1");
   const regolit = document.querySelector(".img2");
   const mantia = document.querySelector(".img3");
   const yadro = document.querySelector(".img4");
+  const bomElement = document.querySelectorAll(".dot");
+  const bomElement2 = document.querySelectorAll(".RB");
+  const bomElement3 = document.querySelectorAll(".XX");
+  const bomElement4 = document.querySelectorAll(".FG");
+  const bomElement5 = document.querySelectorAll(".WG");
+
   button.addEventListener("click", () => {
     pystotа.classList.toggle("afterimage");
     mantia.classList.toggle("afterimage3");
     regolit.classList.toggle("afterimage2");
     yadro.classList.toggle("afterimage4");
+    bomElement.forEach((bom) => {
+      bom.classList.toggle("afterAFT");
+    });
+    bomElement2.forEach((bom) => {
+      bom.classList.toggle("afterRB");
+    });
+    bomElement3.forEach((bom) => {
+      bom.classList.toggle("AFTER3");
+    });
+    bomElement4.forEach((bom) => {
+      bom.classList.toggle("AFTER2");
+    });
+    bomElement5.forEach((bom) => {
+      bom.classList.toggle("AFTER");
+    });
   });
 }
-
+// второй экран астероиды и тени темный режим
 function asteroidswhite() {
   const button = document.getElementById("toggleButton");
   const image5 = document.getElementById("blackShFive");
@@ -1044,6 +812,7 @@ function asteroidswhite() {
     }
   });
 }
+// условие для hover в темной режиме
 function Hover() {
   const box = document.querySelector(".img1");
   const toggleHoverBtn = document.getElementById("toggleButton");
@@ -1055,9 +824,5 @@ function Hover() {
       box.classList.remove("img1");
       box.classList.add("afterimage");
     }
-    // else {
-    //   box.classList.remove("alternate-hover");
-    //   box.classList.add("default-hover");
-    // }
   });
 }
