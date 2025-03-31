@@ -120,21 +120,21 @@ function draggable() {
       pos4 = 0;
 
     if (document.getElementById(elmnt.id + "header")) {
-      // if present, the header is where you move the DIV from:
+      // header — то через что (откуда) мы перемещаем див
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
+      // в противном случае переместить див из любого места внутри див
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-      // get the mouse cursor position at startup:
+      //  получить позицию мышки при запуске
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
+      // вызвать функцию когда двигается курсор
       document.onmousemove = elementDrag;
     }
 
@@ -142,20 +142,20 @@ function draggable() {
       e = e || window.event;
       e.preventDefault();
 
-      // calculate the new cursor position:
+      // посчитать новую позицию курсорса
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      // Convert pixel values to vw
-      const viewportWidth = window.innerWidth; // Get the current viewport width
-      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
-      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+      // конвертация пикселей во vw
+      const viewportWidth = window.innerWidth; // Получить текущую ширину области просмотра
+      const deltaX = (pos1 / viewportWidth) * 100; // Рассчитать горизонтальное изменение vw
+      const deltaY = (pos2 / viewportWidth) * 100; // Рассчитать вертикальное изменение vw
 
-      // Update the element's position using vw units
-      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
-      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+      //  Обновляем позицию элемента, используя  vw
+      const currentTop = parseFloat(elmnt.style.top || 0); // Получить текущее верхнее значение в vw
+      const currentLeft = parseFloat(elmnt.style.left || 0); // Получить текущее левое значение в vw
 
       elmnt.style.top = `${currentTop - deltaY}vw`;
       elmnt.style.left = `${currentLeft - deltaX}vw`;
@@ -168,7 +168,6 @@ function draggable() {
   }
 }
 function draggabletwo() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById("a2"));
 
   function dragElement(elmnt) {
@@ -178,21 +177,19 @@ function draggabletwo() {
       pos4 = 0;
 
     if (document.getElementById(elmnt.id + "header")) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag;
     }
 
@@ -200,20 +197,17 @@ function draggabletwo() {
       e = e || window.event;
       e.preventDefault();
 
-      // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      // Convert pixel values to vw
-      const viewportWidth = window.innerWidth; // Get the current viewport width
-      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
-      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+      const viewportWidth = window.innerWidth;
+      const deltaX = (pos1 / viewportWidth) * 100;
+      const deltaY = (pos2 / viewportWidth) * 100;
 
-      // Update the element's position using vw units
-      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
-      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+      const currentTop = parseFloat(elmnt.style.top || 0);
+      const currentLeft = parseFloat(elmnt.style.left || 0);
 
       elmnt.style.top = `${currentTop - deltaY}vw`;
       elmnt.style.left = `${currentLeft - deltaX}vw`;
@@ -226,7 +220,6 @@ function draggabletwo() {
   }
 }
 function draggablethree() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById("a3"));
 
   function dragElement(elmnt) {
@@ -236,21 +229,19 @@ function draggablethree() {
       pos4 = 0;
 
     if (document.getElementById(elmnt.id + "header")) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag;
     }
 
@@ -258,20 +249,17 @@ function draggablethree() {
       e = e || window.event;
       e.preventDefault();
 
-      // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      // Convert pixel values to vw
-      const viewportWidth = window.innerWidth; // Get the current viewport width
-      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
-      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+      const viewportWidth = window.innerWidth;
+      const deltaX = (pos1 / viewportWidth) * 100;
+      const deltaY = (pos2 / viewportWidth) * 100;
 
-      // Update the element's position using vw units
-      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
-      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+      const currentTop = parseFloat(elmnt.style.top || 0);
+      const currentLeft = parseFloat(elmnt.style.left || 0);
 
       elmnt.style.top = `${currentTop - deltaY}vw`;
       elmnt.style.left = `${currentLeft - deltaX}vw`;
@@ -284,7 +272,6 @@ function draggablethree() {
   }
 }
 function draggablefour() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById("a4"));
 
   function dragElement(elmnt) {
@@ -294,21 +281,19 @@ function draggablefour() {
       pos4 = 0;
 
     if (document.getElementById(elmnt.id + "header")) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag;
     }
 
@@ -316,20 +301,17 @@ function draggablefour() {
       e = e || window.event;
       e.preventDefault();
 
-      // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      // Convert pixel values to vw
-      const viewportWidth = window.innerWidth; // Get the current viewport width
-      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
-      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+      const viewportWidth = window.innerWidth;
+      const deltaX = (pos1 / viewportWidth) * 100;
+      const deltaY = (pos2 / viewportWidth) * 100;
 
-      // Update the element's position using vw units
-      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
-      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+      const currentTop = parseFloat(elmnt.style.top || 0);
+      const currentLeft = parseFloat(elmnt.style.left || 0);
 
       elmnt.style.top = `${currentTop - deltaY}vw`;
       elmnt.style.left = `${currentLeft - deltaX}vw`;
@@ -342,7 +324,6 @@ function draggablefour() {
   }
 }
 function draggablefive() {
-  // Make the DIV element draggable:
   dragElement(document.getElementById("a5"));
 
   function dragElement(elmnt) {
@@ -352,21 +333,19 @@ function draggablefive() {
       pos4 = 0;
 
     if (document.getElementById(elmnt.id + "header")) {
-      // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
-      // otherwise, move the DIV from anywhere inside the DIV:
       elmnt.onmousedown = dragMouseDown;
     }
 
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
-      // get the mouse cursor position at startup:
+
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-      // call a function whenever the cursor moves:
+
       document.onmousemove = elementDrag;
     }
 
@@ -374,20 +353,17 @@ function draggablefive() {
       e = e || window.event;
       e.preventDefault();
 
-      // calculate the new cursor position:
       pos1 = pos3 - e.clientX;
       pos2 = pos4 - e.clientY;
       pos3 = e.clientX;
       pos4 = e.clientY;
 
-      // Convert pixel values to vw
-      const viewportWidth = window.innerWidth; // Get the current viewport width
-      const deltaX = (pos1 / viewportWidth) * 100; // Calculate horizontal change in vw
-      const deltaY = (pos2 / viewportWidth) * 100; // Calculate vertical change in vw
+      const viewportWidth = window.innerWidth;
+      const deltaX = (pos1 / viewportWidth) * 100;
+      const deltaY = (pos2 / viewportWidth) * 100;
 
-      // Update the element's position using vw units
-      const currentTop = parseFloat(elmnt.style.top || 0); // Get current top value in vw
-      const currentLeft = parseFloat(elmnt.style.left || 0); // Get current left value in vw
+      const currentTop = parseFloat(elmnt.style.top || 0);
+      const currentLeft = parseFloat(elmnt.style.left || 0);
 
       elmnt.style.top = `${currentTop - deltaY}vw`;
       elmnt.style.left = `${currentLeft - deltaX}vw`;
