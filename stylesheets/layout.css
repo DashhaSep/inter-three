@@ -1134,6 +1134,9 @@ p {
   font-size: 1.09vw;
 }
 /* ПЯТЫЙ ЭКРАН */
+.fifth-screen {
+  height: 51.2vw;
+}
 #canvas {
   position: relative;
   z-index: 999;
@@ -1155,7 +1158,12 @@ p {
   margin-top: -1.7vw;
   font-size: 1.1vw;
 }
-
+.dot-back,
+.dot-back2 {
+  margin-left: 0.8vw;
+  margin-top: -1.1vw;
+  font-size: 1.1vw;
+}
 .dot-one {
   margin-left: 18.6vw;
   margin-top: 27.3vw;
@@ -1253,7 +1261,7 @@ p {
   margin-top: 12vw;
 }
 .dot-twentyfive {
-  margin-left: 78.1vw;
+  margin-left: 75.4vw;
   margin-top: 13.7vw;
 }
 .dot-twentysix {
@@ -1325,13 +1333,7 @@ p {
   margin-left: 94vw;
   margin-top: 5vw;
 }
-цршеу {
-  /* border: 1px solid #000; */
-  position: absolute;
-  height: 33vw;
-  width: 100vw;
-  margin-left: 1vw;
-}
+
 #clear,
 #enter {
   border: 0.16vw solid black;
@@ -1346,6 +1348,7 @@ p {
   margin-left: 35vw;
   margin-top: 3vw;
   width: 10.23vw;
+  height: 3.2vw;
 }
 #clear-white {
   border: 0.16vw solid rgb(255, 255, 255);
@@ -1361,7 +1364,7 @@ p {
 }
 #enter {
   margin-left: 55vw;
-  margin-top: -3.7vw;
+  margin-top: -3.9vw;
   width: 13.23vw;
 }
 #enter-white {

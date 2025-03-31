@@ -792,6 +792,7 @@
     margin-top: 2.4vw;
     font-size: 4.14vw;
   }
+
   .dot {
     width: 2.65vw;
     height: 2.65vw;
@@ -863,11 +864,11 @@
     margin-left: 29vw;
     margin-top: 9.7vw;
     width: 40.23vw;
-    height: 9vw;
+    height: 8vw;
     font-family: "Helvetica";
     font-size: 4.3vw;
     text-align: center;
-    padding-top: 2vw;
+    padding-top: 2.3vw;
     z-index: 999;
     position: relative;
   }
@@ -916,8 +917,7 @@
   }
   .podval {
     height: 185.64vw;
-
-    margin-top: -25vw;
+    margin-top: -15vw;
   }
   .podval-rock-two {
     width: 23.91vw;
