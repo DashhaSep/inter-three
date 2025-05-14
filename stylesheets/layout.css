@@ -1,3 +1,8 @@
+img {
+  shape-rendering: crispEdges; /* Для четких линий */
+  image-rendering: -webkit-optimize-contrast; /* Для Safari */
+}
+
 /* <!-- загрузочный экран  --> */
 .vk-preloader {
   width: 100vw;
